@@ -221,11 +221,11 @@ table {
 
 /* Animations */
 .glow {
-  animation: glow 30s infinite linear;
+  animation: glow 60s infinite linear;
 }
 
 .text-glow {
-  animation: text-glow 30s infinite linear;
+  animation: text-glow 60s infinite linear;
 }
 
 @keyframes glow {
