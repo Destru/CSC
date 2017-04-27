@@ -160,6 +160,13 @@
     </footer>
   </div>
 
-<script src="/index.js" async defer></script>
+  <script>
+    var setCurrentYear;
+    (setCurrentYear = function() {
+      var copyleft = document.getElementById('copyleft-years');
+      var currentYear = new Date().getFullYear();
+      copyleft.innerHTML = '1982—' + currentYear + '.';
+    })();
+  </script>
 </body>
 </html>
