@@ -32,7 +32,6 @@ footer i {
 
 h2, h3 {
   font-family: 'Press Start 2P', sans-serif;
-  letter-spacing: -1px;
   line-height: 1.6em;
   text-transform: uppercase;
 }
@@ -85,7 +84,7 @@ q:after {
 }
 
 section {
-  margin-bottom: 3.2em;
+  margin-bottom: 6.4em;
 }
 
 table {
@@ -158,9 +157,9 @@ table {
 }
 
 .discord-commands h4 i {
-  margin-left: 2px;
+  margin-left: 4px;
   position: relative;
-  top: -3px;
+  top: -2px;
 }
 
 .discord-commands table {
@@ -207,8 +206,16 @@ table {
   height: 64px;
   margin-bottom: 1.6em;
   margin-right: -80px;
+  margin-top: 4px;
   position: relative;
   left: -80px;
+}
+
+.twitch a i {
+  position: relative;
+  left: -2px;
+  top: 1px;
+  transform: scale(.9);
 }
 
 /* Animations */
@@ -225,7 +232,7 @@ table {
     background-color:#ff0;
   }
   50% {
-    background-color:#fa0;
+    background-color:#fb0;
   }
   100% {
     background-color:#ff0;
@@ -237,7 +244,7 @@ table {
     color:#ff0;
   }
   50% {
-    color:#fa0;
+    color:#fb0;
   }
   100% {
     color:#ff0;
