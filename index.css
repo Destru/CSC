@@ -25,8 +25,9 @@ footer {
 }
 
 footer i {
+  margin-right: 4px;
   text-align: center;
-  width: 16px !important; /* This shouldn't be necessary, Font Awesome. */
+  width: 14px;
 }
 
 h2, h3 {
