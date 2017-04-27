@@ -1,5 +1,5 @@
 a {
-  color: #aeaeae;
+  color: #ccc;
   display: inline-block;
   text-decoration: none;
   transition: all .25s linear;
@@ -180,7 +180,10 @@ table {
   text-align: left;
 }
 
-.discord-commands .public,
+.discord-commands .command {
+  font-weight: 700;
+}
+
 .discord-commands .size {
   opacity: .5;
 }
