@@ -121,6 +121,35 @@ table {
   list-style-type: upper-roman;
 }
 
+#navigation {
+  position: absolute;
+  top: 0; left: 0;
+  z-index: 2;
+}
+
+#navigation a {
+  color: #000;
+}
+
+#navigation ul {
+  height: 132px;
+  margin: 0;
+  padding: 16px;
+}
+
+#navigation ul li {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+#navigation .toggle {
+  margin-left: 32px;
+  margin-bottom: -10px;
+}
+
 #probe {
   padding-top: 156px;
 }
@@ -131,7 +160,6 @@ table {
 
 #social {
   float: left;
-  font-size: 18px;
   list-style-type: none;
   padding-left: 0;
 }
@@ -222,19 +250,20 @@ table {
 }
 
 .twitch a i {
-  position: relative;
-  left: -2px;
-  top: 1px;
-  transform: scale(.9);
+  transform: scale(.95);
+}
+
+.shop a i {
+  margin-left: -2px;
 }
 
 /* Animations */
 .glow {
-  animation: glow 60s infinite linear;
+  animation: glow 42s infinite linear;
 }
 
 .text-glow {
-  animation: text-glow 60s infinite linear;
+  animation: text-glow 42s infinite linear;
 }
 
 @keyframes glow {
