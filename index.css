@@ -292,14 +292,14 @@ table {
 
 /* Media Queries */
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1200px) {
   header {
-    background-position: 65% 40px;
+    background-position: 70% 40px;
     background-size: 580px;
   }
 }
 
-@media all and (max-width: 720px) {
+@media all and (max-width: 750px) {
   header {
     background-position: 80% 80px;
     background-size: 500px;
@@ -314,9 +314,9 @@ table {
   }
 }
 
-@media all and (max-width: 520px) {
+@media all and (max-width: 550px) {
   header {
-    background-position: 95% 130px;
+    background-position: 90% 130px;
     background-size: 340px;
   }
 
@@ -324,15 +324,15 @@ table {
     min-width: 100%;
   }
 
-  #social .twitch {
-    display: none;
-  }
-
   .discord-commands td {
     padding-right: 16px;
   }
 
   .discord-commands .description {
+    display: none;
+  }
+
+  #social .twitch {
     display: none;
   }
 }
