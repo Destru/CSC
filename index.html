@@ -15,11 +15,6 @@
 <body>
   <header class="glow">
     <h1>Cyberpunk Social Club</h1>
-    <nav><!--
-      <ul>
-        <li><a href="#manifesto">Manifesto</a></li>
-      </ul> -->
-    </nav>
     <div id="probe">
       <div class="avatar">
         <img src="/images/Probe.gif" height="64" width="64" alt="Probe Avatar">
@@ -50,12 +45,22 @@
   </header>
   <div id="wrapper">
     <article>
+      <label class="tab" for="tab-0">
+        <i class="fa fa-bookmark-o"></i>
+        Manifesto
+      </label>
+      <input id="tab-0" class="hidden" type="radio" name="tabs" checked>
+
+      <label class="tab" for="tab-1">
+        <i class="fa fa-heart-o"></i>
+        Community
+      </label>
+      <input id="tab-1" class="hidden" type="radio" name="tabs">
+
       <div id="content">
-        <section id="manifesto">
-          <h2>
-            <a href="http://patreon.com/destru" class="text-glow">
-              Manifesto
-            </a>
+        <section id="content-0" class="tab-content">
+          <h2 class="text-glow">
+            Manifesto
           </h2>
 
           <ul>
@@ -72,7 +77,28 @@
           </ul>
         </section>
 
-        <section>
+        <section id="content-1" class="tab-content">
+          <h2 class="text-glow">
+            Community
+          </h2>
+
+          <p>
+            The Cyberpunk Social Club is open to all, especially nerds and
+            silicon-based lifeforms. Consider this an open
+            <a href="https://discord.gg/0tWMsoyJGJXk8Mj5">
+               invitation to join our Discord
+            </a>.
+            Everyone is welcome.
+            There is some collaborative work happening, but it is primarily a
+            place to hang out, have some fun and get inspired.
+          </p>
+
+          <p>
+            Holding some light together in the darkness.
+          </p>
+        </section>
+
+        <section id="projects">
           <div id="binaerpilot" class="project">
             <div class="avatar">
               <img src="/images/Binaerpilot.png" height="64" width="64"
@@ -170,6 +196,14 @@
   </div>
 
   <script>
+    var setCurrentYear;
+    (setCurrentYear = function() {
+      var copyleft = document.getElementById('copyleft-years');
+      var currentYear = new Date().getFullYear();
+      copyleft.innerHTML = '1982—' + currentYear + '.';
+    })();
+
+    // Google Analytics
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -177,13 +211,6 @@
 
     ga('create', 'UA-139019-12', 'auto');
     ga('send', 'pageview');
-
-    var setCurrentYear;
-    (setCurrentYear = function() {
-      var copyleft = document.getElementById('copyleft-years');
-      var currentYear = new Date().getFullYear();
-      copyleft.innerHTML = '1982—' + currentYear + '.';
-    })();
   </script>
 </body>
 </html>

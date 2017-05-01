@@ -69,6 +69,40 @@ i.fa-rebel {
   transform: scale(.9);
 }
 
+label.tab {
+  color: black;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 4px 8px;
+  position: relative;
+  left: -4px;
+  text-transform: uppercase;
+  top: -250px;
+  white-space: nowrap;
+}
+
+label.tab i {
+  margin-right: 4px;
+}
+
+label.tab:hover {
+  background-color: black;
+  color: #0f0;
+  transition: all .25s linear;
+}
+
+label.tab:hover i.fa-bookmark-o::before {
+    content: "\f02e";
+}
+
+label.tab:hover i.fa-send-o::before {
+    content: "\f1d8";
+}
+
+label.tab:hover i.fa-heart-o::before {
+    content: "\f004";
+}
+
 nav ul li {
   display: inline-block;
 }
@@ -178,6 +212,11 @@ table {
   color: #0f0;
 }
 
+#tab-0:checked ~ #content #content-0,
+#tab-1:checked ~ #content #content-1 {
+  display: block;
+}
+
 #wrapper {
   margin: auto;
   max-width: 800px;
@@ -225,6 +264,10 @@ table {
   opacity: .5;
 }
 
+.hidden {
+  display: none;
+}
+
 .patreon-unlock i,
 .public i {
   text-align: center;
@@ -249,13 +292,18 @@ table {
   left: -80px;
 }
 
+.shop a i {
+  margin-left: -2px;
+}
+
+.tab-content {
+  display: none;
+}
+
 .twitch a i {
   transform: scale(.95);
 }
 
-.shop a i {
-  margin-left: -2px;
-}
 
 /* Animations */
 .glow {
@@ -316,7 +364,7 @@ table {
 
 @media all and (max-width: 550px) {
   header {
-    background-position: 90% 130px;
+    background-position: 100% 130px;
     background-size: 340px;
   }
 
