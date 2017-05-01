@@ -78,17 +78,20 @@ label.tab {
 }
 
 label.tab:hover {
-  border-color: #0f0;
-  color: #0f0;
+  color: #ff0;
   transition: all .25s linear;
 }
 
-label.tab:hover i.fa-bookmark-o::before {
-    content: "\f02e";
+label.tab i {
+  margin-right: 8px;
 }
 
-label.tab:hover i.fa-send-o::before {
-    content: "\f1d8";
+label.tab:hover i.fa-star-o::before {
+    content: "\f005";
+}
+
+label.tab:hover i.fa-comments-o::before {
+    content: "\f086";
 }
 
 label.tab:hover i.fa-heart-o::before {
@@ -151,35 +154,6 @@ table {
   list-style-type: upper-roman;
 }
 
-#navigation {
-  position: absolute;
-  top: 0; left: 0;
-  z-index: 2;
-}
-
-#navigation a {
-  color: #000;
-}
-
-#navigation ul {
-  height: 132px;
-  margin: 0;
-  padding: 16px;
-}
-
-#navigation ul li {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-#navigation .toggle {
-  margin-left: 32px;
-  margin-bottom: -10px;
-}
-
 #probe {
   padding-top: 156px;
 }
@@ -209,11 +183,13 @@ table {
 }
 
 #tab-0:checked ~ #tab-0-label,
+#tab-2:checked ~ #tab-2-label,
 #tab-1:checked ~ #tab-1-label {
   display: none;
 }
 
 #tab-0:checked ~ #content #content-0,
+#tab-2:checked ~ #content #content-2,
 #tab-1:checked ~ #content #content-1 {
   display: block;
 }
@@ -320,7 +296,7 @@ table {
     background-color:#ff0;
   }
   50% {
-    background-color:#fb0;
+    background-color:#fc0;
   }
   100% {
     background-color:#ff0;
@@ -332,7 +308,7 @@ table {
     color:#ff0;
   }
   50% {
-    color:#fb0;
+    color:#fc0;
   }
   100% {
     color:#ff0;
@@ -361,6 +337,10 @@ table {
   .discord-commands td {
     padding-right: 24px;
   }
+
+  #social .instagram {
+    display: none;
+  }
 }
 
 @media all and (max-width: 550px) {
@@ -384,4 +364,14 @@ table {
   #social .twitch {
     display: none;
   }
+}
+
+/* double click the internets  */
+label.tab {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
