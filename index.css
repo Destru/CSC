@@ -78,7 +78,7 @@ label.tab {
 }
 
 label.tab:hover {
-  color: #ff0;
+  color: #0f0;
   transition: all .25s linear;
 }
 
