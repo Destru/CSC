@@ -58,10 +58,11 @@ header {
   background-color: #ff0;
   background-image: url('/images/Logo.png');
   background-repeat: no-repeat;
-  background-position: 30% 20px;
+  background-position: 35% 20px;
   background-size: 630px;
   height: 220px;
   padding-left: 5%;
+  transition: all .25s linear;
 }
 
 i.fa-copyright {
@@ -74,32 +75,13 @@ i.fa-rebel {
 }
 
 label.tab {
+  color: #ff0;
   cursor: pointer;
 }
 
 label.tab:hover {
-  color: #ff0;
+  color: #0f0;
   transition: all .25s linear;
-}
-
-label.tab i {
-  margin-right: 8px;
-}
-
-label.tab:hover i.fa-star-o::before {
-    content: "\f005";
-}
-
-label.tab:hover i.fa-comments-o::before {
-    content: "\f086";
-}
-
-label.tab:hover i.fa-heart-o::before {
-    content: "\f004";
-}
-
-nav ul li {
-  display: inline-block;
 }
 
 p {
@@ -130,6 +112,14 @@ table {
   min-width: 70%;
 }
 
+ul.roman {
+  list-style-type: upper-roman;
+}
+
+ul.roman li {
+  padding-left: 24px;
+}
+
 #binaerpilot a:hover {
   color: #0ff;
 }
@@ -150,12 +140,9 @@ table {
   padding-left: .8em;
 }
 
-#manifesto ul {
-  list-style-type: upper-roman;
-}
-
 #probe {
   padding-top: 156px;
+  transition: all .25s linear;
 }
 
 #probe .avatar {
@@ -198,7 +185,7 @@ table {
   margin: auto;
   max-width: 800px;
   min-height: 100%;
-  padding: 3.2em 1.6em;
+  padding: 2.4em 1.6em;
 }
 
 .avatar {
@@ -277,6 +264,10 @@ table {
   display: none;
 }
 
+.tab-content ul {
+  padding-left: 48px;
+}
+
 .twitch a i {
   transform: scale(.95);
 }
@@ -317,17 +308,31 @@ table {
 
 /* Media Queries */
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1180px) {
   header {
-    background-position: 70% 40px;
+    background-position: 60% 20px;
     background-size: 580px;
+    height: 200px;
+  }
+
+  #probe {
+    padding-top: 136px;
   }
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 780px) {
   header {
-    background-position: 80% 80px;
+    background-position: 80% 10px;
     background-size: 500px;
+    height: 150px;
+  }
+
+  #probe {
+    padding-top: 86px;
+  }
+
+  #social .instagram {
+    display: none;
   }
 
   table {
@@ -337,20 +342,34 @@ table {
   .discord-commands td {
     padding-right: 24px;
   }
-
-  #social .instagram {
-    display: none;
-  }
 }
 
 @media all and (max-width: 550px) {
   header {
-    background-position: 100% 130px;
+    background-position: 95% 20px;
     background-size: 340px;
+    height: 110px;
   }
 
   table {
     min-width: 100%;
+  }
+
+  .tab-content ul {
+    padding-left: 24px;
+  }
+
+  ul.roman li {
+    padding-left: 8px;
+  }
+
+
+  #probe {
+    padding-top: 46px;
+  }
+
+  #social .twitch {
+    display: none;
   }
 
   .discord-commands td {
@@ -360,9 +379,24 @@ table {
   .discord-commands .description {
     display: none;
   }
+}
 
-  #social .twitch {
+@media all and (max-width: 350px) {
+  header {
+    background-position: 99% 30px;
+  }
+
+  #social .facebook {
     display: none;
+  }
+
+  ul.roman li {
+    padding-left: 0;
+  }
+
+  .tab-content ul {
+    list-style-type: none;
+    padding-left: 0;
   }
 }
 
