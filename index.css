@@ -16,13 +16,17 @@ body {
   color: #646464;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
-  line-height: 1.6em;
+  line-height: 1.6rem;
   margin: 0;
+}
+
+p {
+  margin: 1.6rem 0;
 }
 
 footer {
   font-size: 13px;
-  line-height: 2em;
+  line-height: 2rem;
 }
 
 footer i {
@@ -33,7 +37,7 @@ footer i {
 
 h2, h3 {
   font-family: 'Press Start 2P', sans-serif;
-  line-height: 1.6em;
+  line-height: 1.6rem;
   text-transform: uppercase;
 }
 
@@ -48,10 +52,11 @@ h2 {
 h2, h3, h4 {
   font-size: 16px;
   font-weight: 400;
+  margin: 1.6rem 0;
 }
 
 h4 {
-  margin-bottom: .4em;
+  margin-bottom: .4rem;
 }
 
 header {
@@ -105,7 +110,7 @@ q:after {
 }
 
 section {
-  margin-bottom: 6.4em;
+  margin-bottom: 6.4rem;
 }
 
 table {
@@ -133,7 +138,7 @@ ul.roman li {
 }
 
 #manifesto li {
-  padding-left: .8em;
+  padding-left: .8rem;
 }
 
 #probe {
@@ -181,7 +186,7 @@ ul.roman li {
   margin: auto;
   max-width: 800px;
   min-height: 100%;
-  padding: 2.4em 1.6em;
+  padding: 2.4rem 1.6rem;
 }
 
 .avatar {
@@ -190,7 +195,7 @@ ul.roman li {
 
 .discord-commands {
   font-size: 13px;
-  margin: 1.6em 0;
+  margin: 1.6rem 0;
 }
 
 .discord-commands h4 i {
@@ -202,7 +207,7 @@ ul.roman li {
 .discord-commands table {
   border-top: solid 2px #242424;
   border-collapse: collapse;
-  margin-bottom: 3.2em;
+  margin-bottom: 3.2rem;
 }
 
 .discord-commands td {
@@ -245,7 +250,7 @@ ul.roman li {
 .project .avatar {
   float: left;
   height: 64px;
-  margin-bottom: 1.6em;
+  margin-bottom: 1.6rem;
   margin-right: -80px;
   margin-top: 2px;
   position: relative;
@@ -382,6 +387,7 @@ ul.roman li {
     background-position: 99% 30px;
   }
 
+  td.size,
   #social .facebook {
     display: none;
   }
