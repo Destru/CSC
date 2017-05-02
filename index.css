@@ -6,7 +6,7 @@ a {
 }
 
 a:hover {
-  color: white;
+  color: #0f0;
   text-decoration: none;
 }
 
@@ -20,7 +20,7 @@ body {
   margin: 0;
 }
 
-p, h2, h3, h4 {
+p, ul, h2, h3, h4 {
   margin: 1.6rem 0;
 }
 
@@ -34,11 +34,11 @@ footer i {
   width: 12px;
 }
 
-h2, h3, label.tab {
+h2, h3, h4, label.tab {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 20px;
-  line-height: .8rem;
+  font-size: 21px;
   font-weight: 700;
+  line-height: .8rem;
   text-transform: uppercase;
 }
 
@@ -47,8 +47,9 @@ h1 {
 }
 
 h4 {
-  font-size: 16px;
-  margin-bottom: .4rem;
+  font-size: 15px;
+  margin-bottom: .8rem;
+  text-transform: capitalize;
 }
 
 header {
@@ -72,6 +73,7 @@ i.fa-rebel {
 }
 
 label.tab {
+  color: #aeaeae;
   cursor: pointer;
   display: inline-block;
   padding-right: 1.4rem;
@@ -87,13 +89,7 @@ p {
 }
 
 p a {
-  display: inline-block;
-  font-weight: 700;
-  border-bottom: solid 1px #161616;
-}
-
-p a:hover {
-  border-color: #323232;
+  display: inline;
 }
 
 q {
@@ -109,7 +105,7 @@ q:after {
 }
 
 section {
-  margin-bottom: 6.4rem;
+  margin-bottom: 3.2rem;
 }
 
 table {
@@ -124,15 +120,16 @@ ul.roman li {
   padding-left: 24px;
 }
 
-#binaerpilot h3 a:hover {
+#binaerpilot a:hover {
   color: #0ff;
 }
 
 #bitcoin {
   color: #323232;
+  white-space: nowrap;
 }
 
-#joshua h3 a:hover {
+#joshua a:hover {
   color: #f0f;
 }
 
@@ -152,6 +149,7 @@ ul.roman li {
 #social {
   float: left;
   list-style-type: none;
+  margin-top: 16px;
   padding-left: 0;
 }
 
@@ -254,7 +252,7 @@ ul.roman li {
   margin-right: -80px;
   position: relative;
   left: -80px;
-  top: -2px;
+  top: -4px;
 }
 
 .shop a i {
@@ -319,6 +317,10 @@ ul.roman li {
 
   #probe {
     padding-top: 136px;
+  }
+
+  #social .tumblr {
+    display: none;
   }
 }
 
