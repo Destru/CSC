@@ -35,10 +35,10 @@ footer i {
 }
 
 h2, h3, label.tab {
-  font-family: 'Teko', sans-serif;
-  font-size: 24px;
-  line-height: 1rem;
-  font-weight: 400;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  line-height: .8rem;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
