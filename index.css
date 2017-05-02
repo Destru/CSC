@@ -20,7 +20,7 @@ body {
   margin: 0;
 }
 
-p {
+p, h2, h3, h4 {
   margin: 1.6rem 0;
 }
 
@@ -31,12 +31,13 @@ footer {
 footer i {
   margin-right: 4px;
   text-align: center;
-  width: 14px;
+  width: 12px;
 }
 
-h2, h3 {
-  font-family: 'Press Start 2P', sans-serif;
-  line-height: 1.6rem;
+h2, h3, label.tab {
+  font-family: 'Teko', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -44,17 +45,9 @@ h1 {
   display: none;
 }
 
-h2 {
-  color: #ff0;
-}
-
-h2, h3, h4 {
-  font-size: 16px;
-  font-weight: 400;
-  margin: 1.6rem 0;
-}
 
 h4 {
+  font-size: 16px;
   margin-bottom: .4rem;
 }
 
@@ -79,12 +72,13 @@ i.fa-rebel {
 }
 
 label.tab {
-  color: #ff0;
   cursor: pointer;
+  display: inline-block;
+  padding-right: 1.4rem;
 }
 
 label.tab:hover {
-  color: #0f0;
+  color: #ff0;
   transition: all .25s linear;
 }
 
@@ -169,15 +163,16 @@ ul.roman li {
   color: #0f0;
 }
 
-#tab-0:checked ~ #tab-0-label,
 #tab-2:checked ~ #tab-2-label,
-#tab-1:checked ~ #tab-1-label {
-  display: none;
+#tab-1:checked ~ #tab-1-label,
+#tab-0:checked ~ #tab-0-label {
+  color: #ff0;
 }
 
-#tab-0:checked ~ #content #content-0,
+
 #tab-2:checked ~ #content #content-2,
-#tab-1:checked ~ #content #content-1 {
+#tab-1:checked ~ #content #content-1,
+#tab-0:checked ~ #content #content-0 {
   display: block;
 }
 
@@ -251,15 +246,16 @@ ul.roman li {
   height: 64px;
   margin-bottom: 1.6rem;
   margin-right: -80px;
-  margin-top: 2px;
   position: relative;
   left: -80px;
+  top: -8px;
 }
 
 .shop a i {
   margin-left: -2px;
 }
 
+.tab-content h2,
 .tab-content {
   display: none;
 }
