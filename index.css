@@ -37,6 +37,7 @@ footer i {
 h2, h3, label.tab {
   font-family: 'Teko', sans-serif;
   font-size: 24px;
+  line-height: 1rem;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -44,7 +45,6 @@ h2, h3, label.tab {
 h1 {
   display: none;
 }
-
 
 h4 {
   font-size: 16px;
@@ -248,7 +248,7 @@ ul.roman li {
   margin-right: -80px;
   position: relative;
   left: -80px;
-  top: -8px;
+  top: -2px;
 }
 
 .shop a i {
