@@ -395,6 +395,10 @@ ul.roman li {
     list-style-type: none;
     padding-left: 0;
   }
+
+  #wrapper {
+    padding: 1.6rem .8rem;
+  }
 }
 
 /* double click the internets  */
