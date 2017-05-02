@@ -87,7 +87,13 @@ p {
 }
 
 p a {
+  display: inline-block;
   font-weight: 700;
+  border-bottom: solid 1px #161616;
+}
+
+p a:hover {
+  border-color: #323232;
 }
 
 q {
@@ -118,7 +124,7 @@ ul.roman li {
   padding-left: 24px;
 }
 
-#binaerpilot a:hover {
+#binaerpilot h3 a:hover {
   color: #0ff;
 }
 
@@ -126,7 +132,7 @@ ul.roman li {
   color: #323232;
 }
 
-#joshua a:hover {
+#joshua h3 a:hover {
   color: #f0f;
 }
 
