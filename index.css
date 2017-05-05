@@ -36,7 +36,7 @@ footer i {
 
 h2, h3, h4, label.tab {
   font-family: 'Rajdhani', sans-serif;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 700;
   line-height: .8rem;
   text-transform: uppercase;
@@ -252,7 +252,7 @@ ul.roman li {
   margin-right: -80px;
   position: relative;
   left: -80px;
-  top: -4px;
+  top: -3px;
 }
 
 .shop a i {
