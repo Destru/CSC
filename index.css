@@ -321,6 +321,7 @@ ul.roman li {
     padding-top: 136px;
   }
 
+  #social .instagram,
   #social .tumblr {
     display: none;
   }
@@ -337,7 +338,7 @@ ul.roman li {
     padding-top: 86px;
   }
 
-  #social .instagram {
+  #social .twitch {
     display: none;
   }
 
@@ -374,7 +375,7 @@ ul.roman li {
     padding-top: 46px;
   }
 
-  #social .twitch {
+  #social .facebook {
     display: none;
   }
 
@@ -393,7 +394,7 @@ ul.roman li {
   }
 
   td.size,
-  #social .facebook {
+  #social .paypal {
     display: none;
   }
 
