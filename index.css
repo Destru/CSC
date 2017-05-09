@@ -233,6 +233,17 @@ ul.roman li {
   display: none;
 }
 
+.call-to-action {
+  border-bottom: solid 1px #323232;
+  font-size: 19px;
+  padding-bottom: 1px;
+  position: relative;
+}
+
+.call-to-action:hover {
+  border-color: #0f0;
+}
+
 .patreon-unlock i,
 .public i {
   text-align: center;
