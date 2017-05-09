@@ -199,9 +199,10 @@ ul.roman li {
 }
 
 .discord-commands h4 i {
-  margin-left: 4px;
+  font-size: 13px;
+    margin-left: 4px;
   position: relative;
-  top: -2px;
+  top: -3px;
 }
 
 .discord-commands table {
