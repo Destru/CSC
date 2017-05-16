@@ -108,6 +108,7 @@ q:after {
 
 section {
   margin-bottom: 6.4rem;
+  transition: all .5s linear;
 }
 
 table {
@@ -180,6 +181,7 @@ ul.roman li {
 #tab-1:checked ~ #content #content-1,
 #tab-0:checked ~ #content #content-0 {
   display: block;
+  opacity: 1;
 }
 
 #wrapper {
