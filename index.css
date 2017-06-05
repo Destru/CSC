@@ -61,7 +61,9 @@ header {
   background-position: 35% 20px;
   background-size: 630px;
   height: 220px;
+  margin-top: -3%;
   padding-left: 5%;
+  transform: skewY(1deg);
   transition: all .25s linear;
 }
 
@@ -147,6 +149,7 @@ ul.roman li {
 
 #probe .avatar {
   float: left;
+  transform: scaleX(-1);
 }
 
 #social {
@@ -202,7 +205,7 @@ ul.roman li {
 
 .discord-commands h4 i {
   font-size: 13px;
-    margin-left: 4px;
+  margin-left: 4px;
   position: relative;
   top: -3px;
 }
@@ -291,11 +294,11 @@ ul.roman li {
 
 /* Animations */
 .glow {
-  animation: glow 42s infinite linear;
+  animation: glow 4.2s infinite linear;
 }
 
 .text-glow {
-  animation: text-glow 42s infinite linear;
+  animation: text-glow 4.2s infinite linear;
 }
 
 @keyframes glow {
@@ -303,7 +306,7 @@ ul.roman li {
     background-color:#ff0;
   }
   50% {
-    background-color:#fc0;
+    background-color:#fd0;
   }
   100% {
     background-color:#ff0;
@@ -315,7 +318,7 @@ ul.roman li {
     color:#ff0;
   }
   50% {
-    color:#fc0;
+    color:#fd0;
   }
   100% {
     color:#ff0;
@@ -407,8 +410,7 @@ ul.roman li {
     background-position: 99% 30px;
   }
 
-  td.size,
-  #social .paypal {
+  td.size {
     display: none;
   }
 
