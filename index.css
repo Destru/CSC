@@ -64,7 +64,11 @@ header {
   margin-top: -5%;
   padding-left: 5%;
   transform: skewY(1.5deg);
-  transition: all .25s linear;
+  transition: height .25s linear;
+}
+
+html {
+  overflow: hidden;
 }
 
 i.fa-copyright {
