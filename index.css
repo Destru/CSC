@@ -64,11 +64,7 @@ header {
   margin-top: -5%;
   padding-left: 5%;
   transform: skewY(1.5deg);
-  transition: height .25s linear;
-}
-
-html {
-  overflow: hidden;
+  transition: color .25s linear;
 }
 
 i.fa-copyright {
@@ -89,7 +85,7 @@ label.tab {
 
 label.tab:hover {
   color: #0f0;
-  transition: all .25s linear;
+  transition: color .25s linear;
 }
 
 p {
@@ -114,7 +110,6 @@ q:after {
 
 section {
   margin-bottom: 6.4rem;
-  transition: all .5s linear;
 }
 
 table {
@@ -148,7 +143,6 @@ ul.roman li {
 
 #probe {
   padding-top: 156px;
-  transition: all .25s linear;
 }
 
 #probe .avatar {
@@ -296,13 +290,9 @@ ul.roman li {
 }
 
 
-/* Animations */
+/* animations */
 .glow {
   animation: glow 32s infinite linear;
-}
-
-.text-glow {
-  animation: text-glow 32s infinite linear;
 }
 
 @keyframes glow {
@@ -310,26 +300,12 @@ ul.roman li {
     background-color:#ff0;
   }
   50% {
-    background-color:#fc0;
+    background-color:#fb0;
   }
   100% {
     background-color:#ff0;
   }
 }
-
-@keyframes text-glow {
-  0% {
-    color:#ff0;
-  }
-  50% {
-    color:#fc0;
-  }
-  100% {
-    color:#ff0;
-  }
-}
-
-/* Media Queries */
 
 @media all and (max-width: 1180px) {
   header {
