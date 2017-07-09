@@ -67,6 +67,11 @@ header {
   transition: color .25s linear;
 }
 
+header.animated {
+  background-image: url('/images/Background.gif');
+  background-repeat: repeat;
+}
+
 i.fa-copyright {
   position: relative;
   left: -1px;
