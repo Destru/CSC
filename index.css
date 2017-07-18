@@ -55,7 +55,7 @@ h4 {
 }
 
 header {
-  background-color: #ff0;
+  background-color: transparent;
   background-image: url('/images/Logo25.png');
   background-repeat: no-repeat;
   background-position: 35% 20px;
