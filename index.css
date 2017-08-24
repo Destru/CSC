@@ -56,20 +56,19 @@ h4 {
 
 header {
   background-color: transparent;
-  background-image: url('/images/Logo25.png');
+  background-image: url('images/Logo25.png');
   background-repeat: no-repeat;
   background-position: 35% 20px;
   background-size: 630px;
   height: 220px;
   margin-top: -5%;
   padding-left: 5%;
-  transform: skewY(1.5deg);
-  transition: color .25s linear;
 }
 
-header.animated {
-  background-image: url('/images/Background.gif');
+.header-flair {
+  background-image: url('images/Background.gif');
   background-repeat: repeat;
+  transform: skewY(1.5deg);
 }
 
 i.fa-copyright {
