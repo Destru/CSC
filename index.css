@@ -42,14 +42,18 @@ footer a {
   color: #ff0;
 }
 
+h1 {
+  display: none;
+}
+
 h2, h3, h4, label.tab {
   font-family: 'Rajdhani', sans-serif;
   line-height: .8rem;
   font-weight: 700;
 }
 
-h2, h3, label.tab {
-  font-size: 23px;
+h2, h3, h4, label.tab {
+  font-size: 27px;
   text-transform: uppercase;
 }
 
@@ -57,13 +61,8 @@ h3 {
   font-size: 21px;
 }
 
-h1 {
-  display: none;
-}
-
 h4 {
   font-size: 17px;
-  font-weight: 400;
   margin-bottom: .8rem;
 }
 
@@ -94,14 +93,15 @@ i.fa-rebel {
 }
 
 label.tab {
-  color: white;
+  color: #888;
   cursor: pointer;
   display: inline-block;
-  padding-right: 1.4rem;
+  letter-spacing: -1px;
+  padding-right: 1.6rem;
 }
 
 label.tab:hover {
-  color: #0f0;
+  color: #ff0;
   transition: color .25s linear;
 }
 
@@ -137,10 +137,6 @@ ul.roman {
   list-style-type: upper-roman;
 }
 
-ul.roman li {
-  padding-left: 24px;
-}
-
 #binaerpilot {
   margin-top: 32px;
 }
@@ -155,8 +151,15 @@ ul.roman li {
   white-space: nowrap;
 }
 
+#manifesto ul {
+  margin-top: 0.2rem;
+  padding-left: 0;
+  position: relative;
+  left: 30px;
+}
+
 #manifesto li {
-  padding-left: .8rem;
+  padding-left: 0.8rem;
 }
 
 #probe {
@@ -189,6 +192,10 @@ ul.roman li {
   color: #0f0;
 }
 
+#stream {
+  margin-top: 3.2rem;
+}
+
 #tab-1:checked ~ #tab-1-label,
 #tab-0:checked ~ #tab-0-label {
   color: #ff0;
@@ -205,7 +212,7 @@ ul.roman li {
   margin: auto;
   max-width: 800px;
   min-height: 100%;
-  padding: 2.4rem 1.6rem;
+  padding: 3.2rem 1.6rem;
 }
 
 .avatar {
@@ -274,7 +281,7 @@ ul.roman li {
 }
 
 .content-block {
-  margin-bottom: 3.2em;
+  margin: 3.2rem 0;
 }
 
 .content-block.highlight {
