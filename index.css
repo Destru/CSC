@@ -2,7 +2,7 @@ a {
   color: white;
   display: inline-block;
   text-decoration: none;
-  transition: color .25s linear, border .5s linear;
+  transition: color .25s linear, border .3s linear;
 }
 
 a:hover {
@@ -29,6 +29,7 @@ p, ul, h2, h3, h4 {
 }
 
 footer {
+  color: #323232;
   font-size: 13px;
 }
 
@@ -142,7 +143,6 @@ ul.roman {
 }
 
 #bitcoin {
-  color: #323232;
   white-space: nowrap;
 }
 
