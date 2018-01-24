@@ -2,7 +2,7 @@ a {
   color: white;
   display: inline-block;
   text-decoration: none;
-  transition: all .25s linear;
+  transition: color .25s linear, border .5s linear;
 }
 
 a:hover {
@@ -93,10 +93,10 @@ i.fa-rebel {
 }
 
 label.tab {
-  color: #888;
+  color: white;
   cursor: pointer;
   display: inline-block;
-  padding-right: 24px;
+  padding-right: 16px;
 }
 
 label.tab:hover {
