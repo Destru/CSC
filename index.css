@@ -53,7 +53,7 @@ h2, h3, h4, label.tab {
 }
 
 h2, h3, h4, label.tab {
-  font-size: 27px;
+  font-size: 23px;
   text-transform: uppercase;
 }
 
@@ -96,8 +96,7 @@ label.tab {
   color: #888;
   cursor: pointer;
   display: inline-block;
-  letter-spacing: -1px;
-  padding-right: 1.6rem;
+  padding-right: 24px;
 }
 
 label.tab:hover {
@@ -137,10 +136,6 @@ ul.roman {
   list-style-type: upper-roman;
 }
 
-#binaerpilot {
-  margin-top: 32px;
-}
-
 #binaerpilot a:hover {
   border-color: #0ff;
   color: #0ff;
@@ -151,8 +146,11 @@ ul.roman {
   white-space: nowrap;
 }
 
+#content {
+  margin-top: -.8rem;
+}
+
 #manifesto ul {
-  margin-top: 0.2rem;
   padding-left: 0;
   position: relative;
   left: 30px;
@@ -192,9 +190,6 @@ ul.roman {
   color: #0f0;
 }
 
-#stream {
-  margin-top: 3.2rem;
-}
 
 #tab-1:checked ~ #tab-1-label,
 #tab-0:checked ~ #tab-0-label {
@@ -221,7 +216,7 @@ ul.roman {
 
 .discord-commands {
   font-size: 13px;
-  margin: 1.6rem 0;
+  margin: 2.4rem 0 1.6rem 0;
 }
 
 .discord-commands h4 i {
