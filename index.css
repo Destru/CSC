@@ -1,3 +1,7 @@
+*:focus {
+  outline: none;
+}
+
 a {
   color: white;
   display: inline-block;
@@ -12,6 +16,7 @@ a:hover {
 
 html, body {
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -31,12 +36,6 @@ p, ul, h2, h3, h4 {
 footer {
   color: #323232;
   font-size: 13px;
-}
-
-footer i {
-  margin-right: 4px;
-  text-align: center;
-  width: 12px;
 }
 
 footer a {
@@ -71,7 +70,7 @@ header {
   background-color: transparent;
   background-image: url('images/Logo25.png');
   background-repeat: no-repeat;
-  background-position: -420px 20px;
+  background-position: 250px 25px;
   background-size: 630px;
   height: 220px;
   margin-top: -5%;
@@ -81,16 +80,7 @@ header {
 .header-flair {
   background-image: url('images/Background.gif');
   background-repeat: repeat;
-  transform: skewY(1.5deg);
-}
-
-i.fa-copyright {
-  position: relative;
-  left: -1px;
-}
-
-i.fa-rebel {
-  transform: scale(.9);
+  transform: skewY(-1.25deg);
 }
 
 label.tab {
@@ -166,33 +156,8 @@ ul.roman {
 }
 
 #probe {
+  line-height: 1px;
   padding-top: 156px;
-}
-
-#probe .avatar {
-  float: left;
-  transform: scaleX(-1);
-}
-
-#social {
-  float: left;
-  list-style-type: none;
-  margin-top: 16px;
-  padding-left: 0;
-}
-
-#social li {
-  float: left;
-}
-
-#social li a {
-  color: black;
-  display: inline-block;
-  padding: 4px 8px;
-}
-
-#social a:hover {
-  color: #0f0;
 }
 
 #twitch-link {
@@ -219,8 +184,10 @@ ul.roman {
   padding: 3.2rem 1.6rem;
 }
 
-.avatar {
-  line-height: 1px;
+.copyright {
+  display: inline-block;
+  transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
 }
 
 .discord-commands {
@@ -274,12 +241,6 @@ ul.roman {
   border-color: #0f0;
 }
 
-.patreon-unlock i,
-.public i {
-  text-align: center;
-  width: 24px;
-}
-
 .patreon-unlock:hover i::before {
   content: "\f09c";
 }
@@ -294,11 +255,6 @@ ul.roman {
   position: relative; left: -32px;
 }
 
-
-.shop a i {
-  margin-left: -2px;
-}
-
 .tab-content {
   display: none;
 }
@@ -306,11 +262,6 @@ ul.roman {
 .tab-content ul {
   padding-left: 48px;
 }
-
-.twitch a i {
-  transform: scale(.95);
-}
-
 
 /* animations */
 .glow {
@@ -329,33 +280,9 @@ ul.roman {
   }
 }
 
-@media all and (max-width: 1180px) {
-  header {
-    background-size: 580px;
-    height: 200px;
-  }
-
-  #probe {
-    padding-top: 136px;
-  }
-
-  #social .instagram {
-    display: none;
-  }
-}
-
 @media all and (max-width: 780px) {
   header {
-    background-size: 500px;
-    height: 150px;
-  }
-
-  #probe {
-    padding-top: 86px;
-  }
-
-  #social .twitch {
-    display: none;
+    background-position: 0 25px;
   }
 
   table {
@@ -369,8 +296,7 @@ ul.roman {
 
 @media all and (max-width: 550px) {
   header {
-    background-size: 340px;
-    height: 110px;
+    background-position: -250px 25px;
   }
 
   table {
@@ -385,25 +311,13 @@ ul.roman {
     padding-left: 8px;
   }
 
-
-  #probe {
-    padding-top: 46px;
-  }
-
-  #social .facebook {
-    display: none;
-  }
-  
-  #tab-2-label {
+  #tab-2-label,
+  .discord-commands .description {
     display: none;
   }
 
   .discord-commands td {
     padding-right: 16px;
-  }
-
-  .discord-commands .description {
-    display: none;
   }
 }
 
@@ -422,7 +336,7 @@ ul.roman {
   }
 
   #wrapper {
-    padding: 1.6rem .8rem;
+    padding: 3.2rem .8rem;
   }
 }
 

@@ -2,15 +2,22 @@
 function nudge() {
   var stage = document.getElementById('the-stage');
   var style = window.getComputedStyle(stage);
-  var posX = parseInt(style.backgroundPositionX);
-  posX++;
-  if (posX > 2400) posX = -800;
-  stage.style.backgroundPositionX = posX + 'px';
+  var posBackgroundX = parseInt(style.backgroundPositionX);
+  var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+  if (posBackgroundX < -666) {
+    posBackgroundX = width - 10;
+  }
+  else {
+    posBackgroundX--;
+  }
+
+  stage.style.backgroundPositionX = posBackgroundX + 'px';
 }
 
 var setTheStage;
 (setTheStage = function() {
-  window.setInterval(nudge, 100);
+  window.setInterval(nudge, 250);
 })();
 
 // highlight Twitch link (if live)
@@ -33,7 +40,7 @@ var setTwitchLink;
     var json = JSON.parse(response);
     if (json.stream === null) {
       twitchLink.removeAttribute('href');
-      twitchLink.style.opacity = .25;
+      twitchLink.style.opacity = .15;
     }
     else {
       twitchLink.setAttribute('href', 'https://twitch.tv/notdestru');
