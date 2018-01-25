@@ -10,7 +10,7 @@ function nudge() {
 
 var setTheStage;
 (setTheStage = function() {
-  window.setInterval(nudge, 64);
+  window.setInterval(nudge, 100);
 })();
 
 // highlight Twitch link (if live)
@@ -32,9 +32,11 @@ var setTwitchLink;
     var twitchLink = document.getElementById('twitch-link');
     var json = JSON.parse(response);
     if (json.stream === null) {
-      twitchLink.style.opacity = .1;
+      twitchLink.removeAttribute('href');
+      twitchLink.style.opacity = .25;
     }
     else {
+      twitchLink.setAttribute('href', 'https://twitch.tv/notdestru');
       twitchLink.style.opacity = 1;
     }
     twitchLink.style.display = 'inline-block';
