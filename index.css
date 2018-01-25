@@ -106,7 +106,7 @@ label.tab:hover {
   transition: color .25s linear;
 }
 
-label.tab a:hover {
+label.tab a {
   color: inherit;
 }
 
