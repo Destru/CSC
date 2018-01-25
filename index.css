@@ -98,7 +98,6 @@ label.tab {
   cursor: pointer;
   display: inline-block;
   padding-right: 16px;
-  padding-bottom: 16px;
 }
 
 label.tab:hover {
@@ -392,6 +391,10 @@ ul.roman {
   }
 
   #social .facebook {
+    display: none;
+  }
+  
+  #tab-2-label {
     display: none;
   }
 
