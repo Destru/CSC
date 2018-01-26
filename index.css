@@ -70,7 +70,7 @@ header {
   background-color: transparent;
   background-image: url('images/Logo25.png');
   background-repeat: no-repeat;
-  background-position: 250px 25px;
+  background-position: 0 25px;
   background-size: 630px;
   height: 220px;
   margin-top: -5%;
@@ -281,10 +281,6 @@ ul.roman {
 }
 
 @media all and (max-width: 780px) {
-  header {
-    background-position: 0 25px;
-  }
-
   table {
     min-width: 85%;
   }
@@ -296,7 +292,7 @@ ul.roman {
 
 @media all and (max-width: 550px) {
   header {
-    background-position: -250px 25px;
+    background-position: -100px 25px;
   }
 
   table {
@@ -322,6 +318,10 @@ ul.roman {
 }
 
 @media all and (max-width: 350px) {
+  header {
+    background-position: -200px 25px;
+  }
+
   td.size {
     display: none;
   }
