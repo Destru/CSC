@@ -69,9 +69,12 @@ var setDiscordCount;
     var $count = document.getElementById('discord-count');
     var json = JSON.parse(response);
     if (json.members.length > 0) {
-      $online.style.display = 'block';
       $count.innerHTML = json.members.length;
     }
+    else {
+      $online.innerHTML = 'Online now';
+    }
+    $online.style.opacity = 1;
   });
 })();
 
