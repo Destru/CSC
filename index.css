@@ -72,7 +72,7 @@ header {
   background-repeat: no-repeat;
   background-position: 0 25px;
   background-size: 630px;
-  height: 220px;
+  height: 200px;
   margin-top: -5%;
   padding-left: 5%;
 }
@@ -142,7 +142,7 @@ ul.roman {
 }
 
 #content {
-  margin-top: -.8rem;
+  margin-top: -1.6rem;
 }
 
 #manifesto ul {
@@ -155,9 +155,17 @@ ul.roman {
   padding-left: 0.8rem;
 }
 
+#online {
+  color: #ff0;
+  display: none;
+  margin-top: .4rem;
+  font-size: 90%;
+  text-transform: uppercase;
+}
+
 #probe {
   line-height: 1px;
-  padding-top: 156px;
+  padding-top: 136px;
 }
 
 #twitch-link {
