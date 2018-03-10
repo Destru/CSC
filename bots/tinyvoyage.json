@@ -1,0 +1,123 @@
+{
+  "origin": [
+    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
+    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
+    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
+    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
+    "#bonus#"
+  ],
+  "pattern": [
+    "#[x:#_bike#][n:#nr#]city# #[s:city]tags#",
+    "#[x:#_run#][n:#nr#]jungle# #[s:jungle]tags#",
+    "#[x:#_walk#]forest# #[s:forest]tags#",
+    "#[x:#_swim#][n:#oe#]ocean# #[s:ocean]tags#"
+  ],
+  "bonus": [
+    "#[x:#_code#][n:#nwr#]robots# \\#bonus",
+    "#[x:#_run#][n:#nwr#]zombie# \\#bonus",
+    "#[x:#_climb#][n:#nr#]sky# \\#bonus"
+  ],
+
+  "tag": [
+    "voyage", "voyages", "memory", "memories", "story", "stories",
+    "expeditions", "expedition", "adventures", "adventure",
+    "adventurer", "explorer", "nomad", "wanderer", "traveler",
+    "moment", "moments", "outdoors", "trekking", "trek", "treks",
+    "trip", "trips", "travel", "travels", "journey", "journeys",
+    "destination", "destinations", "hopes", "dreams", "world", "worlds",
+    "locations", "places", "aspirations", "goals", "achievements",
+    "conquest", "conquests", "achievement", "effort", "efforts",
+    "generative", "generative", "generative", "art", "generativeart",
+    "creative", "creativecode", "tracery"
+  ],
+  "tags": [
+    "\\##tagQualifier# \\##s#",
+    "\\##tagQualifier# \\##tag#"
+  ],
+  "tagQualifier": [
+    "tiny", "cute", "petite", "small", "emoji", "micro", "little",
+    "wee", "teensy", "supercute", "supersmall", "supertiny", "lil",
+    "lovely", "adorable", "wonderful", "mysterious", "inspiring",
+    "emojional"
+  ],
+
+  "_bike": "🚴‍♀️",
+  "_boat": "🚣‍♀️",
+  "_code": "👩‍💻",
+  "_climb": "🧗‍♀️",
+  "_lotus": "🧘‍♀️",
+  "_run": "🏃‍♀️",
+  "_swim": "🏊‍♀️",
+  "_walk": "🚶‍♀️",
+
+  "bike": "🚲",
+  "camping": "🏕",
+  "car": ["🚗", "🚗", "🚙", "🚕"],
+  "carRare": ["🏎", "🚚", "🚛", "🚌", "🚓", "🚒", "🚑", "🚐", "🚎", "🚜"],
+  "insects": ["🐝", "🐝", "🐝", "🐞", "🐞", "🐛", "🦋", "🦗", "🐌"],
+  "insectsCute": ["🐞", "🐛", "🐌", "🦋"],
+  "flag": ["🚩", "🏳", "🏴"],
+  "flower": ["🌹", "🏵", "🌸", "🌺", "🌻", "🌻", "🌼", "🌷"],
+  "fountain": [""],
+  "house": ["🏠", "🏡", "🏠", "🏡", "🏠", "🏡", "🏠", "🏡", "🏠", "🏡", "🏚"],
+  "houseRare": ["🏢", "🏤", "🏥", "🏦", "🏨", "🏩", "🏪", "🏫", "🏨", "🏬"],
+  "mountain": ["🏔", "⛰", "🗻"],
+  "plant": ["#flower#", "🌱", "🌱"],
+  "robot": "🤖",
+  "sun": ["☀", "🌤", "⛅", "🌥", "🌦"],
+  "tree": ["🌲", "🌲", "🌳"],
+  "zombies": ["🧟‍♀️", "🧟‍♂️"],
+
+  "null": "　",
+  "nullWide": "#null# ",
+  "nullWider": "#null##null#",
+  "nullRand": ["#null#", "#null#", "#null#", "#nullWide#"],
+  "n": "#nullWide#",
+  "nr": "#nullRand#",
+  "nw": "#nullWide#",
+  "nwr": "#nullWider#",
+
+  "city": "#s##s##s##s##s##sun##s##s##s##s##s#\n#nwr##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#fl##fl##fl##fl##fl##fl##fl##fl##fl##fl##fl#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
+  "h": ["#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#n#",  "#n#",  "#n#",  "#n#",  "#n#", "#houseRare#"],
+  "fl": ["#fle#", "#fle#", "#fle#", "#nwr#"],
+  "fle": ["#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#insectsCute#"],
+  "r": ["#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#car#", "#car#", "#car#", "#car#", "#car#", "#carRare#"],
+
+  "jungle": "#j##j##j##j##j##j##j##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##n##x##n##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##j##j##j##j##j##j##j#\n",
+  "je": ["🌴", "🌴", "🌴", "🌱", "🌱", "#n#"],
+  "jc": ["🐍", "🦎", "🐒", "🕷", "🕸"],
+  "jr": ["🐘", "🦒", "🦏", "🐆", "🐅", "🍌", "🍍", "🐊"],
+  "js": ["🦖", "🦕", "🍀", "🐉"],
+  "j": ["#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#jw#"],
+  "jw": ["#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jr#", "#jr#", "#jr#", "#jr#", "#jr#", "#js#"],
+
+  "forest": "#f##f##f##f##f##f##f##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##n##x##n##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##f##f##f##f##f##f##f#\n",
+  "fe": ["#tree#", "#tree#", "#n#"],
+  "fc": ["🌿", "🌿", "☘", "🍎", "🍏", "🍐", "🍄", "🌰"],
+  "fr": ["🐻", "🦊", "🐺", "🦉", "🐗", "🐇", "🐿", "🕷", "🕸"],
+  "fs": ["🧚‍♀️", "🧚‍♂️", "🧙‍♂️", "🧙‍♀️", "🦄", "🍀"],
+  "f": ["#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fw#"],
+  "fw": ["#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fr#", "#fr#", "#fr#", "#fr#", "#fr#", "#fs#"],
+
+  "ocean": "#o##o##o##o##o##o##o##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
+  "oe": ["🌊"],
+  "oc": ["🐟", "🐟", "🐟", "🐠", "🐠", "🐡"],
+  "or": ["🐙", "🦑", "🐬", "🐬", "🐬", "🐳", "🐋", "🦈"],
+  "os": ["🧜‍♂️", "🧜‍♀️"],
+  "o": ["#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#ow#"],
+  "ow": ["#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#or#", "#or#", "#or#", "#or#", "#or#", "#os#"],
+
+  "robots": "#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##x##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n",
+  "ro": "#robot#",
+
+  "sky": "#s##s##s##s##s##sun##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#nwr##flag##n##s##n##s##n##s##n##s##n#\n#mountain##x##mountain##tree##tree##tree##tree##tree##tree##tree##tree#\n",
+  "se": ["#nw#", "#nw#", "#nw#", "#nw#", "#nw#", "#nw#", "☁"],
+  "sc": ["☁", "🌧", "🐦"],
+  "sr": ["🚁", "🌩", "⛈", "🕊"],
+  "ss": ["🛸"],
+  "s": ["#se#", "#se#", "#se#", "#se#", "#se#",  "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#sw#"],
+  "sw": ["#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sr#", "#sr#", "#sr#", "#sr#", "#sr#", "#ss#"],
+
+  "zombie": "#z##z##z##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#bike##n##x##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#z##z##z##z##z##z##z##z##z##z##z#\n",
+  "z": ["#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#nw#", "#zombies#"]
+}
