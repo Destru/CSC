@@ -1,2 +1,2 @@
-We are community.
-https://cyberpunksocialclub.com
+# Cyberpunk Social Club
+https://cyberpunksocial.club
