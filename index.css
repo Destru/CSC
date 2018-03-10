@@ -155,6 +155,10 @@ ul.roman {
   padding-left: 0.8rem;
 }
 
+#online, #twitch-link {
+  transition: opacity 1s ease-in;
+}
+
 #online {
   color: #ff0;
   display: block;
@@ -162,7 +166,6 @@ ul.roman {
   margin-top: .4rem;
   font-size: 90%;
   text-transform: uppercase;
-  transition: opacity 1s ease-in;
 }
 
 #probe {

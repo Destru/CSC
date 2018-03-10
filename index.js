@@ -40,13 +40,13 @@ var setTwitchLink;
     var json = JSON.parse(response);
     if (json.stream === null) {
       twitchLink.removeAttribute('href');
-      twitchLink.style.opacity = .15;
+      twitchLink.style.display = 'none';
     }
     else {
       twitchLink.setAttribute('href', 'https://twitch.tv/notdestru');
+      twitchLink.style.display = 'inline-block';
       twitchLink.style.opacity = 1;
     }
-    twitchLink.style.display = 'inline-block';
   });
 })();
 
