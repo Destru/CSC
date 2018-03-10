@@ -1,14 +1,11 @@
 {
-  "": [
-    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
-    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
-    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
-    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
-    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
-    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#"
-  ],
-
   "origin": [
+    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
+    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
+    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
+    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
+    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
+    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
     "#patternBonus#"
   ],
 
@@ -18,11 +15,15 @@
     "#[x:#_walk#]forest# #[s:forest]tags#",
     "#[x:#_swim#][n:#oe#]ocean# #[s:ocean]tags#"
   ],
+
   "patternBonus": [
-    "#[x:#_lotus#][n:#nw#]burn# \\#bonus",
     "#[x:#_climb#][n:#nr#]climb# \\#bonus",
-    "#[x:#_code#][n:#nw#]robots# \\#bonus",
-    "#[x:#_run#][n:#nw#]zombie# \\#bonus"
+    "#[x:#_run#]zombie# \\#bonus"
+  ],
+
+  "wip": [
+    "#[x:#_lotus#]burn# \\#bonus",
+    "#[x:#_code#]robots# \\#bonus"
   ],
 
   "tag": [
@@ -37,10 +38,12 @@
     "generative", "generative", "generative", "art", "generativeart",
     "creative", "creativecode", "tracery"
   ],
+
   "tags": [
     "\\##tagQualifier# \\##s#",
     "\\##tagQualifier# \\##tag#"
   ],
+
   "tagQualifier": [
     "tiny", "cute", "petite", "small", "emoji", "micro", "little",
     "wee", "teensy", "supercute", "supersmall", "supertiny", "lil",
@@ -81,7 +84,7 @@
   "nullWide": "#null# ",
   "nullWider": "#null##null#",
   "nullRand": ["#null#", "#null#", "#null#", "#nullWide#"],
-  "n": "#null#",
+  "n": "#nullWide#",
   "nr": "#nullRand#",
   "nw": "#nullWide#",
   "nwr": "#nullWider#",
