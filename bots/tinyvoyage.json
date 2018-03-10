@@ -83,18 +83,16 @@
 
   "null": "　",
   "nullWide": "#null# ",
-  "nullWider": "#null##null#",
   "nullRand": ["#null#", "#null#", "#null#", "#nullWide#"],
   "n": "#null#",
   "nr": "#nullRand#",
   "nw": "#nullWide#",
-  "nwr": "#nullWider#",
 
   "burn": "#n##n##x##n##n#\n#fire##fire##fire##fire##fire#\n#money##money##money##money##money#\n#fire##fire##fire##fire##fire#\n",
   "climb": "#s##s##s##s##s##sun##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
-  "city": "#s##s##s##s##s##sun##s##s##s##s##s#\n#nwr##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#fl##fl##fl##fl##fl##fl##fl##fl##fl##fl##fl#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
+  "city": "#s##s##s##s##s##sun##s##s##s##s##s#\n#nw##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#fl##fl##fl##fl##fl##fl##fl##fl##fl##fl##fl#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
   "h": ["#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#n#",  "#n#",  "#n#",  "#n#",  "#n#", "#houseRare#"],
-  "fl": ["#fle#", "#fle#", "#fle#", "#nwr#"],
+  "fl": ["#fle#", "#fle#", "#fle#", "#nr#"],
   "fle": ["#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#insectsCute#"],
   "r": ["#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#car#", "#car#", "#car#", "#car#", "#car#", "#carRare#"],
 
