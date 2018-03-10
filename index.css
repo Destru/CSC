@@ -141,6 +141,11 @@ ul.roman {
   white-space: nowrap;
 }
 
+#copyright-symbol {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
 #content {
   margin-top: -1.6rem;
 }
