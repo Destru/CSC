@@ -80,10 +80,9 @@
   "n": "#nullWide#",
   "nr": "#nullRand#",
   "nw": "#nullWide#",
-  "nx": "#nullWide##null#",
 
   "_patterns":"",
-  "eBurn": "#nx##robot##x##robot##nx#\n#fire##burn##fire##burn##fire#\n#burn##fire##burn##fire##burn#\n",
+  "eBurn": "#nw##nw##nw##robot##x##robot##nw##nw##nw#\n#nw##nw##fire##burn##fire##burn##fire##nw##nw#\n#nw##fire##burn##fire##burn##fire##burn##fire##nw#\n",
   "eCity": "#s##s##s##s##s##sun##s##s##s##s##s#\n#n##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
   "eDesert": "#d##d##d##d##d##d##d##d##d##d##d#\n#d##d##d##d##d##n##d##d##d##d##d#\n#d##d##d##d##n##x##n##d##d##d##d#\n#d##d##d##d##d##n##d##d##d##d##d#\n#d##d##d##d##d##d##d##d##d##d##d#\n",
   "eForest": "#f##f##f##f##f##f##f##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##n##x##n##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##f##f##f##f##f##f##f#\n",
