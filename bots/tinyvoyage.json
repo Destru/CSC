@@ -1,5 +1,9 @@
 {
-  "origin": [
+  "botDev": [
+    "#patternBonus#"
+  ],
+
+  "botProduction": [
     "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
     "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
     "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
@@ -9,21 +13,26 @@
     "#patternBonus#"
   ],
 
-  "pattern": [
-    "#[x:#_bike#]city# #[s:city]tags#",
-    "#[x:#_run#]jungle# #[s:jungle]tags#",
-    "#[x:#_walk#]forest# #[s:forest]tags#",
-    "#[x:#_swim#][n:#oe#]ocean# #[s:ocean]tags#"
+  "origin": [
+    "#botDev#"
   ],
 
-  "patternBonus": [
-    "#[x:#_climb#]climb# \\#bonus",
-    "#[x:#_run#]zombie# \\#bonus"
+  "pattern": [
+    "#[x:#_bike#]eCity# #[s:city]tags#",
+    "#[x:#_run#]eJungle# #[s:jungle]tags#",
+    "#[x:#_walk#]eForest# #[s:forest]tags#",
+    "#[x:#_swim#][n:#oe#]eOcean# #[s:ocean]tags#"
+  ],
+
+  "patternSecret": [
+    "#[x:#_climb#]eMountain# #[s:mountain]tags# \\#secret",
+    "#[x:#_run#]eZombie# #[s:plantsvszombies]tags# \\#secret"
   ],
 
   "wip": [
-    "#[x:#_lotus#]burn# \\#bonus",
-    "#[x:#_code#]robots# \\#bonus"
+    "#[x:#_lotus#]eBurn# #[s:burnmoney]tags# \\#secret",
+    "#[x:#_row#]eRiver# #[s:river]tags#",
+    "#[x:#_code#]eRobots# #[s:robotarmy]tags# \\#secret"
   ],
 
   "tag": [
@@ -52,10 +61,10 @@
   ],
 
   "_bike": "🚴‍♀️",
-  "_boat": "🚣‍♀️",
   "_code": "👩‍💻",
   "_climb": "🧗‍♀️",
   "_lotus": "🧘‍♀️",
+  "_row": "🚣‍♀️",
   "_run": "🏃‍♀️",
   "_swim": "🏊‍♀️",
   "_walk": "🚶‍♀️",
@@ -89,15 +98,15 @@
   "nr": "#nullRand#",
   "nw": "#nullWide#",
 
-  "burn": "#n##n##x##n##n#\n#fire##fire##fire##fire##fire#\n#money##money##money##money##money#\n#fire##fire##fire##fire##fire#\n",
-  "climb": "#s##s##s##s##s##sun##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
-  "city": "#s##s##s##s##s##sun##s##s##s##s##s#\n#nw##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
+  "eBurn": "#n##n##x##n##n#\n#fire##fire##fire##fire##fire#\n#money##money##money##money##money#\n#fire##fire##fire##fire##fire#\n",
+  "eMountain": "#s##s##s##s##s##sun##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
+  "eCity": "#s##s##s##s##s##sun##s##s##s##s##s#\n#nw##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
   "h": ["#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#n#",  "#n#",  "#n#",  "#n#",  "#n#", "#houseRare#"],
   "fl": ["#fle#", "#fle#", "#fle#", "#n#"],
   "fle": ["#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#insectsCute#"],
   "r": ["#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#car#", "#car#", "#car#", "#car#", "#car#", "#carRare#"],
 
-  "desert": "#d##d##d##d##d##d##d##d##d##d##d#\n#d##d##d##d##d##n##d##d##d##d##d#\n#d##d##d##d##n##x##n##d##d##d##d#\n#d##d##d##d##d##n##d##d##d##d##d#\n#d##d##d##d##d##d##d##d##d##d##d#\n",
+  "eDesert": "#d##d##d##d##d##d##d##d##d##d##d#\n#d##d##d##d##d##n##d##d##d##d##d#\n#d##d##d##d##n##x##n##d##d##d##d#\n#d##d##d##d##d##n##d##d##d##d##d#\n#d##d##d##d##d##d##d##d##d##d##d#\n",
   "de": ["#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "🌵"],
   "dc": ["🦂", "🐜", "🕷", "🕸"],
   "dr": ["🌴", "⚱", ""],
@@ -105,7 +114,7 @@
   "d": ["#de#", "#de#", "#de#", "#de#", "#de#", "#de#", "#de#", "#de#", "#de#", "#de#", "#de#",  "#de#", "#de#",  "#de#",  "#de#", "#dw#"],
   "dw": ["#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dr#", "#dr#", "#dr#", "#dr#", "#dr#", "#ds#"],
 
-  "jungle": "#j##j##j##j##j##j##j##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##n##x##n##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##j##j##j##j##j##j##j#\n",
+  "eJungle": "#j##j##j##j##j##j##j##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##n##x##n##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##j##j##j##j##j##j##j#\n",
   "je": ["🌴", "🌴", "🌴", "🌱", "🌱", "#n#"],
   "jc": ["🐍", "🦎", "🐒", "🕷", "🕸"],
   "jr": ["🐘", "🦒", "🦏", "🐆", "🐅", "🍌", "🍍", "🐊"],
@@ -113,7 +122,7 @@
   "j": ["#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#jw#"],
   "jw": ["#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jr#", "#jr#", "#jr#", "#jr#", "#jr#", "#js#"],
 
-  "forest": "#f##f##f##f##f##f##f##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##n##x##n##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##f##f##f##f##f##f##f#\n",
+  "eForest": "#f##f##f##f##f##f##f##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##n##x##n##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##f##f##f##f##f##f##f#\n",
   "fe": ["#tree#", "#tree#", "#n#"],
   "fc": ["🌿", "🌿", "☘", "🍎", "🍏", "🍐", "🍄", "🌰"],
   "fr": ["🐻", "🦊", "🐺", "🦉", "🐗", "🐇", "🐿", "🕷", "🕸"],
@@ -121,7 +130,7 @@
   "f": ["#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fw#"],
   "fw": ["#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fr#", "#fr#", "#fr#", "#fr#", "#fr#", "#fs#"],
 
-  "ocean": "#oe##o##o##o##o##o##o##o##o##o##oe#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#oe##o##o##o##o##o##o##o##o##o##oe#\n",
+  "eOcean": "#oe##o##o##o##o##o##o##o##o##o##oe#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#oe##o##o##o##o##o##o##o##o##o##oe#\n",
   "oe": ["🌊"],
   "oc": ["🐟", "🐟", "🐟", "🐠", "🐠", "🐡"],
   "or": ["🐙", "🦑", "🐬", "🐬", "🐬", "🐳", "🐋", "🦈"],
@@ -129,7 +138,8 @@
   "o": ["#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#ow#"],
   "ow": ["#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#or#", "#or#", "#or#", "#or#", "#or#", "#os#"],
 
-  "robots": "#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##x##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n",
+  "eRiver": "#f##f##f##f##f##f##f##f##f##f#\n#r##r##r##r##r##r##r##r##r##r##r#\n#o##o##o##o##o##oe##o##o##o##o##o#\n#o##o##o##o##oe##x##oe##o##o##o##o#\n#o##o##o##o##o##oe##o##o##o##o##o#\n",
+  "eRobots": "#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##x##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n",
   "ro": "#robot#",
 
   "se": ["#nw#", "#nw#", "#nw#", "#nw#", "#nw#", "#nw#", "☁"],
@@ -139,6 +149,6 @@
   "s": ["#se#", "#se#", "#se#", "#se#", "#se#",  "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#sw#"],
   "sw": ["#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sc#", "#sr#", "#sr#", "#sr#", "#sr#", "#sr#", "#ss#"],
 
-  "zombie": "#z##z##z##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#bike##n##x##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#z##z##z##z##z##z##z##z##z##z##z#\n",
+  "eZombie": "#z##z##z##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#bike##n##x##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#z##z##z##z##z##z##z##z##z##z##z#\n",
   "z": ["#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#nw#", "#zombies#"]
 }
