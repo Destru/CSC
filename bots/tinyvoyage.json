@@ -1,6 +1,5 @@
 {
   "botDev": [
-    "#patternBonus#",
     "#wip#"
   ],
 
@@ -17,15 +16,15 @@
   "cyberpunk": "#[x:#_code#]eRobots# https://cyberpunksocial.club",
 
   "origin": [
-    "#botProduction#"
+    "#botDev#"
   ],
 
   "pattern": [
     "#[x:#_bike#][n:#nw#]eCity# #[s:city]tags#",
-    "#[x:#_row#][n:#nw#]eRiver# #[s:river]tags#",
+    "#[x:#_swim#][n:#nw#]eRiver# #[s:river]tags#",
     "#[x:#_run#]eJungle# #[s:jungle]tags#",
     "#[x:#_walk#]eForest# #[s:forest]tags#",
-    "#[x:#_swim#][n:#oe#]eOcean# #[s:ocean]tags#"
+    "#[x:#_row#][n:#oe#]eOcean# #[s:ocean]tags#"
   ],
 
   "patternBonus": [
@@ -35,7 +34,8 @@
   ],
 
   "wip": [
-    "#[x:#_lotus#]eBurn# #[s:burnmoney]tags# \\#secret"
+    "#[x:#_swim#][n:#nw#]eRiver# #[s:river]tags#",
+    "#[x:#_teach#]eBurn# #[s:burn]tags# \\#secret"
   ],
 
   "tag": [
@@ -69,10 +69,13 @@
   "_lotus": "🧘‍♀️",
   "_row": "🚣‍♀️",
   "_run": "🏃‍♀️",
+  "_surf": "🏄‍♀️",
   "_swim": "🏊‍♀️",
+  "_teach": "👩‍🏫",
   "_walk": "🚶‍♀️",
 
-  "bike": "🚲",
+  "bike": ["🚲", "🛴", "🛵", ""],
+  "burn": ["#money#", "#money#", "#money#", "#money#", "#money#", "🏦", "💰", "💰", "💰"],
   "burger": "🍔",
   "camping": "🏕",
   "car": ["🚗", "🚗", "🚙", "🚕"],
@@ -102,7 +105,7 @@
   "nr": "#nullRand#",
   "nw": "#nullWide#",
 
-  "eBurn": "#n##n##x##n##n#\n#fire##fire##fire##fire##fire#\n#money##money##money##money##money#\n#fire##fire##fire##fire##fire#\n",
+  "eBurn": "#nw##robot##x##robot##nw#\n#fire##burn##fire##burn##fire#\n#burn##fire##burn##fire##burn#\n",
 
   "eCity": "#s##s##s##s##s##sun##s##s##s##s##s#\n#nw##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
   "h": ["#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#n#",  "#n#",  "#n#",  "#n#",  "#n#", "#houseRare#"],
@@ -144,7 +147,7 @@
   "o": ["#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#ow#"],
   "ow": ["#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#or#", "#or#", "#or#", "#or#", "#or#", "#os#"],
 
-  "eRiver": "#n##treeRiver##fl##treeRiver##fl##treeRiver##fl##treeRiver##fl##treeRiver##n#\n#r##r##r##r##r##r##r##r##r##r##r#\n#n##treeRiver##fl##treeRiver##fl##treeRiver##fl##treeRiver##fl##treeRiver##n#\n#oe##oe##oe##oe##oe##x##oe##oe##oe##oe##oe#\n#o##o##o##o##o##oe##o##o##o##o##o#\n",
+  "eRiver": "#s##n##s##n##sun##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#n##treeRiver##fl##treeRiver##fl##treeRiver##fl##treeRiver##fl##treeRiver##n#\n#o##o##o##oe##oe##x##oe##oe##o##o##o#\n#o##o##o##o##oe##oe##oe##o##o##o##o#\n",
   "eRobots": "#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##x##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n",
   "ro": "#robot#",
 
