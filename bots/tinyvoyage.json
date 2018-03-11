@@ -30,7 +30,7 @@
 
   "patternBonus": [
     "#[x:#_climb#]eMountain# #[s:mountain]tags# \\#secret",
-    "#[x:#_code#]eRobots# #[s:robotarmy]tags# \\#secret https://cyberpunksocial.club",
+    "#[x:#_code#]eRobots# #[s:robotarmy]tags# \\#secret",
     "#[x:#_run#]eZombie# #[s:plantsvszombies]tags# \\#secret"
   ],
 
