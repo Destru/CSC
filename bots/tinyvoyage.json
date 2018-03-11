@@ -1,6 +1,7 @@
 {
   "botDev": [
-    "#patternBonus#"
+    "#patternBonus#",
+    "#wip#"
   ],
 
   "botProduction": [
@@ -24,7 +25,7 @@
     "#[x:#_swim#][n:#oe#]eOcean# #[s:ocean]tags#"
   ],
 
-  "patternSecret": [
+  "patternBonus": [
     "#[x:#_climb#]eMountain# #[s:mountain]tags# \\#secret",
     "#[x:#_run#]eZombie# #[s:plantsvszombies]tags# \\#secret"
   ],
