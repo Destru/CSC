@@ -16,25 +16,29 @@
   "cyberpunk": "#[x:#_code#]eRobots# https://cyberpunksocial.club",
 
   "origin": [
-    "#botDev#"
+    "#botProduction#"
   ],
 
   "pattern": [
-    "#[x:#_bike#][n:#nw#]eCity# #[s:city]tags#",
-    "#[x:#_swim#][n:#nw#]eRiver# #[s:river]tags#",
+    "#[x:#_bike#]eCity# #[s:city]tags#",
+    "#[x:#_swim#]eRiver# #[s:river]tags#",
     "#[x:#_run#]eJungle# #[s:jungle]tags#",
     "#[x:#_walk#]eForest# #[s:forest]tags#",
     "#[x:#_row#][n:#oe#]eOcean# #[s:ocean]tags#"
   ],
 
   "patternBonus": [
+    "#[x:#_teach#]eBurn# #[s:burn]tags# \\#secret"
+    "#[x:#_climb#]eMountain# #[s:mountain]tags# \\#secret",
+    "#[x:#_climb#]eMountain# #[s:mountain]tags# \\#secret",
     "#[x:#_climb#]eMountain# #[s:mountain]tags# \\#secret",
     "#[x:#_code#]eRobots# #[s:robotarmy]tags# \\#secret",
+    "#[x:#_run#]eZombie# #[s:plantsvszombies]tags# \\#secret"
+    "#[x:#_run#]eZombie# #[s:plantsvszombies]tags# \\#secret"
     "#[x:#_run#]eZombie# #[s:plantsvszombies]tags# \\#secret"
   ],
 
   "wip": [
-    "#[x:#_swim#][n:#nw#]eRiver# #[s:river]tags#",
     "#[x:#_teach#]eBurn# #[s:burn]tags# \\#secret"
   ],
 
@@ -101,13 +105,14 @@
   "null": "　",
   "nullWide": "#null# ",
   "nullRand": ["#null#", "#null#", "#null#", "#nullWide#"],
-  "n": "#nullRand#",
+  "n": "#nullWide#",
   "nr": "#nullRand#",
   "nw": "#nullWide#",
+  "nx": "#nullWide##null#",
 
-  "eBurn": "#nw##robot##x##robot##nw#\n#fire##burn##fire##burn##fire#\n#burn##fire##burn##fire##burn#\n",
+  "eBurn": "#nx##robot##x##robot##nx#\n#fire##burn##fire##burn##fire#\n#burn##fire##burn##fire##burn#\n",
 
-  "eCity": "#s##s##s##s##s##sun##s##s##s##s##s#\n#nw##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
+  "eCity": "#s##s##s##s##s##sun##s##s##s##s##s#\n#n##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
   "h": ["#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#n#",  "#n#",  "#n#",  "#n#",  "#n#", "#houseRare#"],
   "fl": ["#fle#", "#fle#", "#fle#", "#n#"],
   "fle": ["#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#insectsCute#"],
@@ -137,7 +142,7 @@
   "f": ["#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fw#"],
   "fw": ["#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fr#", "#fr#", "#fr#", "#fr#", "#fr#", "#fs#"],
 
-  "eMountain": "#s##s##s##s##s##sun##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
+  "eMountain": "#n##s##n##s##n##sun##s##s##n##s##n#\n#s##n##s##n##s##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
 
   "eOcean": "#oe##o##o##o##o##o##o##o##o##o##oe#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#oe##o##o##o##o##o##o##o##o##o##oe#\n",
   "oe": ["🌊"],
@@ -151,8 +156,8 @@
   "eRobots": "#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##x##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n",
   "ro": "#robot#",
 
-  "se": ["#nw#", "#nw#", "#nw#", "#nw#", "☁"],
-  "sc": ["☁", "🌧", "🐦"],
+  "se": ["#nw#", "#nw#", "#nw#", "☁"],
+  "sc": ["🌧", "🐦"],
   "sr": ["🚁", "🌩", "⛈", "🕊"],
   "ss": ["🛸"],
   "s": ["#se#", "#se#", "#se#", "#se#", "#se#",  "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#sw#"],
