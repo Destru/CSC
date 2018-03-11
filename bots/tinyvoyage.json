@@ -19,7 +19,7 @@
   ],
 
   "pattern": [
-    "#[x:#_bike#]eCity# #[s:city]tags#",
+    "#[x:#_bike#][n:#nw#]eCity# #[s:city]tags#",
     "#[x:#_run#]eJungle# #[s:jungle]tags#",
     "#[x:#_walk#]eForest# #[s:forest]tags#",
     "#[x:#_swim#][n:#oe#]eOcean# #[s:ocean]tags#"
@@ -32,7 +32,7 @@
 
   "wip": [
     "#[x:#_lotus#]eBurn# #[s:burnmoney]tags# \\#secret",
-    "#[x:#_row#]eRiver# #[s:river]tags#",
+    "#[x:#_row#][n:#nw#]eRiver# #[s:river]tags#",
     "#[x:#_code#]eRobots# #[s:robotarmy]tags# \\#secret"
   ],
 
@@ -90,6 +90,7 @@
   "sun": ["☀", "🌤", "⛅", "🌥", "🌦"],
   "tree": ["🌲", "🌲", "🌳"],
   "treeCity": ["🌳", "🌳", "🌴"],
+  "treeRiver": ["🌳"],
   "zombies": ["🧟‍♀️", "🧟‍♂️"],
 
   "null": "　",
@@ -100,7 +101,7 @@
   "nw": "#nullWide#",
 
   "eBurn": "#n##n##x##n##n#\n#fire##fire##fire##fire##fire#\n#money##money##money##money##money#\n#fire##fire##fire##fire##fire#\n",
-  "eMountain": "#s##s##s##s##s##sun##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
+
   "eCity": "#s##s##s##s##s##sun##s##s##s##s##s#\n#nw##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
   "h": ["#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#n#",  "#n#",  "#n#",  "#n#",  "#n#", "#houseRare#"],
   "fl": ["#fle#", "#fle#", "#fle#", "#n#"],
@@ -131,6 +132,8 @@
   "f": ["#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fw#"],
   "fw": ["#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fc#", "#fr#", "#fr#", "#fr#", "#fr#", "#fr#", "#fs#"],
 
+  "eMountain": "#s##s##s##s##s##sun##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#s##s##s##s##s##s##s##s##s##s##s#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
+
   "eOcean": "#oe##o##o##o##o##o##o##o##o##o##oe#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#oe##o##o##o##o##o##o##o##o##o##oe#\n",
   "oe": ["🌊"],
   "oc": ["🐟", "🐟", "🐟", "🐠", "🐠", "🐡"],
@@ -139,11 +142,11 @@
   "o": ["#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#ow#"],
   "ow": ["#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#or#", "#or#", "#or#", "#or#", "#or#", "#os#"],
 
-  "eRiver": "#f##f##f##f##f##f##f##f##f##f#\n#r##r##r##r##r##r##r##r##r##r##r#\n#o##o##o##o##o##oe##o##o##o##o##o#\n#o##o##o##o##oe##x##oe##o##o##o##o#\n#o##o##o##o##o##oe##o##o##o##o##o#\n",
+  "eRiver": "#n##treeRiver##fl##treeRiver##fl##treeRiver##fl##treeRiver##fl##treeRiver##n#\n#r##r##r##r##r##r##r##r##r##r##r#\n#n##treeRiver##fl##treeRiver##fl##treeRiver##fl##treeRiver##fl##treeRiver##n#\n#oe##oe##oe##oe##oe##x##oe##oe##oe##oe##oe#\n#o##o##o##o##o##oe##o##o##o##o##o#\n",
   "eRobots": "#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##x##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n",
   "ro": "#robot#",
 
-  "se": ["#nw#", "#nw#", "#nw#", "#nw#", "#nw#", "#nw#", "☁"],
+  "se": ["#nw#", "#nw#", "#nw#", "#nw#", "☁"],
   "sc": ["☁", "🌧", "🐦"],
   "sr": ["🚁", "🌩", "⛈", "🕊"],
   "ss": ["🛸"],
