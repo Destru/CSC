@@ -15,11 +15,12 @@
   ],
 
   "origin": [
-    "#botDev#"
+    "#botProduction#"
   ],
 
   "pattern": [
     "#[x:#_bike#][n:#nw#]eCity# #[s:city]tags#",
+    "#[x:#_row#][n:#nw#]eRiver# #[s:river]tags#",
     "#[x:#_run#]eJungle# #[s:jungle]tags#",
     "#[x:#_walk#]eForest# #[s:forest]tags#",
     "#[x:#_swim#][n:#oe#]eOcean# #[s:ocean]tags#"
@@ -27,13 +28,12 @@
 
   "patternBonus": [
     "#[x:#_climb#]eMountain# #[s:mountain]tags# \\#secret",
+    "#[x:#_code#]eRobots# #[s:robotarmy]tags# \\#secret https://cyberpunksocial.club",
     "#[x:#_run#]eZombie# #[s:plantsvszombies]tags# \\#secret"
   ],
 
   "wip": [
-    "#[x:#_lotus#]eBurn# #[s:burnmoney]tags# \\#secret",
-    "#[x:#_row#][n:#nw#]eRiver# #[s:river]tags#",
-    "#[x:#_code#]eRobots# #[s:robotarmy]tags# \\#secret"
+    "#[x:#_lotus#]eBurn# #[s:burnmoney]tags# \\#secret"
   ],
 
   "tag": [
