@@ -28,13 +28,13 @@
   ],
 
   "patternBonus": [
-    "#[x:#_teach#]eBurn# #[s:burn]tags# \\#secret"
+    "#[x:#_teach#]eBurn# #[s:burn]tags# \\#secret",
     "#[x:#_climb#]eMountain# #[s:mountain]tags# \\#secret",
     "#[x:#_climb#]eMountain# #[s:mountain]tags# \\#secret",
     "#[x:#_climb#]eMountain# #[s:mountain]tags# \\#secret",
     "#[x:#_code#]eRobots# #[s:robotarmy]tags# \\#secret",
-    "#[x:#_run#]eZombie# #[s:plantsvszombies]tags# \\#secret"
-    "#[x:#_run#]eZombie# #[s:plantsvszombies]tags# \\#secret"
+    "#[x:#_run#]eZombie# #[s:plantsvszombies]tags# \\#secret",
+    "#[x:#_run#]eZombie# #[s:plantsvszombies]tags# \\#secret",
     "#[x:#_run#]eZombie# #[s:plantsvszombies]tags# \\#secret"
   ],
 
@@ -116,7 +116,7 @@
   "h": ["#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#n#",  "#n#",  "#n#",  "#n#",  "#n#", "#houseRare#"],
   "fl": ["#fle#", "#fle#", "#fle#", "#n#"],
   "fle": ["#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#insectsCute#"],
-  "r": ["#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#car#", "#car#", "#car#", "#car#", "#car#", "#carRare#"],
+  "r": ["#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#car#", "#car#", "#car#", "#car#", "#car#", "#carRare#"],
 
   "eDesert": "#d##d##d##d##d##d##d##d##d##d##d#\n#d##d##d##d##d##n##d##d##d##d##d#\n#d##d##d##d##n##x##n##d##d##d##d#\n#d##d##d##d##d##n##d##d##d##d##d#\n#d##d##d##d##d##d##d##d##d##d##d#\n",
   "de": ["#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "🌵"],
@@ -131,7 +131,7 @@
   "jc": ["🐍", "🦎", "🐒", "🕷", "🕸"],
   "jr": ["🐘", "🦒", "🦏", "🐆", "🐅", "🍌", "🍍", "🐊"],
   "js": ["🦖", "🦕", "🍀", "🐉"],
-  "j": ["#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#jw#"],
+  "j": ["#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#jw#"],
   "jw": ["#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jc#", "#jr#", "#jr#", "#jr#", "#jr#", "#jr#", "#js#"],
 
   "eForest": "#f##f##f##f##f##f##f##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##n##x##n##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##f##f##f##f##f##f##f#\n",
