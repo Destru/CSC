@@ -24,26 +24,26 @@
   ],
 
   "pattern": [
-    "#[x:#_bike#]eCity# #[s:city]tags#",
-    "#[x:#_swim#]eDesert# #[s:desert]tags#",
-    "#[x:#_run#]eJungle# #[s:jungle]tags#",
-    "#[x:#_walk#]eForest# #[s:forest]tags#",
-    "#[x:#_row#][n:#oe#]eOcean# #[s:ocean]tags#",
-    "#[x:#_surf#]eRiver# #[s:river]tags#"
+    "#[x:#_bike#]eCity# #tags#",
+    "#[x:#_swim#]eDesert# #tags#",
+    "#[x:#_run#]eJungle# #tags#",
+    "#[x:#_walk#]eForest# #tags#",
+    "#[x:#_row#][n:#oe#]eOcean# #tags#",
+    "#[x:#_surf#]eRiver# #tags#"
   ],
 
   "patternBonus": [
-    "#[x:#_teach#]eBurn# #[s:burnthemall][tag:bonus]tags#",
-    "#[x:#_sleep#][nw:#cloud#]eDreams# #[s:sweetdreams][tag:bonus]tags#",
-    "#[x:#_climb#]eMountain# #[s:mountain][tag:bonus]tags#",
-    "#[x:#_code#]eRobots# #[s:robotarmy][tag:bonus]tags#",
-    "#[x:#_run#]eZombie# #[s:plantsvszombies][tag:bonus]tags#"
+    "#[x:#_teach#]eBurn# #tags# \\#capitalism",
+    "#[x:#_sleep#][nw:#cloud#]eDreams# #tags#",
+    "#[x:#_climb#]eMountain# #tags#",
+    "#[x:#_code#]eRobots# #tags# \\#cyberpunk",
+    "#[x:#_run#]eZombie# #tags# \\#plantsvszombies"
   ],
 
   "wip": [
   ],
 
-  "tags": "\n\\##tagQualifier# \\##tag# \\##s#",
+  "tags": "\\##tagQualifier# \\##tag#",
   "tag": [
     "voyage", "voyages", "memory", "memories", "story", "stories",
     "expeditions", "expedition", "adventures", "adventure",
