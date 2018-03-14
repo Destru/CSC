@@ -139,7 +139,7 @@
   "se": ["#nw#", "#nw#", "#nw#", "#cloud#"],
 
   "_patterns":"",
-  "eBurn": "#nw##nw##nw##robot##x##robot##nw##nw##nw#\n#nw##nw##fire##burn##fire##burn##fire##nw##nw#\n#nw##fire##burn##fire##burn##fire##burn##fire##nw#\n",
+  "eBurn": "#robot##robot##robot##robot##x##robot##robot##robot##robot#\n#nw##nw##fire##burn##fire##burn##fire##nw##nw#\n#nw##fire##burn##fire##burn##fire##burn##fire##nw#\n",
   "eCity": "#s##s##s##s##s##sun##s##s##s##s##s#\n#n##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#ri##ri##ri##ri##ri##ri##ri##ri##ri##ri##ri#\n",
   "eDesert": "#sun##nw##d##d##d##d##d##d##d##d##d#\n#nw##dt##dt##dt##dt##dt##dt##dt##dt##dt##nw#\n#ri##ri##ri##ri##oe##x##oe##ri##ri##ri##ri#\n#d##dt##d##dt##d##dt##d##dt##d##dt##d#\n#d##d##d##d##d##d##d##d##d##d##d#\n",
   "eDreams": "#nw##nw##nw##treat##nw##nw##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##treat##nw##x##nw##treat##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##nw##nw##treat##nw##nw##nw#\n",
