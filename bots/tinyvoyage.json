@@ -24,37 +24,36 @@
   ],
 
   "pattern": [
-    "#[x:#_bike#]eCity# #tags#",
-    "#[x:#_run#]eJungle# #tags#",
+    "#[x:#_swim#][n:#oe#]eOcean# #tags#",
     "#[x:#_walk#]eForest# #tags#",
-    "#[x:#_row#][n:#oe#]eOcean# #tags#"
+    "#[x:#_run#]eJungle# #tags#",
+    "#[x:#_bike#]eCity# #tags#",
+    "#[x:#_surf#]eDesert# #tags#"
   ],
 
   "patternBonus": [
-    "#[x:#_teach#]eBurn# #tags# \\#capitalism",
-    "#[x:#_sleep#][nw:#cloud#]eDreams# #tags#",
+    "#[x:#_code#]eRobots# #tags# \\#robotarmy",
+    "#[x:#_run#]eZombie# #tags# \\#plantsvszombies",
     "#[x:#_climb#]eMountain# #tags#",
-    "#[x:#_code#]eRobots# #tags# \\#cyberpunk",
-    "#[x:#_run#]eZombie# #tags# \\#plantsvszombies"
+    "#[x:#_teach#]eBurn# #tags#",
+    "#[x:#_sleep#][nw:#cloud#]eDreams# #tags#"
   ],
 
   "wip": [
-    "#[x:#_swim#]eDesert# #tags#",
-    "#[x:#_surf#]eRiver# #tags#"
   ],
 
   "tags": "\\##tagQualifier# \\##tag#",
   "tag": [
-    "voyage", "voyages", "memory", "memories", "story", "stories",
-    "expeditions", "expedition", "adventures", "adventure",
+    "voyages", "memories", "stories", "expeditions","adventures",
     "adventurer", "explorer", "nomad", "wanderer", "traveler",
-    "moment", "moments", "outdoors", "trekking", "trek", "treks",
-    "trip", "trips", "travel", "travels", "journey", "journeys",
-    "destination", "destinations", "hopes", "dreams", "world", "worlds",
+    "moments", "outdoors", "trekking", "treks", "trips", "travels", "journeys",
+    "destinations", "hopes", "dreams", "worlds", "delights",
     "locations", "places", "aspirations", "goals", "achievements",
-    "conquest", "conquests", "achievement", "effort", "efforts",
-    "generative", "generative", "generative", "art", "generativeart",
-    "creative", "creativecode", "tracery"
+    "conquests", "efforts",
+    "generative", "generative", "generative",
+    "generativeart",
+    "creativecode",
+    "tracery"
   ],
   "tagQualifier": [
     "tiny", "cute", "petite", "small", "emoji", "micro", "little",
@@ -107,14 +106,13 @@
   "star": ["⭐", "⭐", "⭐", "🌟", "🌟", "🌠"],
   "treat": ["🍦", "🍧", "🍨", "🍩", "🍪", "🎂", "🍰", "🥧", "🍫", "🍬", "🍭"],
   "tree": ["🌲", "🌲", "🌳"],
-  "treeCity": ["🌳", "🌳", "🌴"],
-  "treeRiver": ["🌾", "🌳"],
+  "treeCity": ["🌳"],
   "zombies": ["🧟‍♀️", "🧟‍♂️"],
 
   "_env_assets":"",
-  "dc": ["🦂", "🐜", "🐍", "🕸"],
-  "dr": ["⚱", "🐃", "🐘", "🐪", "🐫"],
-  "ds": ["🧞‍♀️", "🧞‍♂️"],
+  "notused-dc": ["🦂", "🐜", "🐍", "🕸"],
+  "notused-dr": ["⚱", "🐃", "🐘", "🐪", "🐫"],
+  "notused-ds": ["🧞‍♀️", "🧞‍♂️"],
   "fc": ["🌿", "🌿", "☘", "🍎", "🍏", "🍐", "🍄", "🌰"],
   "fr": ["🐻", "🦊", "🐺", "🦉", "🐗", "🐇", "🐿", "🕷", "🕸"],
   "fs": ["🧚‍♀️", "🧚‍♂️", "🧙‍♂️", "🧙‍♀️", "🦄", "🍀"],
@@ -130,8 +128,7 @@
   "ss": ["🛸"],
 
   "_env":"",
-  "de": ["#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#nr#", "#flower#", "#flower#", "🌵"],
-  "dt": ["#nw#", "#nw#", "#nw#", "#nw#", "#nw#", "🌵", "🌵", "#je#", "#flower#"],
+  "de": ["🌵", "🌵", "🌵", "#nw#", "#nw#", "#nw#", "#flower#"],
   "fe": ["#tree#", "#tree#", "#n#"],
   "fl": ["#fle#", "#fle#", "#fle#", "#n#"],
   "fle": ["#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#insectsCute#"],
@@ -139,20 +136,18 @@
   "se": ["#nw#", "#nw#", "#nw#", "#cloud#"],
 
   "_patterns":"",
-  "eBurn": "#robot##robot##robot##robot##x##robot##robot##robot##robot#\n#nw##nw##fire##burn##fire##burn##fire##nw##nw#\n#nw##fire##burn##fire##burn##fire##burn##fire##nw#\n",
+  "eBurn": "#robot##robot##robot##robot##x##robot##robot##robot##robot#\n#robot##robot##fire##burn##fire##burn##fire##robot##robot#\n#robot##fire##burn##fire##burn##fire##burn##fire##robot#\n",
   "eCity": "#s##s##s##s##s##sun##s##s##s##s##s#\n#n##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#ri##ri##ri##ri##ri##ri##ri##ri##ri##ri##ri#\n",
-  "eDesert": "#sun##nw##d##d##d##d##d##d##d##d##d#\n#nw##dt##dt##dt##dt##dt##dt##dt##dt##dt##nw#\n#ri##ri##ri##ri##oe##x##oe##ri##ri##ri##ri#\n#d##dt##d##dt##d##dt##d##dt##d##dt##d#\n#d##d##d##d##d##d##d##d##d##d##d#\n",
+  "eDesert": "#s##n##s##n##sun##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#de##de##de##de##de##de##de##de##de##de##de#\n#ri##ri##ri##oe##oe##x##oe##oe##ri##ri##ri#\n#ri##ri##ri##ri##oe##oe##oe##ri##ri##ri##ri#\n",
   "eDreams": "#nw##nw##nw##treat##nw##nw##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##treat##nw##x##nw##treat##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##nw##nw##treat##nw##nw##nw#\n",
   "eForest": "#f##f##f##f##f##f##f##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##n##x##n##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##f##f##f##f##f##f##f#\n",
   "eJungle": "#j##j##j##j##j##j##j##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##n##x##n##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##j##j##j##j##j##j##j#\n",
   "eMountain": "#n##s##n##s##n##sun##s##s##n##s##n#\n#s##n##s##n##s##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
   "eOcean": "#oe##o##o##o##o##o##o##o##o##o##oe#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#oe##o##o##o##o##o##o##o##o##o##oe#\n",
-  "eRiver": "#s##n##s##n##sun##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#n##treeRiver##fl##treeRiver##fl##treeRiver##fl##treeRiver##fl##treeRiver##n#\n#ri##ri##ri##oe##oe##x##oe##oe##ri##ri##ri#\n#ri##ri##ri##ri##oe##oe##oe##ri##ri##ri##ri#\n",
   "eRobots": "#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##x##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n",
   "eZombie": "#z##z##z##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#bike##n##x##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#z##z##z##z##z##z##z##z##z##z##z#\n",
 
   "_tiles":"",
-  "d": ["#de#", "#de#", "#de#", "#de#", "#de#", "#de#", "#de#", "#de#", "#de#", "#de#", "#de#", "#de#", "#dw#"],
   "f": ["#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fw#"],
   "h": ["#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#n#",  "#n#",  "#n#",  "#n#",  "#n#", "#houseRare#"],
   "j": ["#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#jw#"],
