@@ -25,11 +25,9 @@
 
   "pattern": [
     "#[x:#_bike#]eCity# #tags#",
-    "#[x:#_swim#]eDesert# #tags#",
     "#[x:#_run#]eJungle# #tags#",
     "#[x:#_walk#]eForest# #tags#",
-    "#[x:#_row#][n:#oe#]eOcean# #tags#",
-    "#[x:#_surf#]eRiver# #tags#"
+    "#[x:#_row#][n:#oe#]eOcean# #tags#"
   ],
 
   "patternBonus": [
@@ -41,6 +39,8 @@
   ],
 
   "wip": [
+    "#[x:#_swim#]eDesert# #tags#",
+    "#[x:#_surf#]eRiver# #tags#"
   ],
 
   "tags": "\\##tagQualifier# \\##tag#",
