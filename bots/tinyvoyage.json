@@ -17,7 +17,8 @@
   "cyberpunk": "#[x:#_code#]eRobots# https://cyberpunksocial.club",
   "special": [
     "https://twitter.com/tinyvoyages/status/973397814590894080",
-    "https://twitter.com/tinyvoyages/status/974713677143162881"
+    "https://twitter.com/tinyvoyages/status/974713677143162881",
+    "https://twitter.com/tinyvoyages/status/974868722971127808"
   ],
 
   "origin": [
@@ -25,47 +26,27 @@
   ],
 
   "pattern": [
-    "#[x:#_swim#][n:#oe#]eOcean# #tags#",
-    "#[x:#_walk#]eForest# #tags#",
-    "#[x:#_run#]eJungle# #tags#",
-    "#[x:#_bike#]eCity# #tags#",
-    "#[x:#_surf#]eDesert# #tags#"
+    "#[x:#_swim#][n:#oe#]pOcean#",
+    "#[x:#_walk#]pForest#",
+    "#[x:#_run#]pJungle#",
+    "#[x:#_bike#]pCity#",
+    "#[x:#_surf#]pDesert#"
   ],
 
   "patternBonus": [
-    "#[x:#_code#]eRobots# #tags# \\#robotarmy",
-    "#[x:#_run#]eZombie# #tags# \\#plantsvszombies",
-    "#[x:#_climb#]eMountain# #tags#",
-    "#[x:#_teach#]eBurn# #tags#",
-    "#[x:#_sleep#][nw:#cloud#]eDreams# #tags#"
+    "#[x:#_code#]eRobots# \\#robotarmy",
+    "#[x:#_run#]eZombie# \\#plantsvszombies",
+    "#[x:#_teach#]eBurn# \\#capitalism",
+    "#[x:#_climb#]eMountain#",
+    "#[x:#_sleep#][nw:#cloud#]eDreams#"
   ],
 
   "wip": [
   ],
 
-  "tags": "\\##tagQualifier# \\##tag#",
-  "tag": [
-    "voyages", "memories", "stories", "expeditions","adventures",
-    "adventurer", "explorer", "nomad", "wanderer", "traveler",
-    "moments", "outdoors", "trekking", "treks", "trips", "travels", "journeys",
-    "destinations", "hopes", "dreams", "worlds", "delights",
-    "locations", "places", "aspirations", "goals", "achievements",
-    "conquests", "efforts",
-    "generative", "generative", "generative",
-    "generativeart",
-    "creativecode",
-    "tracery"
-  ],
-  "tagQualifier": [
-    "tiny", "cute", "petite", "small", "emoji", "micro", "little",
-    "wee", "teensy", "supercute", "supersmall", "supertiny", "lil",
-    "lovely", "adorable", "wonderful", "mysterious", "inspiring",
-    "emojional"
-  ],
-
   "null": "　",
   "nullWide": "#null# ",
-  "nullRand": ["#null#", "#null#", "#null#", "#nullWide#"],
+  "nullRand": ["#null#", "#nullWide#"],
   "n": "#nullWide#",
   "nr": "#nullRand#",
   "nw": "#nullWide#",
@@ -139,16 +120,16 @@
   "se": ["#nw#", "#nw#", "#nw#", "#cloud#"],
 
   "_patterns":"",
-  "eBurn": "#robot##robot##robot##robot##x##robot##robot##robot##robot#\n#robot##robot##fire##burn##fire##burn##fire##robot##robot#\n#robot##fire##burn##fire##burn##fire##burn##fire##robot#\n",
-  "eCity": "#s##s##s##s##s##sun##s##s##s##s##s#\n#n##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#ri##ri##ri##ri##ri##ri##ri##ri##ri##ri##ri#\n",
-  "eDesert": "#s##n##s##n##sun##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#de##de##de##de##nw##beach##nw##de##de##de##de#\n#o##o##o##o##oe##x##oe##o##o##o##o#\n#o##o##o##o##oe##oe##oe##o##o##o##o#\n",
-  "eDreams": "#nw##nw##nw##treat##nw##nw##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##treat##nw##x##nw##treat##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##nw##nw##treat##nw##nw##nw#\n",
-  "eForest": "#f##f##f##f##f##f##f##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##n##x##n##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##f##f##f##f##f##f##f#\n",
-  "eJungle": "#j##j##j##j##j##j##j##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##n##x##n##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##j##j##j##j##j##j##j#\n",
-  "eMountain": "#n##s##n##s##n##sun##s##s##n##s##n#\n#s##n##s##n##s##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
-  "eOcean": "#oe##o##o##o##o##o##o##o##o##o##oe#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#oe##o##o##o##o##o##o##o##o##o##oe#\n",
-  "eRobots": "#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##x##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n",
-  "eZombie": "#z##z##z##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#bike##n##x##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#z##z##z##z##z##z##z##z##z##z##z#\n",
+  "pBurn": "#robot##robot##robot##robot##x##robot##robot##robot##robot#\n#robot##robot##fire##burn##fire##burn##fire##robot##robot#\n#robot##fire##burn##fire##burn##fire##burn##fire##robot#\n",
+  "pCity": "#s##s##s##s##s##sun##s##s##s##s##s#\n#n##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#ri##ri##ri##ri##ri##ri##ri##ri##ri##ri##ri#\n",
+  "pDesert": "#s##n##s##n##sun##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#de##de##de##de##nw##beach##nw##de##de##de##de#\n#o##o##o##o##oe##x##oe##o##o##o##o#\n#o##o##o##o##oe##oe##oe##o##o##o##o#\n",
+  "pDreams": "#nw##nw##nw##treat##nw##nw##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##treat##nw##x##nw##treat##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##nw##nw##treat##nw##nw##nw#\n",
+  "pForest": "#f##f##f##f##f##f##f##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##n##x##n##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##f##f##f##f##f##f##f#\n",
+  "pJungle": "#j##j##j##j##j##j##j##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##n##x##n##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##j##j##j##j##j##j##j#\n",
+  "pMountain": "#n##s##n##s##n##sun##s##s##n##s##n#\n#s##n##s##n##s##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
+  "pOcean": "#oe##o##o##o##o##o##o##o##o##o##oe#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#oe##o##o##o##o##o##o##o##o##o##oe#\n",
+  "pRobots": "#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##x##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n",
+  "pZombie": "#z##z##z##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#bike##n##x##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#z##z##z##z##z##z##z##z##z##z##z#\n",
 
   "_tiles":"",
   "f": ["#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fw#"],
