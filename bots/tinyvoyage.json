@@ -10,7 +10,6 @@
     "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
     "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
     "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
-    "#pattern#", "#pattern#", "#pattern#", "#pattern#", "#pattern#",
     "#patternBonus#"
   ],
 
@@ -37,11 +36,11 @@
   ],
 
   "patternBonus": [
-    "#[x:#_code#]eRobots# \\#robotarmy",
-    "#[x:#_run#]eZombie# \\#plantsvszombies",
-    "#[x:#_teach#]eBurn# \\#capitalism",
-    "#[x:#_climb#]eMountain#",
-    "#[x:#_sleep#][nw:#cloud#]eDreams#"
+    "#[x:#_code#]pRobots# \\#robotarmy",
+    "#[x:#_run#]pZombie# \\#plantsvszombies",
+    "#[x:#_teach#]pBurn#",
+    "#[x:#_climb#]pMountain#",
+    "#[x:#_sleep#][nw:#cloud#]pDreams#"
   ],
 
   "wip": [
@@ -140,7 +139,7 @@
   "j": ["#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#jw#"],
   "o": ["#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#ow#"],
   "r": ["#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#car#", "#car#", "#car#", "#car#", "#car#", "#carRare#"],
-  "ri": ["#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#or"],
+  "ri": ["#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#or#"],
   "ro": "#robot#",
   "s": ["#se#", "#se#", "#se#", "#se#", "#se#",  "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#sw#"],
   "z": ["#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#nw#", "#zombies#"],
