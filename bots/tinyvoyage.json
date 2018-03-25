@@ -21,7 +21,8 @@
     "https://twitter.com/tinyvoyages/status/975115717677785088",
     "https://twitter.com/tinyvoyages/status/975224477461004293",
     "https://twitter.com/tinyvoyages/status/976627550439919616",
-    "https://twitter.com/tinyvoyages/status/977716754301399040"
+    "https://twitter.com/tinyvoyages/status/977716754301399040",
+    "https://twitter.com/tinyvoyages/status/977843551764496384"
   ],
 
   "origin": [
@@ -50,7 +51,7 @@
   "null": "　",
   "nullWide": "#null# ",
   "nullRand": ["#null#", "#nullWide#"],
-  "n": "#nullWide#",
+  "n": "#null#",
   "nr": "#nullRand#",
   "nw": "#nullWide#",
 
