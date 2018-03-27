@@ -26,7 +26,7 @@
   ],
 
   "origin": [
-    "#botDev#"
+    "#botProduction#"
   ],
 
   "pattern": [
@@ -69,7 +69,7 @@
   "_teach": "👩‍🏫",
   "_walk": "🚶‍♀️",
   "beach": "⛱",
-  "bike": ["🚲", "🛴", "🛵", ""],
+  "bike": ["🚲", "🛴", "🛵"],
   "burn": ["#money#", "#money#", "#money#", "#money#", "#money#", "🏦", "💰", "💰", "💰"],
   "burger": "🍔",
   "camping": "🏕",
@@ -86,6 +86,7 @@
   "house": ["🏠", "🏡"],
   "houseRare": ["🏢", "🏤", "🏥", "🏦", "🏨", "🏩", "🏪", "🏫", "🏨", "🏬"],
   "money": ["💵", "💴", "💵", "💶", "💷"],
+  "moon": ["🌕", "🌖", "🌗", "🌘", "🌙"],
   "mountain": ["🏔", "⛰", "🗻"],
   "plant": ["#flower#", "🌱", "🌱"],
   "robot": "🤖",
@@ -117,7 +118,7 @@
   "ss": ["🛸"],
 
   "_env":"",
-  "de": ["🌵", "🌵", "🌵", "#nw#", "#nw#", "#nw#", "#nw#", "#nw#",  "🌴", "#flower#"],
+  "de": ["🌵", "🌵", "#nw#", "#nw#", "#nw#", "🌴"],
   "fe": ["#tree#", "#tree#", "#tree#", "#tree#", "#n#"],
   "fl": ["#fle#", "#fle#", "#n#"],
   "fle": ["#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#flower#", "#insectsCute#"],
@@ -127,10 +128,10 @@
   "_patterns":"",
   "pBurn": "#robot##robot##robot##robot##robot##robot##robot##robot##robot#\n#robot##robot##robot##robot##x##robot##robot##robot##robot#\n#robot##robot##fire##burn##fire##burn##fire##robot##robot#\n#robot##fire##burn##fire##burn##fire##burn##fire##robot#\n#fire##fire##fire##fire##fire##fire##fire##fire##fire#\n",
   "pCity": "#s##s##s##s##s##sun##s##s##s##s##s#\n#n##h##h##h##h##h##h##h##h##h##n#\n#ro##ro##ro##ro##n##x##n##ro##ro##ro##ro#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#ri##ri##ri##ri##ri##ri##ri##ri##ri##ri##ri#\n",
-  "pDesert": "#s##n##s##n##sun##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#de##de##de##de##nw##beach##nw##de##de##de##de#\n#o##o##o##o##oe##x##oe##o##o##o##o#\n#o##o##o##o##oe##oe##oe##o##o##o##o#\n",
+  "pDesert": "#s##nw##s##nw##sun##nw##s##nw##s##nw##s#\n#de##de##de##de##nw##beach##nw##de##de##de##de#\n#o##o##o##o##oe##oe##oe##o##o##o##o#\n#o##o##o##o##oe##x##oe##o##o##o##o#\n#o##o##o##o##oe##oe##oe##o##o##o##o#\n",
   "pDreams": "#nw##nw##nw##treat##nw##nw##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##treat##nw##x##nw##treat##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##nw##nw##treat##nw##nw##nw#\n",
   "pForest": "#l##f##f##f##f##f##f##f##f##f##f#\n#l##l##f##f##n##f##f##f##f##f##f#\n#l##l##l##n##x##n##f##f##f##f##f#\n#l##l##f##f##n##f##f##f##f##f##f#\n#l##f##f##f##f##f##f##f##f##f##f#\n",
-  "pJungle": "#j##j##j##j##j##j##j##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##n##x##n##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##j##j##j##j##j##j##j#\n",
+  "pJungle": "#s##s##s##s##nw##moon##nw##s##s##s##s#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##n##x##n##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##j##j##j##j##j##j##j#\n",
   "pMountain": "#n##s##n##s##n##sun##s##s##n##s##n#\n#s##n##s##n##s##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
   "pOcean": "#sun##nw##s##s##s##s##s##s##s##s##s#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
   "pRobots": "#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##x##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n",
