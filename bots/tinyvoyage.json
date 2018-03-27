@@ -26,26 +26,26 @@
   ],
 
   "origin": [
-    "#botProduction#"
+    "#botDev#"
   ],
 
   "pattern": [
     "#[x:#_swim#][n:#oe#]pOcean#",
     "#[x:#_walk#]pForest#",
     "#[x:#_run#]pJungle#",
-    "#[x:#_bike#]pCity#",
+    "#[x:#_bike#][n:#nw#]pCity#",
     "#[x:#_surf#]pDesert#"
   ],
 
   "patternBonus": [
-    "#[x:#_code#]pRobots# \\#robotarmy",
-    "#[x:#_run#]pZombie# \\#plantsvszombies",
+    "#[x:#_run#]pZombie#",
     "#[x:#_teach#]pBurn#",
-    "#[x:#_climb#]pMountain#",
+    "#[x:#_climb#][n:#nw#]pMountain#",
     "#[x:#_sleep#][nw:#cloud#]pDreams#"
   ],
 
   "wip": [
+    "#[x:#_swim#][n:#oe#]pOcean#"
   ],
 
   "null": "　",
@@ -124,27 +124,27 @@
   "se": ["#nw#", "#nw#", "#nw#", "#cloud#"],
 
   "_patterns":"",
-  "pBurn": "#robot##robot##robot##robot##x##robot##robot##robot##robot#\n#robot##robot##fire##burn##fire##burn##fire##robot##robot#\n#robot##fire##burn##fire##burn##fire##burn##fire##robot#\n",
+  "pBurn": "#robot##robot##robot##robot##robot##robot##robot##robot##robot#\n#robot##robot##robot##robot##x##robot##robot##robot##robot#\n#robot##robot##fire##burn##fire##burn##fire##robot##robot#\n#robot##fire##burn##fire##burn##fire##burn##fire##robot#\n#fire##fire##fire##fire##fire##fire##fire##fire##fire#\n",
   "pCity": "#s##s##s##s##s##sun##s##s##s##s##s#\n#n##h##h##h##h##h##h##h##h##h##n#\n#r##r##r##r##n##x##n##r##r##r##r#\n#treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity##fl##treeCity#\n#ri##ri##ri##ri##ri##ri##ri##ri##ri##ri##ri#\n",
   "pDesert": "#s##n##s##n##sun##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#de##de##de##de##nw##beach##nw##de##de##de##de#\n#o##o##o##o##oe##x##oe##o##o##o##o#\n#o##o##o##o##oe##oe##oe##o##o##o##o#\n",
   "pDreams": "#nw##nw##nw##treat##nw##nw##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##treat##nw##x##nw##treat##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##nw##nw##treat##nw##nw##nw#\n",
   "pForest": "#f##f##f##f##f##f##f##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##n##x##n##f##f##f##f#\n#f##f##f##f##f##n##f##f##f##f##f#\n#f##f##f##f##f##f##f##f##f##f##f#\n",
   "pJungle": "#j##j##j##j##j##j##j##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##n##x##n##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##j##j##j##j##j##j##j#\n",
   "pMountain": "#n##s##n##s##n##sun##s##s##n##s##n#\n#s##n##s##n##s##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
-  "pOcean": "#oe##o##o##o##o##o##o##o##o##o##oe#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#oe##o##o##o##o##o##o##o##o##o##oe#\n",
+  "pOcean": "#sun##nw##s##s##s##s##s##s##s##s##s#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
   "pRobots": "#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##x##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n",
-  "pZombie": "#z##z##z##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#bike##n##x##z##z##z##z##z##z##z##z#\n#z##z##n##z##z##z##z##z##z##z##z#\n#z##z##z##z##z##z##z##z##z##z##z#\n",
+  "pZombie": "#z##z##z##z##z##z##z##z##z##z##z#\n#nw##nw##nw##z##z##z##z##z##z##z##z#\n#bike##nw##x##z##z##z##z##z##z##z##z#\n#nw##nw##nw##z##z##z##z##z##z##z##z#\n#z##z##z##z##z##z##z##z##z##z##z#\n",
 
   "_tiles":"",
-  "f": ["#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fw#"],
+  "f": ["#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fw#"],
   "h": ["#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#house#", "#n#",  "#n#",  "#n#",  "#n#",  "#n#", "#houseRare#"],
-  "j": ["#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#jw#"],
-  "o": ["#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#ow#"],
+  "j": ["#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#je#", "#jw#"],
+  "o": ["#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#ow#"],
   "r": ["#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#n#", "#car#", "#car#", "#car#", "#car#", "#car#", "#carRare#"],
-  "ri": ["#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#or#"],
+  "ri": ["#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oe#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#oc#", "#or#"],
   "ro": "#robot#",
-  "s": ["#se#", "#se#", "#se#", "#se#", "#se#",  "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#sw#"],
-  "z": ["#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#nw#", "#zombies#"],
+  "s": ["#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#se#", "#sw#"],
+  "z": ["#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#plant#", "#zombies#"],
 
   "_weights":"",
   "dw": ["#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dc#", "#dr#", "#dr#", "#dr#", "#dr#", "#dr#", "#ds#"],
