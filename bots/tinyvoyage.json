@@ -132,10 +132,10 @@
   "pDesert": "#s##nw##s##nw##sun##nw##s##nw##s##nw##s#\n#de##de##de##de##nw##beach##nw##de##de##de##de#\n#o##o##o##o##oe##oe##oe##o##o##o##o#\n#o##o##o##o##oe##x##oe##o##o##o##o#\n#o##o##o##o##oe##oe##oe##o##o##o##o#\n",
   "pDreams": "#nw##nw##nw##treat##nw##nw##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##treat##nw##x##nw##treat##nw#\n#nw##nw##treat##nw##treat##nw##nw#\n#nw##nw##nw##treat##nw##nw##nw#\n",
   "pForest": "#l##f##f##f##f##f##f##f##f##f##f#\n#l##l##f##f##n##f##f##f##f##f##f#\n#l##l##l##n##x##n##f##f##f##f##f#\n#l##l##f##f##n##f##f##f##f##f##f#\n#l##f##f##f##f##f##f##f##f##f##f#\n",
-  "pJungle": "#s##s##s##s##nw##moon##nw##s##s##s##s#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##n##x##n##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##j##j##j##j##j##j##j#\n",
+  "pJungle": "#moon##nw##s##s##s##s##s##s##s##s##s#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##n##x##n##j##j##j##j#\n#j##j##j##j##j##n##j##j##j##j##j#\n#j##j##j##j##j##j##j##j##j##j##j#\n",
   "pMountain": "#n##s##n##s##n##sun##s##s##n##s##n#\n#s##n##s##n##s##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
   "pOcean": "#sun##nw##s##s##s##s##s##s##s##s##s#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
-  "pRobots": "#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##x##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n#ro##ro##ro##ro##ro##ro##ro##ro##ro##ro##ro#\n",
+  "pRobots": "#robot##robot##robot##robot##robot##robot##robot##robot##robot##robot##robot#\n#robot##robot##robot##robot##robot##robot##robot##robot##robot##robot##robot#\n#robot##robot##robot##robot##robot##x##robot##robot##robot##robot##robot#\n#robot##robot##robot##robot##robot##robot##robot##robot##robot##robot##robot#\n#robot##robot##robot##robot##robot##robot##robot##robot##robot##robot##robot#\n",
   "pZombie": "#nw##z##z##z##z##z##z##z##z##z##z#\n#nw##nw##nw##z##z##z##z##z##z##z##z#\n#bike##nw##x##z##z##z##z##z##z##z##z#\n#nw##nw##nw##z##z##z##z##z##z##z##z#\n#nw##z##z##z##z##z##z##z##z##z##z#\n",
 
   "_tiles":"",
