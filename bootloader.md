@@ -12,13 +12,13 @@ echo "We are a creative community for nerds, but everyone is welcome. Please rea
 ```
 
 ```md
-## ANNOUNCEMENTS
+# ANNOUNCEMENTS
 
 1. This is a safe space. If you don't feel safe contact an @Operator immediately.
 2. Racism, sexism, and bigotry in general will result in an immediate ban.
 3. Pornographic content is most likely inappropriate (unless it's #original-work).
 
-## LEVELS
+# LEVELS
 
 Gain access to additional channels as you contribute to the community. Use !rank to check your status. Special roles are unlockable via [Patreon](https://patreon.com/destru).
 
@@ -29,7 +29,7 @@ Gain access to additional channels as you contribute to the community. Use !rank
 50. < Replicant >
 99. < Cyberpunk >
 
-## MANIFESTO
+# MANIFESTO
 
 1.  Work is meaning.
 2.  Create something frequently.
