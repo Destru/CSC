@@ -136,7 +136,7 @@
   "pMountain": "#n##s##n##s##n##sun##s##s##n##s##n#\n#s##n##s##n##s##n##s##n##s##n##s#\n#n##s##n##s##n##s##n##s##n##s##n#\n#nw##goat##n##n##n##n##n##n##n##n##n#\n#mountain##x##n##tree##tree##tree##tree##tree##tree##tree##tree#\n",
   "pOcean": "#sun##nw##s##s##s##s##s##s##s##s##s#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##n##x##n##o##o##o##o#\n#o##o##o##o##n##n##n##o##o##o##o#\n#o##o##o##o##o##o##o##o##o##o##o#\n",
   "pRobots": "#robot##robot##robot##robot##robot##robot##robot##robot##robot##robot##robot#\n#robot##robot##robot##robot##robot##robot##robot##robot##robot##robot##robot#\n#robot##robot##robot##robot##robot##x##robot##robot##robot##robot##robot#\n#robot##robot##robot##robot##robot##robot##robot##robot##robot##robot##robot#\n#robot##robot##robot##robot##robot##robot##robot##robot##robot##robot##robot#\n",
-  "pZombie": "#nw##z##z##z##z##z##z##z##z##z##z#\n#nw##nw##nw##z##z##z##z##z##z##z##z#\n#bike##nw##x##z##z##z##z##z##z##z##z#\n#nw##nw##nw##z##z##z##z##z##z##z##z#\n#nw##z##z##z##z##z##z##z##z##z##z#\n",
+  "pZombie": "#z##z##z##z##z##z##z##z##z##z##z#\n#nw##nw##nw##z##z##z##z##z##z##z##z#\n#bike##nw##x##z##z##z##z##z##z##z##z#\n#nw##nw##nw##z##z##z##z##z##z##z##z#\n#z##z##z##z##z##z##z##z##z##z##z#\n",
 
   "_tiles":"",
   "f": ["#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fe#", "#fw#"],
