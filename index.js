@@ -6,7 +6,7 @@ function nudge() {
   var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
   if (posBackgroundX < -666) {
-    posBackgroundX = width - 10;
+    animateHeader = null;
   }
   else {
     posBackgroundX--;
@@ -15,8 +15,8 @@ function nudge() {
   stage.style.backgroundPositionX = posBackgroundX + 'px';
 }
 
-var setTheStage;
-(setTheStage = function() {
+var animateHeader;
+(animateHeader = function() {
   window.setInterval(nudge, 250);
 })();
 

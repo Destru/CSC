@@ -106,8 +106,9 @@ label.tab {
   cursor: pointer;
   display: inline-block;
   font-size: 23px;
+  line-height: 1em;
   text-transform: uppercase;
-  padding-right: 16px;
+  padding-right: 32px;
 }
 
 label.tab:hover {
@@ -167,7 +168,7 @@ ul.roman {
 }
 
 #content {
-  margin-top: -1.6rem;
+  margin-top: -.8rem;
 }
 
 #manifesto ul {
@@ -177,7 +178,7 @@ ul.roman {
 }
 
 #manifesto li {
-  padding-left: 0.8rem;
+  padding-left: 0.8em;
 }
 
 #online, #twitch-link {
@@ -206,7 +207,6 @@ ul.roman {
 #tab-1:checked ~ #tab-1-label,
 #tab-0:checked ~ #tab-0-label {
   color: #ff0;
-  text-decoration: underline;
 }
 
 #tab-2:checked ~ #content #content-2,
