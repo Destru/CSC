@@ -42,17 +42,33 @@ footer a {
   color: #ff0;
 }
 
-h1 {
-  display: none;
+.sticker {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 0 12px;
+  margin-top: 6px;
+  margin-left: -16px;
+  transform: rotate(-1.16deg);
 }
 
-h2, h3, h4, label.tab {
+h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 46px;
+  line-height: 1.25em;
+  position: absolute;
+  top: 7px;
+  text-transform: uppercase;
+  word-spacing: 100vw;
+}
+
+h2, h3, h4 {
   font-family: 'Rajdhani', sans-serif;
   line-height: .8rem;
   font-weight: 700;
 }
 
-h2, h3, h4, label.tab {
+h2, h3, h4 {
   font-size: 23px;
   text-transform: uppercase;
 }
@@ -72,21 +88,25 @@ header {
   background-repeat: no-repeat;
   background-position: 0 25px;
   background-size: 630px;
-  height: 200px;
-  margin-top: -5%;
-  padding-left: 5%;
+  height: 320px;
+  margin-top: -2vw;
 }
 
 .header-flair {
   background-image: url('images/Background.gif');
   background-repeat: repeat;
-  transform: skewY(-1.25deg);
+  transform: rotate(-1.16deg);
+  width: 104vw;
+  position: relative;
+  left: -2vw;
 }
 
 label.tab {
   color: white;
   cursor: pointer;
   display: inline-block;
+  font-size: 23px;
+  text-transform: uppercase;
   padding-right: 16px;
 }
 
@@ -174,8 +194,8 @@ ul.roman {
 }
 
 #probe {
-  line-height: 1px;
-  padding-top: 136px;
+  padding-top: 256px;
+  padding-left: 55vw;
 }
 
 #twitch-link {
@@ -186,6 +206,7 @@ ul.roman {
 #tab-1:checked ~ #tab-1-label,
 #tab-0:checked ~ #tab-0-label {
   color: #ff0;
+  text-decoration: underline;
 }
 
 #tab-2:checked ~ #content #content-2,
@@ -250,7 +271,7 @@ ul.roman {
 
 .call-to-action {
   border-bottom: solid 1px #323232;
-  font-size: 19px;
+  font-size: 21px;
   padding-bottom: 1px;
   position: relative;
 }
@@ -355,6 +376,14 @@ ul.roman {
 
   #wrapper {
     padding: 3.2rem .8rem;
+  }
+
+  #manifesto ul {
+    left: 0;
+  }
+
+  #manifesto li {
+    padding-left: 0;
   }
 }
 
