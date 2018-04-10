@@ -20,37 +20,7 @@ var animateHeader;
   window.setInterval(nudge, 500);
 })();
 
-// highlight Twitch link (if live)
-function checkTwitch(callback) {
-  var xobj = new XMLHttpRequest();
-  xobj.overrideMimeType("application/json");
-  xobj.open('GET', 'https://api.twitch.tv/kraken/streams/notdestru?client_id=kcq01v6zv3ii7b3ruauhxv47n8941d', true);
-  xobj.onreadystatechange = function () {
-    if (xobj.readyState == 4 && xobj.status == "200") {
-      callback(xobj.responseText);
-    }
-  };
-  xobj.send(null);
-}
-
-var setTwitchLink;
-(setTwitchLink = function() {
-  checkTwitch(function(response) {
-    var twitchLink = document.getElementById('twitch-link');
-    var json = JSON.parse(response);
-    if (json.stream === null) {
-      twitchLink.removeAttribute('href');
-      twitchLink.style.display = 'none';
-    }
-    else {
-      twitchLink.setAttribute('href', 'https://twitch.tv/notdestru');
-      twitchLink.style.display = 'inline-block';
-      twitchLink.style.opacity = 1;
-    }
-  });
-})();
-
-// get Discord live users
+// discord live users
 function checkDiscord(callback) {
   var xobj = new XMLHttpRequest();
   xobj.open('GET', 'https://discordapp.com/api/guilds/160320676580818951/widget.json', true);
