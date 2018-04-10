@@ -17,7 +17,7 @@ function nudge() {
 
 var animateHeader;
 (animateHeader = function() {
-  window.setInterval(nudge, 250);
+  window.setInterval(nudge, 500);
 })();
 
 // highlight Twitch link (if live)

@@ -102,16 +102,19 @@ header {
 }
 
 label.tab {
+  border-bottom: solid 1px white;
   color: white;
   cursor: pointer;
   display: inline-block;
   font-size: 23px;
+  margin-right: 16px;
   line-height: 1em;
+  padding-bottom: 1px;
   text-transform: uppercase;
-  padding-right: 32px;
 }
 
 label.tab:hover {
+  border-color: #ff0;
   color: #ff0;
   transition: color .25s linear;
 }
@@ -206,6 +209,7 @@ ul.roman {
 #tab-2:checked ~ #tab-2-label,
 #tab-1:checked ~ #tab-1-label,
 #tab-0:checked ~ #tab-0-label {
+  border-color: #ff0;
   color: #ff0;
 }
 
@@ -270,7 +274,7 @@ ul.roman {
 }
 
 .call-to-action {
-  border-bottom: solid 1px #323232;
+  border-bottom: solid 1px white;
   font-size: 21px;
   padding-bottom: 1px;
   position: relative;
