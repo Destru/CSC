@@ -46,10 +46,9 @@ footer a {
   background-color: black;
   color: white;
   display: inline-block;
-  padding: 0 12px;
+  padding: 0 10px;
   margin-top: 6px;
-  margin-left: -16px;
-  transform: rotate(-1.16deg);
+  margin-left: -12px;
 }
 
 h1 {
@@ -86,19 +85,22 @@ header {
   background-color: transparent;
   background-image: url('images/Logo25.png');
   background-repeat: no-repeat;
-  background-position: 0 25px;
+  background-position: 0 75px;
   background-size: 630px;
-  height: 320px;
-  margin-top: -2vw;
+  height: 331px;
+  margin-top: -5vw;
 }
 
-.header-flair {
+.flair {
   background-image: url('images/Background.gif');
   background-repeat: repeat;
-  transform: rotate(-1.16deg);
   width: 104vw;
   position: relative;
   left: -2vw;
+}
+
+.flair, .sticker {
+  transform: rotate(-1.666deg);
 }
 
 label.tab {
@@ -155,11 +157,6 @@ ul.roman {
   list-style-type: upper-roman;
 }
 
-#binaerpilot a:hover {
-  border-color: #0ff;
-  color: #0ff;
-}
-
 #bitcoin {
   color: #242424;
   white-space: nowrap;
@@ -198,7 +195,7 @@ ul.roman {
 }
 
 #probe {
-  padding-top: 256px;
+  padding-top: 267px;
   padding-left: 55vw;
 }
 
@@ -335,7 +332,7 @@ ul.roman {
 
 @media all and (max-width: 550px) {
   header {
-    background-position: -100px 25px;
+    background-position: -100px 75px;
   }
 
   table {
@@ -362,7 +359,7 @@ ul.roman {
 
 @media all and (max-width: 350px) {
   header {
-    background-position: -200px 25px;
+    background-position: -200px 75px;
   }
 
   td.size {
