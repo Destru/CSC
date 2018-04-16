@@ -195,25 +195,11 @@ ul.roman {
   display: none;
 }
 
-#tab-2:checked ~ #tab-2-label,
-#tab-1:checked ~ #tab-1-label,
-#tab-0:checked ~ #tab-0-label {
-  border-color: #ff0;
-  color: #ff0;
-}
-
-#tab-2:checked ~ #content #content-2,
-#tab-1:checked ~ #content #content-1,
-#tab-0:checked ~ #content #content-0 {
-  display: block;
-  opacity: 1;
-}
-
 #wrapper {
   margin: auto;
   max-width: 800px;
   min-height: 100%;
-  padding: 3.2rem 1.6rem;
+  padding: 1.6rem;
 }
 
 .copyright {
@@ -277,9 +263,6 @@ ul.roman {
   border-color: #0f0;
 }
 
-.patreon-unlock:hover i::before {
-  content: "\f09c";
-}
 
 .content-block {
   margin: 3.2rem 0;
@@ -289,31 +272,6 @@ ul.roman {
   background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   padding: 16px 0 16px 32px;
   position: relative; left: -32px;
-}
-
-.tab-content {
-  display: none;
-}
-
-.tab-content ul {
-  padding-left: 48px;
-}
-
-/* animations */
-.glow {
-  animation: glow 32s infinite linear;
-}
-
-@keyframes glow {
-  0% {
-    background-color:#ff0;
-  }
-  50% {
-    background-color:#fb0;
-  }
-  100% {
-    background-color:#ff0;
-  }
 }
 
 @media all and (max-width: 780px) {
@@ -335,7 +293,7 @@ ul.roman {
     min-width: 100%;
   }
 
-  .tab-content ul {
+  #content ul {
     padding-left: 24px;
   }
 
@@ -343,7 +301,6 @@ ul.roman {
     padding-left: 8px;
   }
 
-  #tab-2-label,
   .discord-commands .description {
     display: none;
   }
@@ -366,13 +323,13 @@ ul.roman {
     padding-left: 0;
   }
 
-  .tab-content ul {
+  #content ul {
     list-style-type: none;
     padding-left: 0;
   }
 
   #wrapper {
-    padding: 3.2rem .8rem;
+    padding: 1.6rem .8rem;
   }
 
   #manifesto ul {
