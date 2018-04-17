@@ -36,10 +36,11 @@ p, ul, h2, h3, h4 {
 footer {
   color: #323232;
   font-size: 13px;
+  padding-bottom: 3.2rem;
 }
 
 footer a {
-  color: #ff0;
+  color: #646464;
 }
 
 .sticker {
@@ -97,28 +98,6 @@ header {
   width: 104vw;
   position: relative;
   left: -2vw;
-}
-
-label.tab {
-  border-bottom: solid 1px white;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 23px;
-  margin-right: 16px;
-  line-height: 1em;
-  padding-bottom: 2px;
-  text-transform: uppercase;
-}
-
-label.tab:hover {
-  border-color: #ff0;
-  color: #ff0;
-  transition: color .25s linear;
-}
-
-label.tab a {
-  color: inherit;
 }
 
 p {
@@ -189,10 +168,6 @@ ul.roman {
 #probe {
   padding-top: 287px;
   padding-left: 55vw;
-}
-
-#twitch-link {
-  display: none;
 }
 
 #wrapper {
@@ -274,6 +249,51 @@ ul.roman {
   position: relative; left: -32px;
 }
 
+.social-links {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: .8rem;
+}
+
+.social-links li a {
+  color: white;
+  display: inline-block;
+  font-size: 23px;
+  line-height: 1rem;
+  text-align: center;
+  padding: .6rem;
+}
+
+.social-links li:hover a {
+  background-color: white;
+  color: black;
+}
+
+li.spotify {
+  background-color: #7bb342;
+}
+
+li.soundcloud {
+  background-color: #fe3801;
+}
+
+li.discord {
+  background-color: #7289da;
+}
+
+li.fb {
+  background-color: #3e5b98;
+}
+
+li.twitter {
+  background-color: #4da7de;
+}
+
 @media all and (max-width: 780px) {
   table {
     min-width: 85%;
@@ -339,14 +359,4 @@ ul.roman {
   #manifesto li {
     padding-left: 0;
   }
-}
-
-/* double click the internets  */
-label.tab {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
