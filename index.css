@@ -87,8 +87,10 @@ h4 {
 
 header {
   background-color: transparent;
-  height: 351px;
-  margin-top: -5vw;
+}
+
+header.pixeltrash {
+  height: 216px;
 }
 
 header.csc {
@@ -96,10 +98,8 @@ header.csc {
   background-repeat: no-repeat;
   background-position: 0 75px;
   background-size: 630px;
-}
-
-header.pixeltrash {
-  margin-bottom: -3.2rem;
+  height: 351px;
+  margin-top: -5vw;
 }
 
 .flair {
@@ -248,7 +248,6 @@ ul.roman {
   border-color: #0f0;
 }
 
-
 .content-block {
   margin: 3.2rem 0;
 }
@@ -261,7 +260,7 @@ ul.roman {
 
 .social-links {
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 3.2rem 0;
   padding-left: 0;
 }
 
@@ -271,38 +270,20 @@ ul.roman {
 }
 
 .social-links li a {
+  border: solid 1px white;
   color: white;
   display: inline-block;
   font-size: 23px;
   line-height: 1rem;
   text-align: center;
-  padding: .6rem;
+  padding: .5rem;
 }
 
-.social-links li:hover a {
+.social-links li a:hover {
   background-color: white;
-  color: black;
+  color: #080808;
 }
 
-li.spotify {
-  background-color: #7bb342;
-}
-
-li.soundcloud {
-  background-color: #fe3801;
-}
-
-li.discord {
-  background-color: #7289da;
-}
-
-li.fb {
-  background-color: #3e5b98;
-}
-
-li.twitter {
-  background-color: #4da7de;
-}
 
 @media all and (max-width: 780px) {
   table {
