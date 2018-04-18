@@ -17,7 +17,7 @@ function nudge() {
 
 var animateHeader;
 (animateHeader = function() {
-  window.setInterval(nudge, 666);
+  // window.setInterval(nudge, 666);
 })();
 
 // discord live users
