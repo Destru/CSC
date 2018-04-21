@@ -38,7 +38,7 @@ var setCurrentYear;
 var setBackground;
 (setBackground = function() {
   var backgrounds = ['18_0312b','18_0313b','18_0314b','18_0315b','18_0316b','18_0317b','18_0318b','18_0319b','18_0323b','18_0325b'];
-  var fewerBackgrounds = ['18_0325b','18_0318b','18_0312b','18_0319b','18_0316b','18_0323b'];
+  var fewerBackgrounds = ['18_0325b','18_0318b','18_0312b','18_0319b'];
   var body = document.getElementsByTagName('body')[0];
   var rand = fewerBackgrounds[Math.floor(Math.random() * fewerBackgrounds.length)];
   body.style.backgroundImage = 'url(images/'+rand+'.jpg)';
