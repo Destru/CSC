@@ -1,25 +1,3 @@
-// animate the banner
-function nudge() {
-  var stage = document.getElementById('the-stage');
-  var style = window.getComputedStyle(stage);
-  var posBackgroundX = parseInt(style.backgroundPositionX);
-  var width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-
-  if (posBackgroundX < -666) {
-    animateHeader = null;
-  }
-  else {
-    posBackgroundX--;
-  }
-
-  stage.style.backgroundPositionX = posBackgroundX + 'px';
-}
-
-var animateHeader;
-(animateHeader = function() {
-  // window.setInterval(nudge, 666);
-})();
-
 // discord live users
 function checkDiscord(callback) {
   var xobj = new XMLHttpRequest();
@@ -44,7 +22,7 @@ var setDiscordCount;
     else {
       $online.innerHTML = 'Online now';
     }
-    $online.style.opacity = 1;
+    if ($online.style.opacity !== 1) $online.style.opacity = 1;
   });
 })();
 

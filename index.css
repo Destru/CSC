@@ -6,7 +6,6 @@ a {
   color: white;
   display: inline-block;
   text-decoration: none;
-  transition: color .25s linear, border .3s linear;
 }
 
 a:hover {
@@ -27,22 +26,18 @@ body {
   color: #888;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
-  line-height: 1.6rem;
+  line-height: 1.5em;
   margin: 0;
 }
 
 p, ul, h2, h3, h4 {
-  margin: 1.6rem 0;
+  margin: 1.5rem 0;
 }
 
 footer {
   color: #323232;
   font-size: 13px;
-  padding-bottom: 3.2rem;
-}
-
-footer a {
-  color: #646464;
+  padding-bottom: 3rem;
 }
 
 .sticker {
@@ -52,6 +47,7 @@ footer a {
   padding: 0 10px;
   margin-top: 6px;
   margin-left: -12px;
+  transform: rotate(-1.666deg);
 }
 
 h1 {
@@ -59,15 +55,18 @@ h1 {
   font-size: 46px;
   font-weight: 400;
   line-height: 1.25em;
-  position: absolute;
-  top: 7px;
   text-transform: uppercase;
   word-spacing: 100vw;
 }
 
+h2 a {
+  border-bottom: solid 1px white;
+  line-height: 1.1em;
+}
+
 h2, h3, h4 {
   font-family: 'Rajdhani', sans-serif;
-  line-height: .8rem;
+  line-height: .5rem;
   font-weight: 400;
 }
 
@@ -82,60 +81,15 @@ h3 {
 
 h4 {
   font-size: 17px;
-  margin-bottom: .8rem;
-}
-
-header {
-  background-color: transparent;
-}
-
-header.pixeltrash {
-  height: 216px;
-}
-
-header.csc {
-  background-image: url('images/Logo25.png');
-  background-repeat: no-repeat;
-  background-position: 0 75px;
-  background-size: 630px;
-  height: 351px;
-  margin-top: -5vw;
-}
-
-.flair {
-  background-image: url('images/Background.gif');
-  background-repeat: repeat;
-  width: 104vw;
-  position: relative;
-  left: -2vw;
+  margin-bottom: .5rem;
 }
 
 p {
-  max-width: 640px;
-}
-
-p a {
-  display: inline;
-}
-
-q {
-  quotes: "“" "”" "‘" "’";
-}
-
-q:before {
-  content: open-quote;
-}
-
-q:after {
-  content: close-quote;
-}
-
-section {
-  margin-bottom: 3.2rem;
+  max-width: 666px;
 }
 
 table {
-  min-width: 70%;
+  min-width: 66%;
 }
 
 ul.roman {
@@ -162,10 +116,6 @@ ul.roman {
   padding-left: 0.8em;
 }
 
-#online, #twitch-link {
-  transition: opacity 1s ease-in;
-}
-
 #online {
   color: #ff0;
   display: block;
@@ -175,16 +125,11 @@ ul.roman {
   text-transform: uppercase;
 }
 
-#probe {
-  padding-top: 287px;
-  padding-left: 55vw;
-}
-
 #wrapper {
   margin: auto;
-  max-width: 800px;
+  max-width: 747px;
   min-height: 100%;
-  padding: 1.6rem;
+  padding: 1.5rem;
 }
 
 .copyright {
@@ -193,63 +138,67 @@ ul.roman {
   -moz-transform: scaleX(-1);
 }
 
-.flair, .sticker {
-  transform: rotate(-1.666deg);
-}
-
-.discord-commands {
+.torrents {
   font-size: 13px;
-  margin: 2.4rem 0 1.6rem 0;
+  margin: 2.4rem 0 1.5rem 0;
 }
 
-.discord-commands h4 i {
+footer a, .torrents a {
+  border-bottom: solid 1px white;
+  line-height: .95rem;
+}
+
+.torrents h4 i {
   font-size: 13px;
   margin-left: 4px;
   position: relative;
   top: -3px;
 }
 
-.discord-commands table {
+.torrents table {
   border-top: solid 2px #242424;
   border-collapse: collapse;
 }
 
-.discord-commands td {
+.torrents td {
   border-top: solid 1px #161616;
   padding: 4px 32px 4px 0;
 }
 
-.discord-commands th {
+.torrents th {
   border-bottom: solid 2px #161616;
   font-size: 13px;
   text-align: left;
 }
 
-.discord-commands .command {
+.torrents .command {
   font-weight: 700;
 }
 
-.discord-commands .size {
+.torrents .size {
   opacity: .5;
 }
 
-.hidden {
-  display: none;
-}
-
 .call-to-action {
+  display: inline-block;
+  font-size: 17px;
   border-bottom: solid 1px white;
-  font-size: 21px;
   padding-bottom: 1px;
-  position: relative;
 }
 
-.call-to-action:hover {
+footer a:hover, .torrents a:hover, h2 a:hover, .call-to-action:hover {
+  background-color: #0f0;
   border-color: #0f0;
+  outline: solid 3px #0f0;
+  color: black;
+}
+
+.highlight .call-to-action {
+  font-size: 21px;
 }
 
 .content-block {
-  margin: 3.2rem 0;
+  margin: 3rem 0;
 }
 
 .content-block.highlight {
@@ -258,48 +207,43 @@ ul.roman {
   position: relative; left: -32px;
 }
 
-.social-links {
+.social {
   list-style-type: none;
-  margin: 0 0 3.2rem 0;
+  margin: 0 0 1.5rem 0;
   padding-left: 0;
 }
 
-.social-links li {
+.social li {
   display: inline-block;
-  margin-right: .8rem;
+  margin-right: .5rem;
 }
 
-.social-links li a {
+.social li a {
   border: solid 1px white;
   color: white;
   display: inline-block;
-  font-size: 23px;
+  font-size: 21px;
   line-height: 1rem;
   text-align: center;
   padding: .5rem;
 }
 
-.social-links li a:hover {
+.social li a:hover {
   background-color: white;
   color: #080808;
 }
-
 
 @media all and (max-width: 780px) {
   table {
     min-width: 85%;
   }
 
-  .discord-commands td {
+  .torrents td {
     padding-right: 24px;
   }
 }
 
 @media all and (max-width: 550px) {
-  header {
-    background-position: -100px 75px;
-  }
-
   table {
     min-width: 100%;
   }
@@ -312,20 +256,16 @@ ul.roman {
     padding-left: 8px;
   }
 
-  .discord-commands .description {
+  .torrents .description {
     display: none;
   }
 
-  .discord-commands td {
+  .torrents td {
     padding-right: 16px;
   }
 }
 
 @media all and (max-width: 350px) {
-  header {
-    background-position: -200px 75px;
-  }
-
   td.size {
     display: none;
   }
@@ -340,7 +280,7 @@ ul.roman {
   }
 
   #wrapper {
-    padding: 1.6rem .8rem;
+    padding: 1.5rem .5rem;
   }
 
   #manifesto ul {
