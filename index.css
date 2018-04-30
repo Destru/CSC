@@ -14,19 +14,17 @@ a:hover {
 }
 
 html, body {
+  margin: 0;
   min-height: 100%;
   overflow-x: hidden;
 }
 
 body {
   background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
   color: rgba(255,255,255, .666);
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
   line-height: 1.6em;
-  margin: 0;
 }
 
 p, ul, h2, h3, h4 {
@@ -94,6 +92,20 @@ table {
 
 ul.roman {
   list-style-type: upper-roman;
+}
+
+li:hover #binaerpilot-avatar {
+  filter: invert(1);
+}
+
+#app {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  min-width: 100vw;
+  opacity: 0;
+  transition: opacity 1.25s ease-in-out;
 }
 
 #bitcoin {
@@ -212,24 +224,24 @@ footer a:hover, .torrents a:hover, h2 a:hover, .call-to-action:hover {
   position: relative; left: -32px;
 }
 
-.social {
+.icons {
   list-style-type: none;
   margin: 0 0 1rem 0;
   padding-left: 0;
 }
 
-.social li {
+.icons li {
   display: inline-block;
   margin-right: 1rem;
 }
 
-.social li a {
+.icons li a {
   color: white;
   display: inline-block;
   font-size: 21px;
 }
 
-.social li a:hover {
+.icons li a:hover {
   background-color: #0f0;
   color: black;
   line-height: 1em;
