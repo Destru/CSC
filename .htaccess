@@ -51,3 +51,10 @@ ErrorDocument 504 /error.html
   BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
   Header append Vary User-Agent
 </IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^cyberpunksocialclub\.com$ [OR]
+  RewriteCond %{HTTP_HOST} ^www\.cyberpunksocialclub\.com$
+  RewriteRule (.*)$ https://cyberpunksocial.club/$1 [R=301,L]
+</IfModule>
