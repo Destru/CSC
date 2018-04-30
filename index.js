@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const app = document.getElementById("app");
   const background = new Image();
 
-  background.src = '/images/'+rand+'.jpg';
-  app.style.backgroundImage = 'url(/images/'+rand+'.jpg)';
+  background.src = 'images/'+rand+'.jpg';
+  app.style.backgroundImage = 'url(images/'+rand+'.jpg)';
 
   background.onload = function() {
     app.style.opacity = "1";
