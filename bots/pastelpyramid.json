@@ -45,6 +45,8 @@
     "#svgShapesRandom#",
     "#svgShapesRandom##svgShapesRandom#",
     "#svgShapesRandom##svgShapesRandom#"
+    "#svgShapesRandom##svgShapesRandom##svgShapesRandom#",
+    "#svgShapesRandom##svgShapesRandom##svgShapesRandom##svgShapesRandom#",
   ],
   "svgShapesRandom": [
     "<polygon points=\"#number2##numberNotZero##numberNotZero#, #number5##numberNotZero##numberNotZero# #number2##numberNotZero##numberNotZero#,#number5##numberNotZero##numberNotZero# #number2##numberNotZero##numberNotZero#,#number5##numberNotZero##numberNotZero#\" fill=\"\\##hexCode#\" />",
