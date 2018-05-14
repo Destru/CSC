@@ -36,24 +36,15 @@
   "number5": ["0", "1", "2", "3", "4", "5"],
   "numberLow": ["0", "1", "2"],
 
-  "svg": "{svg <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" height=\"300\" width=\"600\">#svgBackground##svgShapes#<text fill=\"white\" x=\"50%\" y=\"50%\" font-family=\"sans-serif\" font-size=\"#textSize#\" font-weight=\"666\" letter-spacing=\"-.03em\" alignment-baseline=\"central\" text-anchor=\"middle\">#text#</text></svg>} #text#",
+  "svg": "{svg <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" height=\"300\" width=\"560\">#svgBackground##svgShapes#<text fill=\"white\" x=\"50%\" y=\"50%\" font-family=\"sans-serif\" font-size=\"#textSize#\" font-weight=\"300\" letter-spacing=\"-1rem\" alignment-baseline=\"central\" text-anchor=\"middle\">#text#</text></svg>} #text#",
   "svgBackground": [
-    "<rect x=\"0\" y=\"0\" height=\"300\" width=\"560\" style=\"fill:\\##color#\" />",
-    "<rect x=\"0\" y=\"0\" height=\"300\" width=\"560\" style=\"fill:\\##color#\" />",
-    "<rect x=\"0\" y=\"0\" height=\"150\" width=\"560\" style=\"fill:\\##color#\" /><rect x=\"0\" y=\"150\" height=\"150\" width=\"560\" style=\"fill:\\##hexCode#\" />",
-    "<rect x=\"0\" y=\"0\" height=\"300\" width=\"280\" style=\"fill:\\##color#\" /><rect x=\"280\" y=\"0\" height=\"300\" width=\"280\" style=\"fill:\\##hexCode#\" />"
+    "<rect x=\"0\" y=\"0\" height=\"300\" width=\"560\" style=\"fill:\\##color#\" />"
   ],
   "svgShapes": [
-    "", "", "", "", "",
-    "<polygon points=\"300,20 120,280 480,280\" fill=\"\\##hexCode#\" />",
-    "<polygon points=\"300,20 120,280 480,280\" fill=\"\\##hexCode#\" />#svgShapesRandom#",
-    "<polygon points=\"300,280 120,20 480,20\" fill=\"\\##hexCode#\" />",
-    "<polygon points=\"300,280 120,20 480,20\" fill=\"\\##hexCode#\" />#svgShapesRandom#",
-    "#svgShapesRandom#",
-    "#svgShapesRandom#",
-    "#svgShapesRandom##svgShapesRandom#",
-    "#svgShapesRandom##svgShapesRandom##svgShapesRandom#",
-    "#svgShapesRandom##svgShapesRandom##svgShapesRandom##svgShapesRandom#"
+    "", "", "",
+    "<polygon points=\"0,0 300,280 0,560\" fill=\"\\##hexCode#\" />",
+    "<polygon points=\"300,0 0,280 300,560\" fill=\"\\##hexCode#\" />",
+    "#svgShapesRandom#"
   ],
   "svgShapesRandom": [
     "<polygon points=\"#number2##numberNotZero##numberNotZero#, #number5##numberNotZero##numberNotZero# #number2##numberNotZero##numberNotZero#,#number5##numberNotZero##numberNotZero# #number2##numberNotZero##numberNotZero#,#number5##numberNotZero##numberNotZero#\" fill=\"\\##hexCode#\" />",
