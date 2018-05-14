@@ -18,8 +18,8 @@
   "hex": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"],
   "hexCode": "#[hexLightPair:#hexLight##number#]hexPattern#",
   "hexColor": "f#hexHigh#",
-  "hexHigh": ["9", "a", "b", "c", "d", "e"],
-  "hexLight": ["a", "b", "c", "d", "e", "f"],
+  "hexHigh": ["9", "a", "b", "c", "d", "e", "f"],
+  "hexLight": ["a", "b", "c", "d", "e"],
   "hexPattern": [
     "#hexColor##hexLightPair##hexLightPair#",
     "#hexLightPair##hexColor##hexLightPair#",
@@ -34,22 +34,23 @@
   "number2": ["0", "1", "2"],
   "number5": ["0", "1", "2", "3", "4", "5"],
   "numberLow": ["0", "1", "2"],
+  "numberVeryLow": ["0", "0", "0", "0", "0", "1"],
 
-  "svg": "{svg <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" height=\"300\" width=\"560\">#svgBackground##svgShapes#<text fill=\"white\" x=\"50%\" y=\"50%\" font-family=\"sans-serif\" font-size=\"#textSize#\" font-weight=\"666\" letter-spacing=\"-.666rem\" alignment-baseline=\"central\" text-anchor=\"middle\">#text#</text></svg>}",
+  "svg": "{svg <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" height=\"300\" width=\"560\">#svgBackground##svgShapes#<text fill=\"white\" x=\"50%\" y=\"50%\" font-family=\"sans-serif\" font-size=\"#textSize#\" font-weight=\"900\" letter-spacing=\"-#numberVeryLow#.#number##number#rem\" alignment-baseline=\"central\" text-anchor=\"middle\">#text#</text></svg>}",
   "svgBackground": [
     "<rect x=\"0\" y=\"0\" height=\"300\" width=\"560\" style=\"fill:\\##color#\" />"
   ],
   "svgShapes": [
     "", "", "",
-    "<polygon points=\"60,290 280,10 500,290\" fill=\"\\##hexCode#\" />",
-    "<polygon points=\"60,10 280,290 500,10\" fill=\"\\##hexCode#\" />",
+    "<polygon points=\"60,280 280,20 500,280\" fill=\"\\##hexCode#\" />",
+    "<polygon points=\"60,20 280,280 500,20\" fill=\"\\##hexCode#\" />",
     "#svgShapesRandom#"
   ],
   "svgShapesRandom": [
     "<polygon points=\"#number2##numberNotZero##numberNotZero#, #number5##numberNotZero##numberNotZero# #number2##numberNotZero##numberNotZero#,#number5##numberNotZero##numberNotZero# #number2##numberNotZero##numberNotZero#,#number5##numberNotZero##numberNotZero#\" fill=\"\\##hexCode#\" />",
     "<circle cx=\"#number2##number##numberNotZero#\" cy=\"#number5##numberNotZero##numberNotZero#\" r=\"#numberLow##numberNotZero#%\" fill=\"\\##hexCode#\" />"
   ],
-  "emoji": [ "☐", "☗", "☖", "☰", "☲", "☳", "♈", "♉", "♎", "♒", "♜", "♝", "♟", "♦", "⚫", "⚬",  "⚪", "⚈", "⚉", "⚊", "⚋", "⚌", "⚍", "⚎", "⚏", "▼", "▬", "▮", "●", "▲", "▰"],
+  "emoji": ["☗", "☖", "☰", "☲", "☳", "♈", "♉", "♎", "♒", "♜", "♝", "♟", "♦", "⚫", "⚬",  "⚪", "⚈", "⚉", "⚊", "⚋", "⚌", "⚍", "⚎", "⚏", "▼", "▬", "▮", "●", "▲", "▰"],
   "words": [
     "𝐒𝐀𝐓𝐀𝐍", "𝟔𝟔𝟔", "𝟗𝟗𝟗", "𝐒𝐄𝐕𝐄𝐍", "𝐒𝐍𝐀𝐊𝐄", "𝐁𝐀𝐀𝐋", "𝐋𝐔𝐂𝐈𝐅𝐄𝐑", "𝐆𝐇𝐎𝐔𝐋", "𝐙𝐎𝐌𝐁𝐈𝐄", "𝐂𝐇𝐑𝐈𝐒𝐓", "𝐏𝐑𝐈𝐄𝐒𝐓", "𝐏𝐀𝐒𝐓𝐎𝐑", "𝐁𝐈𝐒𝐇𝐎𝐏", "𝐑𝐈𝐓𝐔𝐀𝐋", "𝐎𝐌𝐄𝐍", "𝐏𝐋𝐀𝐆𝐔𝐄", "𝐖𝐑𝐄𝐀𝐊", "𝐑𝐄𝐄𝐊", "𝐖𝐄𝐀𝐊", "𝐖𝐄𝐀𝐊", "𝐖𝐎𝐔𝐍𝐃", "𝐖𝐎𝐔𝐍𝐃𝐄𝐃", "𝐇𝐔𝐑𝐓", "𝐒𝐀𝐃𝐈𝐒𝐓", "𝐒𝐀𝐋𝐄𝐌", "𝐂𝐑𝐔𝐂𝐈𝐅𝐘", "𝐂𝐑𝐎𝐒𝐒", "𝐀𝐍𝐆𝐄𝐋", "𝐏𝐑𝐎𝐏𝐇𝐄𝐓", "𝐏𝐘𝐑𝐀𝐌𝐈𝐃", "𝐀𝐍𝐊𝐇", "𝐓𝐎𝐊𝐄𝐍", "𝐓𝐎𝐓𝐄𝐌", "𝐑𝐎𝐓", "𝐃𝐄𝐀𝐃", "𝐃𝐄𝐀𝐓𝐇", "𝐔𝐍𝐃𝐄𝐀𝐃", "𝐑𝐈𝐒𝐄𝐍", "𝐁𝐋𝐎𝐎𝐃𝐘", "𝐌𝐔𝐂𝐔𝐒", "𝐅𝐋𝐎𝐎𝐃", "𝐂𝐋𝐄𝐀𝐍𝐒𝐄", "𝐏𝐔𝐑𝐆𝐄", "𝐑𝐀𝐏𝐓𝐔𝐑𝐄", "𝐑𝐄𝐈𝐆𝐍", "𝐇𝐎𝐑𝐍", "𝐏𝐀𝐆𝐀𝐍", "𝐑𝐈𝐓𝐄", "𝐄𝐓𝐂𝐇𝐄𝐃", "𝐂𝐀𝐑𝐕𝐄𝐃", "𝐎𝐏𝐄𝐍𝐄𝐃", "𝐃𝐎𝐎𝐑𝐖𝐀𝐘", "𝐆𝐀𝐓𝐄𝐖𝐀𝐘", "𝐏𝐎𝐑𝐓𝐀𝐋", "𝐃𝐎𝐎𝐑", "𝐆𝐀𝐓𝐄", "𝐁𝐔𝐑𝐍𝐄𝐃", "𝐁𝐑𝐎𝐊𝐄𝐍", "𝐄𝐌𝐏𝐓𝐘", "𝐀𝐋𝐎𝐍𝐄", "𝐒𝐎𝐋𝐈𝐓𝐔𝐃𝐄", "𝐕𝐎𝐈𝐃", "𝐃𝐈𝐑𝐆𝐄", "𝐃𝐎𝐎𝐌", "𝐅𝐄𝐍𝐑𝐈𝐒", "𝐇𝐄𝐋", "𝐔𝐋𝐕", "𝐔𝐋𝐕𝐄𝐑", "𝐆𝐎𝐁𝐋𝐈𝐍", "𝐆𝐇𝐎𝐔𝐋", "𝐆𝐇𝐎𝐒𝐓", "𝐒𝐏𝐈𝐑𝐈𝐓", "𝐖𝐎𝐋𝐅", "𝐖𝐎𝐋𝐕𝐄𝐒", "𝐇𝐎𝐒𝐓", "𝐏𝐀𝐑𝐀𝐒𝐈𝐓𝐄", "𝐕𝐈𝐑𝐔𝐒", "𝐔𝐍𝐋𝐈𝐅𝐄", "𝐇𝐀𝐓𝐄", "𝐄𝐑𝐀𝐒𝐄", "𝐃𝐄𝐕𝐈𝐋𝐒", "𝐃𝐄𝐌𝐎𝐍𝐒", "𝐄𝐕𝐈𝐋", "𝐆𝐎𝐃", "𝐉𝐄𝐒𝐔𝐒", "𝐏𝐑𝐎𝐏𝐇𝐄𝐓", "𝐒𝐄𝐄𝐑", "𝐕𝐈𝐒𝐈𝐎𝐍", "𝐄𝐍𝐓𝐑𝐀𝐍𝐂𝐄", "𝐅𝐋𝐄𝐒𝐇", "𝐒𝐈𝐍", "𝐕𝐈𝐂𝐄", "𝐆𝐑𝐄𝐄𝐃", "𝐆𝐋𝐔𝐓𝐓𝐎𝐍𝐘", "𝐋𝐔𝐒𝐓", "𝐇𝐔𝐍𝐆𝐄𝐑", "𝐄𝐍𝐕𝐘", "𝐃𝐄𝐒𝐈𝐑𝐄", "𝐏𝐑𝐈𝐌𝐀𝐋", "𝐒𝐔𝐅𝐅𝐄𝐑", "𝐃𝐄𝐌𝐎𝐍", "𝐑𝐎𝐓𝐓𝐄𝐍", "𝐁𝐋𝐎𝐎𝐃", "𝐁𝐈𝐋𝐄", "𝐀𝐁𝐘𝐒𝐒", "𝐕𝐎𝐈𝐃", "𝐃𝐄𝐀𝐓𝐇", "𝐁𝐋𝐄𝐀𝐊", "𝐏𝐀𝐈𝐍", "𝐀𝐍𝐆𝐒𝐓", "𝐅𝐄𝐀𝐑", "𝐂𝐑𝐔𝐄𝐋", "𝐓𝐄𝐑𝐑𝐎𝐑", "𝐇𝐎𝐑𝐑𝐎𝐑", "𝐇𝐀𝐕𝐎𝐂", "𝐕𝐕𝐈𝐓𝐂𝐇", "𝐇𝐎𝐑𝐑𝐈𝐃", "𝐖𝐈𝐓𝐂𝐇", "𝐕𝐔𝐋𝐆𝐀𝐑", "𝐈𝐌𝐏𝐔𝐑𝐄", "𝐃𝐑𝐄𝐀𝐃", "𝐃𝐈𝐑𝐄", "𝐌𝐎𝐍𝐒𝐓𝐄𝐑", "𝐁𝐄𝐀𝐒𝐓", "𝐎𝐃𝐈𝐎𝐔𝐒", "𝐅𝐄𝐓𝐈𝐃", "𝐏𝐔𝐓𝐑𝐈𝐃", "𝐓𝐎𝐗𝐈𝐂", "𝐋𝐄𝐓𝐇𝐀𝐋", "𝐏𝐎𝐈𝐒𝐎𝐍", "𝐒𝐄𝐑𝐏𝐄𝐍𝐓", "𝐕𝐄𝐍𝐎𝐌", "𝐀𝐋𝐓𝐀𝐑", "𝐑𝐈𝐓𝐔𝐀𝐋", "𝐑𝐈𝐓𝐄", "𝐒𝐇𝐑𝐈𝐍𝐄𝐒", "𝐓𝐎𝐌𝐁𝐒", "𝐆𝐑𝐀𝐕𝐄𝐒", "𝐓𝐄𝐌𝐏𝐋𝐄", "𝐂𝐇𝐔𝐑𝐂𝐇", "𝐂𝐇𝐀𝐏𝐄𝐋", "𝐏𝐀𝐍𝐈𝐂", "𝐇𝐀𝐓𝐑𝐄𝐃", "𝐒𝐎𝐑𝐑𝐘", "𝐅𝐎𝐑𝐆𝐈𝐕𝐄", "𝐑𝐄𝐃𝐄𝐄𝐌", "𝐒𝐇𝐈𝐓", "𝐏𝐈𝐒𝐒", "𝐕𝐎𝐌𝐈𝐓", "𝐅𝐄𝐂𝐄𝐒", "𝐂𝐑𝐘𝐏𝐓", "𝐒𝐇𝐑𝐈𝐍𝐄", "𝐄𝐍𝐓𝐑𝐎𝐏𝐘"
   ]
