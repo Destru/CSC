@@ -515,7 +515,7 @@
             callback(xobj.responseText);
           }
         };
-        xobj.send(null);
+        xobj.send();
       }
 
       document.addEventListener("DOMContentLoaded", function() {
@@ -533,19 +533,19 @@
           app.style.opacity = "1";
           copyleft.innerHTML = "2016—" + currentYear + ".";
         };
-      });
 
-      if (window.location.hostname !== "localhost") {
         checkDiscord(function(response) {
           const online = document.getElementById("online");
           const onlineCount = document.getElementById("discord-count");
           const json = JSON.parse(response);
-          if (json.members.length > 0) {
-            onlineCount.innerHTML = json.members.length;
+          if (json.presence_count > 0) {
+            onlineCount.innerHTML = json.presence_count;
             online.style.opacity = 1;
           }
         });
+      });
 
+      if (window.location.hostname !== "localhost") {
         (function(i, s, o, g, r, a, m) {
           i["GoogleAnalyticsObject"] = r;
           (i[r] =
