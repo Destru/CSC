@@ -104,19 +104,11 @@
       }
 
       p {
-        max-width: 666px;
-      }
-
-      table {
-        min-width: 66%;
+        max-width: 480px;
       }
 
       ul.roman {
         list-style-type: upper-roman;
-      }
-
-      li:hover #binaerpilot-avatar {
-        filter: invert(1);
       }
 
       #app {
@@ -124,7 +116,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         opacity: 0;
-        transition: opacity 1.25s ease-out;
+        transition: opacity .5s ease-out;
       }
 
       #bitcoin {
@@ -159,7 +151,7 @@
 
       #wrapper {
         margin: auto;
-        max-width: 747px;
+        max-width: 666px;
         min-height: 100%;
         padding: 1.5rem;
       }
@@ -170,52 +162,16 @@
         -moz-transform: scaleX(-1);
       }
 
-      .torrents {
-        font-size: 13px;
-        margin: 2.4rem 0 1.5rem 0;
-      }
-
-      footer a,
-      .torrents a {
+      footer a {
         border-bottom: solid 1px white;
         line-height: 0.95rem;
       }
 
-      .torrents h4 i {
-        font-size: 13px;
-        margin-left: 4px;
-        position: relative;
-        top: -3px;
-      }
-
-      .torrents table {
-        border-top: solid 2px rgba(255, 255, 255, 0.25);
-        border-collapse: collapse;
-      }
-
-      .torrents td {
-        border-top: solid 1px rgba(255, 255, 255, 0.15);
-        padding: 4px 32px 4px 0;
-      }
-
-      .torrents th {
-        border-bottom: solid 2px rgba(255, 255, 255, 0.15);
-        font-size: 13px;
-        text-align: left;
-      }
-
-      .torrents .command {
-        font-weight: 700;
-      }
-
-      .torrents .size {
-        opacity: 0.5;
-      }
-
       .call-to-action {
+        color: #0f0;
         display: inline-block;
         font-size: 17px;
-        border-bottom: solid 1px white;
+        border-bottom: solid 1px transparent;
         padding-bottom: 1px;
       }
 
@@ -225,7 +181,6 @@
       }
 
       footer a:hover,
-      .torrents a:hover,
       h2 a:hover,
       .call-to-action:hover {
         background-color: #0f0;
@@ -253,76 +208,13 @@
         left: -32px;
       }
 
-      .icons {
-        list-style-type: none;
-        margin: 0 0 1rem 0;
-        padding-left: 0;
-      }
-
-      .icons li {
-        display: inline-block;
-        margin-right: 1rem;
-      }
-
-      .icons li a {
-        color: white;
-        display: inline-block;
-        font-size: 21px;
-      }
-
-      .icons li a:hover {
-        background-color: #0f0;
-        color: black;
-        line-height: 1em;
-        outline: solid 4px #0f0;
-      }
-
-      @media all and (max-width: 780px) {
-        table {
-          min-width: 85%;
-        }
-
-        .torrents td {
-          padding-right: 24px;
-        }
-      }
-
       @media all and (max-width: 550px) {
-        table {
-          min-width: 100%;
-        }
-
-        #content ul {
-          padding-left: 24px;
-        }
-
         ul.roman li {
           padding-left: 8px;
-        }
-
-        .torrents .description {
-          display: none;
-        }
-
-        .torrents td {
-          padding-right: 16px;
         }
       }
 
       @media all and (max-width: 350px) {
-        td.size {
-          display: none;
-        }
-
-        ul.roman li {
-          padding-left: 0;
-        }
-
-        #content ul {
-          list-style-type: none;
-          padding-left: 0;
-        }
-
         #wrapper {
           padding: 1.5rem 0.5rem;
         }
@@ -359,6 +251,21 @@
             <span class="sticker">Club</span>
           </h1>
 
+          <div id="discord" class="content-block highlight">
+            <p>
+              <a class="call-to-action" href="https://discord.gg/yYjap5d">
+                Join us on our Discord server
+              </a>
+              <span id="online"><span id="discord-count"></span> Punks Online</span>
+            </p>
+
+            <p>
+              A leftist creative collective open to all lifeforms, especially silicon-based.
+              We are community, and you are welcome.
+            </p>
+          </div>
+
+
           <div id="manifesto" class="content-block">
             <h2>Manifesto</h2>
             <ul class="roman">
@@ -375,125 +282,11 @@
             </ul>
           </div>
 
-          <div id="discord" class="content-block highlight">
-            <p>
-              <a class="call-to-action" href="https://discord.gg/yYjap5d">
-                Join us on our Discord server
-              </a>
-              <span id="online"
-                ><span id="discord-count"></span> Punks Online</span
-              >
-            </p>
-
-            <p>
-              We are open to all lifeforms, especially silicon-based.
-              Collaborative work happens, but this is a place to recreate and
-              recharge. It <i>is</i> an outlet for you to share your work, and
-              as the collective shares ideas the sum of our creative output
-              grows. <b>We are community.</b> You are welcome.
-            </p>
-          </div>
-
-          <div id="binaerpilot" class="content-block">
-            <h2>
-              <a href="https://binaerpilot.bandcamp.com" title="Binärpilot"
-                >Binaerpilot</a
-              >
-            </h2>
-            <p>
-              Free electronic music for robots that like to dance.
-              <i>Or</i> the pursuit of complex but elegant ideas in simple and
-              crude systems. <i>Or</i> a love letter to the freedom found in
-              restrictions. To destroy the popollution, and to create something
-              unique. Something out of this world.
-            </p>
-
-            <div class="torrents">
-              <h4>Torrents</h4>
-              <table>
-                <tr>
-                  <td class="command">!Backstage</td>
-                  <td class="patreon-unlock">
-                    <a href="https://www.patreon.com/bePatron?c=833922">
-                      Unlock
-                    </a>
-                  </td>
-                  <td class="description">Binaerpilot Rarities</td>
-                  <td class="size">470MB+</td>
-                </tr>
-                <tr>
-                  <td class="command">!Binaerpilot</td>
-                  <td class="public">
-                    Public
-                  </td>
-                  <td class="description">Complete Binaerpilot Discography</td>
-                  <td class="size">440MB+</td>
-                </tr>
-                <tr>
-                  <td class="command">!FLAC</td>
-                  <td class="patreon-unlock">
-                    <a href="https://www.patreon.com/bePatron?c=833922">
-                      Unlock
-                    </a>
-                  </td>
-                  <td class="description">
-                    High-Definition Binaerpilot Releases
-                  </td>
-                  <td class="size">650MB+</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </article>
-
-        <aside>
-          <ul class="icons">
-            <li>
-              <a href="https://twitter.com/notdestru" title="Destru on Twitter"
-                ><span class="socicon socicon-twitter"></span
-              ></a>
-            </li>
-            <li>
-              <a href="https://patreon.com/destru" title="Destru on Patreon"
-                ><span class="socicon-patreon"></span
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://soundcloud.com/binaerpilot"
-                title="Binaerpilot on SoundCloud"
-                ><span class="socicon socicon-soundcloud"></span
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://open.spotify.com/artist/7h7YbSISHutpSg3XJt831S?si=EpTpEybjQaGMP7djGocOVA0"
-                title="Binaerpilot on Spotify"
-                ><span class="socicon socicon-spotify"></span
-              ></a>
-            </li>
-            <li>
-              <a href="https://notdestru.tumblr.com/" title="Destru on Tumblr"
-                ><span class="socicon-tumblr"></span
-              ></a>
-            </li>
-          </ul>
-        </aside>
-
         <footer>
           <div>
             <span id="copyright-symbol">&copy;</span>
-            Cyberpunk Social Club, <span id="copyleft-years"></span>
-          </div>
-
-          <div>
-            Binaerpilot is
-            <a
-              href="https://creativecommons.org/licenses/by-nc-nd/2.0/"
-              title="Creative commons license information"
-              >CC BY-NC-ND</a
-            >. Fractals by
-            <a href="https://p1x3ltr4sh.deviantart.com">P1X3LTR4SH</a>.
+            Cyberpunk Social Club, <span id="copyleft-years"></span>.<br/>
+            Fractals by <a href="https://p1x3ltr4sh.deviantart.com">P1X3LTR4SH</a>.
           </div>
 
           <div id="bitcoin">
@@ -531,7 +324,7 @@
         background.src = "images/" + rand + ".jpg";
         background.onload = function() {
           app.style.opacity = "1";
-          copyleft.innerHTML = "2016—" + currentYear + ".";
+          copyleft.innerHTML = "2016—" + currentYear;
         };
 
         checkDiscord(function(response) {
