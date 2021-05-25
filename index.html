@@ -29,6 +29,8 @@
     <meta property="og:image" content="https://cyberpunksocial.club/images/cyberpunksocial.club.png" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@cyberpunksocial" />
+    <meta name="twitter:creator" content="@notdestru" />
 
     <title>Cyberpunk Social Club</title>
 
@@ -154,19 +156,22 @@
         transform: scaleX(-1);
       }
 
-      #glitched {
+      #logo {
         background-color: #ff0;
-        border-radius: 68px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 48%;
         float: left;
-        margin-top:  1rem;
+        margin-top:  1.5rem;
         margin-right: .75rem;
-        height: 68px;
+        height: 48px;
         text-align: center;
-        width: 68px;
+        padding: 4px;
+        width: 48px;
       }
 
-      #glitched img {
-        margin-top: 10px;
+      #logo.glitched {
+        background-image: url('images/csc-glitched.gif');
       }
 
       #manifesto ul {
@@ -253,17 +258,9 @@
         }
       }
 
-      @media all and (max-width: 350px) {
-        #wrapper {
-          padding: 1.5rem 0.5rem;
-        }
-
-        #manifesto ul {
-          left: 0;
-        }
-
-        #manifesto li {
-          padding-left: 0;
+      @media all and (max-width: 375px) {
+        #logo {
+          display: none;
         }
       }
     </style>
@@ -286,9 +283,7 @@
           </h1>
 
           <div id="discord" class="content-block highlight">
-            <div id="glitched">
-              <a href="https://discord.gg/yYjap5d" title="Join our community."><img src="images/csc-glitched.gif" alt="Cyberpunk Social Club Logo Glitched" height="48" width="48" /></a>
-            </div>
+            <a class="glitched" id="logo" href="https://discord.gg/yYjap5d" title="Join our community."></a>
 
             <p>
               <a class="call-to-action" href="https://discord.gg/yYjap5d" title="Join us on our Discord server.">
@@ -300,7 +295,7 @@
 
             <p>
               A leftist creative collective open to all lifeforms, especially silicon-based.
-              We are community, and you are welcome.
+              We are community. You are welcome.
             </p>
           </div>
 
