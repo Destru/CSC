@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="description" content="Underground electronic music from Norway.">
+  <title>BINÄRPILOT</title>
+
+  <link rel="shortcut icon" type="image/png" href="binaerpilot.png"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      color: #fff;
+      font-family: "Press Start 2P";
+      line-height: 2em;
+      text-transform: uppercase;
+    }
+
+    #download a {
+      border-bottom: solid 2px #ff0;
+      padding-bottom: 4px;
+      color: #ff0;
+      text-decoration: none;
+    }
+
+    #download a:hover {
+      color: #0f0;
+      border-color: #0f0;
+    }
+
+    body {
+      background-color: #000;
+    }
+
+    #app {
+      display: none;
+    }
+
+    #binaerpilot {
+      position: absolute;
+      top: 50%; left: 50%;
+      margin-left: -42px;
+      margin-top: -42px;
+      height: 84px;
+      width: 84px;
+    }
+
+    #download {
+      position: absolute;
+      top: 50%;
+      margin-top: 63px;
+      width: 100%;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Binärpilot</h1>
+      <p>
+        Website for Norwegian musician Alexander Støver,
+        also known as Binärpilot, Binærpilot, Binaerpilot, and Binarpilot.
+        Creating free electronic music since 1997.
+      </p>
+    </header>
+
+    <section>
+      <p>
+        Free electronic music for robots that like to dance.
+        <i>Or</i> the pursuit of complex but elegant ideas in simple and
+        crude systems. <i>Or</i> a love letter to the freedom found in
+        restrictions. To destroy the popollution, and to create something
+        unique. Something out of this world.
+      </p>
+    </section>
+
+    <footer>
+      <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" title="License information (Creative Commons).">CC BY-NC-ND</a>
+      12GHwbwJTGtmHBeY6aQr2pqwuZ5m19SWwG
+    </footer>
+  </div>
+
+  <div id="binaerpilot">
+    <a href="https://binaerpilot.bandcamp.com" title="Binärpilot on Bandcamp">
+      <img src="binaerpilot.png" alt="Binärpilot Logo Pixelated" height="84" width="84">
+    </a>
+  </div>
+
+  <div id="download">
+    Download <a href="https://discord.gg/Kv78JrR7GW" title="Binaerpilot Discography Torrent">all my music</a> in the CSC.
+  </div>
+
+  <script>
+    if (window.location.hostname !== 'localhost') {
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-139019-12', 'auto');
+      ga('send', 'pageview');
+    }
+  </script>
+</body>
+</html>
