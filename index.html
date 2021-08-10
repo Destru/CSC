@@ -99,6 +99,10 @@
         word-spacing: 100vw;
       }
 
+      h1 a {
+        color: #ff0;
+      }
+
       h2 a {
         border-bottom: solid 1px white;
         line-height: 1em;
@@ -140,8 +144,8 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        opacity: 0.15;
-        transition: opacity .5s ease-out;
+        opacity: 0.3;
+        transition: opacity .5s ease-in;
         min-width: 100vw;
         min-height: 100vh;
       }
@@ -263,6 +267,19 @@
           display: none;
         }
       }
+
+      body::-webkit-scrollbar {
+        color:  rgba(0, 0, 0, 0.3);
+        width: .5em;
+      }
+
+      body::-webkit-scrollbar-track {
+        background-color:  rgba(255, 255, 255, .1);
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color:  rgba(0, 0, 0, 1);
+      }
     </style>
 
     <link rel="shortcut icon" type="image/png" href="images/csc-alienbob-round.png" />
@@ -279,7 +296,7 @@
           <h1>
             <span class="sticker">Cyberpunk</span>
             <span class="sticker">Social</span>
-            <span class="sticker">Club</span>
+            <span class="sticker"><a href="https://cyberpunksocialclub.myspreadshop.com/" title="Cyberpunk Social Club Merch">Merch</a></span>
           </h1>
 
           <div id="discord" class="content-block highlight">
