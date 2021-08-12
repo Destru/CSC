@@ -472,10 +472,6 @@
           backgrounds[Math.floor(Math.random() * backgrounds.length)];
 
         loader.src = "images/csc-sketch.png";
-        loader.onload = function () {
-          loading.style.opacity = 1;
-        };
-
         app.style.backgroundImage = "url(images/" + rand + ".jpg)";
         background.src = "images/" + rand + ".jpg";
         background.onload = function () {
