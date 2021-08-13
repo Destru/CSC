@@ -15,30 +15,24 @@
     html, body {
       margin: 0;
       color: #fff;
-      font-family: "Press Start 2P";
+      font-family: 'Press Start 2P', sans-serif;
       font-size: 1rem;
-      line-height: 1.6rem;
+      line-height: 1.8rem;
       text-transform: uppercase;
     }
 
-    #download {
-      padding: 4rem;
-    }
-
-    #download a {
-      color: #0ff;
-      opacity: 1;
-      padding-bottom: 2px;
+    a {
+      display: inline-block;
+      line-height: 1rem;
       text-decoration: none;
+      transform-origin: 0 0;
+      transition: all .2s ease-in-out;
     }
 
-    #download a.merch, #download a.merch:hover {
-      border-color: #a0f;
-      color: #a0f;
-    }
-
-    #download a:hover {
-      border-bottom: solid 2px #0ff;
+    a:hover {
+      position: relative;
+      text-decoration: none;
+      transform: scale(1.5);
     }
 
     body {
@@ -49,6 +43,18 @@
       display: none;
     }
 
+    #promo {
+      margin: auto;
+      max-width: 480px;
+      padding: 20vh 5vw 0 5vw;
+    }
+
+    #promo i {
+      display: inline-block;
+      font-size: 50%;
+      font-style: normal;
+      line-height: 1rem;
+    }
 
   </style>
 </head>
@@ -79,10 +85,9 @@
     </footer>
   </div>
 
-  <div id="download">
-    <span style="color:#ff0">Bin&auml;rpilot</span><br>
-    <span style="color:#0fa">Upcoming Release</span><br/><br/>
-    <span style="color:#f0f">SFAT</span><br/>
+  <div id="promo">
+    <span style="font-size: 300%; color: #a0f;">Bin&auml;rpilot</span><br><br>
+    <span style="color:#f0f; font-size: 150%"><a style="color: #f0f" href="https://binaerpilot.bandcamp.com" title="Binaerpilot SFAT will be released on BandCamp"></a>SFAT</span><br/>
     Mogadishu<br/>
     Ph34r<br/>
     Russia<br/>
@@ -92,10 +97,17 @@
     Pageantry<br/>
     Rule 34<br/>
     Song for Alan Turing<br/><br/>
-    <a href="https://patreon.com/destru" title="Support Destru (Binaerpilot) on Patreon">Previews</a> @Patreon<br/>
-    <a href="https://discord.gg/Kv78JrR7GW" title="Binaerpilot Discography Torrent">Torrents</a> @Discord<br/><br/>
-    <a class="merch" href="https://cyberpunksocialclub.myspreadshop.com" title="Cyberpunk Social Club Merch">Merch</a> @Spreadshirt<br/>
+    <a style="color: #08f" href="https://cyberpunksocialclub.myspreadshop.com" title="Cyberpunk Social Club Merch">Buy Merch</a><br/>
+    <a style="color: #0ff" href="https://discord.gg/Kv78JrR7GW" title="Binaerpilot Discography Torrent">Download Torrents*</a><br/>
+    <a style="color: #0f8" href="https://patreon.com/destru" title="Support Destru (Binaerpilot) on Patreon">Unlock Previews</a><br/><br>
+    <i style="color: #333">
+      *You must to join the
+      <a style="color: #0f0" href="https://discord.gg/Kv78JrR7GW">Discord</a>
+      in order to download torrents.
 
+      This change made due to bandwidth costs, sorry!
+      All my music will still forever be free.
+    </i>
   </div>
 
   <script>
