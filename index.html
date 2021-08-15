@@ -162,7 +162,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         opacity: 0;
-        transition: opacity .75s ease-in-out;
+        transition: opacity .666s ease-in-out;
         min-width: 100vw;
         min-height: 100vh;
       }
@@ -185,7 +185,7 @@
         position: absolute;
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
-        transition: opacity .666s ease-in-out;
+        transition: opacity .333s ease-in-out;
       }
 
       #logo {
@@ -223,7 +223,7 @@
         margin-top: 0.4rem;
         font-size: 90%;
         text-transform: uppercase;
-        transition: opacity 1.25s ease-out;
+        transition: opacity 1s ease-out;
       }
 
       #wrapper {
@@ -457,21 +457,15 @@
         const app = document.getElementById("app");
         const background = new Image();
         const backgrounds = [
-          "p1x3ltr4sh",
-          "p1x3ltr4sh-2",
-          "p1x3ltr4sh-3",
-          "p1x3ltr4sh-4",
-          "p1x3ltr4sh-5",
-          "p1x3ltr4sh-6",
+          "p1x3ltr4sh-optimized",
+          "p1x3ltr4sh-4-optimized",
         ];
         const copyleft = document.getElementById("copyleft-years");
         const currentYear = new Date().getFullYear();
         const loading = document.getElementById("loading")
-        const loader = new Image();
         const rand =
           backgrounds[Math.floor(Math.random() * backgrounds.length)];
 
-        loader.src = "images/csc-sketch.png";
         app.style.backgroundImage = "url(images/" + rand + ".jpg)";
         background.src = "images/" + rand + ".jpg";
         background.onload = function () {

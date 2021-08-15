@@ -16,7 +16,7 @@ ErrorDocument 504 /error.html
   ExpiresByType image/gif "access plus 1 year"
   ExpiresByType image/png "access plus 1 year"
   ExpiresByType image/x-icon "access plus 1 year"
-  ExpiresDefault "access plus 1 month"
+  ExpiresDefault "access plus 1 day"
 </IfModule>
 
 <IfModule mod_deflate.c>
@@ -53,4 +53,9 @@ ErrorDocument 504 /error.html
   RewriteCond %{HTTP_HOST} ^cyberpunksocialclub\.com$ [OR]
   RewriteCond %{HTTP_HOST} ^www\.cyberpunksocialclub\.com$
   RewriteRule (.*)$ https://cyberpunksocial.club/$1 [R=301,L]
+  RewriteCond %{HTTP_HOST} ^cyberpunksocial\.club$ [OR]
+  RewriteCond %{HTTP_HOST} ^www\.cyberpunksocial\.club$
+  RewriteRule ^shop$ "https\:\/\/cyberpunksocialclub\.myspreadshop\.com\/" [R=301,L]
 </IfModule>
+
+
