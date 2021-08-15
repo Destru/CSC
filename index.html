@@ -112,12 +112,16 @@
         color: #0f0;
       }
 
-      h1 #merch:hover {
+      h1 .blink:hover {
         background-color: #0f0;
       }
 
-      h1 #merch:hover a {
+      h1 .blink:hover a {
         color: #000;
+      }
+
+      h1 .sticker:last-child {
+        transition: opacity 0.666s ease-in-out;
       }
 
       h2 a {
@@ -216,18 +220,15 @@
         padding-left: 0.8em;
       }
 
-      #header-toggle {
+      .blink-container {
         position: absolute;
         z-index: 666;
       }
 
-      #merch, #club {
-        transition: opacity .666s ease-in-out;
-        position: absolute;
-      }
-
-      #merch {
+      .blink {
         opacity: 0;
+        transition: opacity 0.666s ease-in-out;
+        position: absolute;
       }
 
       #online {
@@ -386,11 +387,17 @@
           <h1>
             <span class="sticker">Cyberpunk</span>
             <span class="sticker">Social</span>
-            <div id="header-toggle">
-              <span class="sticker" id="club">Club</span>
-              <span class="sticker" id="merch"><a href="https://shop.cyberpunksocial.club">Merch</a></span>
+            <div class="blink-container">
+              <span class="sticker blink" id="club">Club</span>
+              <span class="sticker blink" id="merch"
+                ><a
+                  href="https://shop.cyberpunksocial.club"
+                  title="Cyberpunk Social Club Shop"
+                  >Merch</a
+                ></span
+              >
             </div>
-            <span class="sticker"">Club</span>
+            <span class="sticker" id="background">Club</span>
           </h1>
 
           <div id="discord" class="content-block highlight">
@@ -493,18 +500,23 @@
           }
         });
 
-        let flipSticker = false
+        const blinkDelay = 1750
+        const stickerBackground = document.getElementById("background");
+        const stickerClub = document.getElementById("club");
+        const stickerMerch = document.getElementById("merch");
 
-        setInterval(() => {
-          console.log('hello')
-          const club = document.getElementById('club')
-          const merch = document.getElementById('merch')
+        let flipSticker = false;
 
-          club.style.opacity = flipSticker ? 1 : 0
-          merch.style.opacity = flipSticker ? 0 : 1
+        setTimeout(() => {
+          setInterval(() => {
+            if (stickerBackground.style.opacity !== 0)
+              stickerBackground.style.opacity = 0;
+            stickerClub.style.opacity = flipSticker ? 1 : 0;
+            stickerMerch.style.opacity = flipSticker ? 0 : 1;
 
-          flipSticker = !flipSticker
-        }, 1500)
+            flipSticker = !flipSticker;
+          }, blinkDelay);
+        }, blinkDelay);
       });
 
       if (window.location.hostname !== "localhost") {
