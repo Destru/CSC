@@ -597,7 +597,7 @@
           contactInput.value = ''
           e.preventDefault()
 
-          if (!sendingMessage) {
+          if (!sendingMessage && message.length > 0) {
             sendingMessage = true
 
             contactInput.disabled = true
