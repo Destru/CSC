@@ -12,148 +12,129 @@
     <title>BINÄRPILOT</title>
 
     <link rel="shortcut icon" type="image/png" href="binaerpilot.png" />
-
+    <link rel="stylesheet" type="text/css" href="../reset.css" />
     <style>
-      a,
-      abbr,
-      acronym,
-      address,
-      applet,
-      article,
-      aside,
-      audio,
-      b,
-      big,
-      blockquote,
-      body,
-      canvas,
-      caption,
-      center,
-      cite,
-      code,
-      dd,
-      del,
-      details,
-      dfn,
-      div,
-      dl,
-      dt,
-      em,
-      embed,
-      fieldset,
-      figcaption,
-      figure,
-      footer,
-      form,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      header,
-      hgroup,
-      html,
-      i,
-      iframe,
-      img,
-      ins,
-      kbd,
-      label,
-      legend,
-      li,
-      main,
-      mark,
-      menu,
-      nav,
-      object,
-      ol,
-      output,
-      p,
-      pre,
-      q,
-      ruby,
-      s,
-      samp,
-      section,
-      small,
-      span,
-      strike,
-      strong,
-      sub,
-      summary,
-      sup,
-      table,
-      tbody,
-      td,
-      tfoot,
-      th,
-      thead,
-      time,
-      tr,
-      tt,
-      u,
-      ul,
-      var,
-      video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
+      @font-face {
+        font-family: 'Nintendo';
+        font-style: normal;
+        font-weight: 400;
+        src: url(data:font/ttf;base64,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)
+          format('woff2');
       }
-      article,
-      aside,
-      details,
-      figcaption,
-      figure,
-      footer,
-      header,
-      hgroup,
-      main,
-      menu,
-      nav,
-      section {
+
+      @keyframes flicker {
+        0% {
+          opacity: 0.27861;
+        }
+        5% {
+          opacity: 0.34769;
+        }
+        10% {
+          opacity: 0.23604;
+        }
+        15% {
+          opacity: 0.90626;
+        }
+        20% {
+          opacity: 0.18128;
+        }
+        25% {
+          opacity: 0.83891;
+        }
+        30% {
+          opacity: 0.65583;
+        }
+        35% {
+          opacity: 0.67807;
+        }
+        40% {
+          opacity: 0.26559;
+        }
+        45% {
+          opacity: 0.84693;
+        }
+        50% {
+          opacity: 0.96019;
+        }
+        55% {
+          opacity: 0.08594;
+        }
+        60% {
+          opacity: 0.20313;
+        }
+        65% {
+          opacity: 0.71988;
+        }
+        70% {
+          opacity: 0.53455;
+        }
+        75% {
+          opacity: 0.37288;
+        }
+        80% {
+          opacity: 0.71428;
+        }
+        85% {
+          opacity: 0.70419;
+        }
+        90% {
+          opacity: 0.7003;
+        }
+        95% {
+          opacity: 0.36108;
+        }
+        100% {
+          opacity: 0.24387;
+        }
+      }
+      .crt::after {
+        content: ' ';
         display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(18, 16, 16, 0.1);
+        opacity: 0;
+        z-index: 2;
+        pointer-events: none;
+        animation: flicker 0.15s infinite;
       }
-      [hidden] {
-        display: none;
-      }
-      body {
-        line-height: 1;
-      }
-      menu,
-      ol,
-      ul {
-        list-style: none;
-      }
-      blockquote,
-      q {
-        quotes: none;
-      }
-      blockquote:after,
-      blockquote:before,
-      q:after,
-      q:before {
-        content: '';
-        content: none;
-      }
-      table {
-        border-collapse: collapse;
-        border-spacing: 0;
+      .crt::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(
+            rgba(18, 16, 16, 0) 50%,
+            rgba(0, 0, 0, 0.25) 50%
+          ),
+          linear-gradient(
+            90deg,
+            rgba(255, 0, 0, 0.06),
+            rgba(0, 255, 0, 0.02),
+            rgba(0, 0, 255, 0.06)
+          );
+        z-index: 2;
+        background-size: 100% 2px, 3px 100%;
+        pointer-events: none;
       }
     </style>
 
     <style>
       html,
       body {
-        background-color: black;
+        background-color: rgb(0, 12, 0);
         margin: 0;
         color: #0f0;
-        font-family: 'VT323', monospace;
-        font-size: 19px;
-        line-height: 1.2rem;
+        font-family: 'Nintendo', monospace;
+        font-size: 16px;
+        line-height: 1.4rem;
+        overflow: none;
         text-transform: uppercase;
       }
 
@@ -173,12 +154,8 @@
 
       footer {
         display: block;
-        font-size: 50%;
-        line-height: 0.75rem;
-      }
-
-      h1 {
-        display: none;
+        font-size: 8px;
+        line-height: 0.8rem;
       }
 
       nav ul a:hover {
@@ -192,58 +169,65 @@
       }
 
       ul.social {
-        font-size: 75%;
-        margin-top: 0.5rem;
-        line-height: 1rem;
+        font-size: 8px;
+        line-height: 0.8rem;
       }
 
       #app {
         align-items: center;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         height: 100vh;
-        width: 100vw;
+        transition: all 0.666s ease-in-out;
+      }
+
+      #app article {
+        display: flex;
+        justify-content: center;
       }
 
       #binaerpilot {
         margin-right: 2rem;
+        margin-bottom: 2rem;
       }
 
-      #text-only {
+      #robots-only {
         display: none;
       }
-    </style>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
-      rel="stylesheet"
-    />
+      @media all and (max-width: 550px) {
+        #app article {
+          flex-direction: column;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="app">
-      <div id="binaerpilot">
+      <article>
+      <div id="binaerpilot" class="crt">
         <img
-          src="binaerpilot-large.png"
-          height="240"
-          width="240"
+          src="binaerpilot-web.png"
+          height="120"
+          width="120"
           alt="BINAERPILOT LOGO"
         />
       </div>
-      <div id="battlestar">
+      <div id="battlestar" class="crt">
         <header>
-          <h1>Binärpilot</h1>
           <nav>
             <ul>
               <!-- <li><a href="#">Releases</a></li> -->
-              <li><a href="https://cyberpunksocial.club/join">Torrents</a></li>
+              <li>
+                <a href="https://cyberpunksocial.club/join">Downloads</a>
+              </li>
               <li><a href="https://cyberpunksocial.club/shop">Merch</a></li>
-              <li><a href="https://patreon.com/destru">Support</a></li>
             </ul>
 
             <ul class="social">
               <li><a href="https://binaerpilot.bandcamp.com">Bandcamp</a></li>
+              <li><a href="https://patreon.com/destru">Patreon</a></li>
               <li>
                 <a href="https://soundcloud.com/binaerpilot">Soundcloud</a>
               </li>
@@ -253,13 +237,21 @@
                   >Spotify</a
                 >
               </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UC0HpHlt3FvryKMa-Z1c-dcg"
+                  >YouTube</a
+                >
+              </li>
             </ul>
           </nav>
         </header>
 
-        <section id="text-only">
+        <section id="robots-only">
+          <h2>Binärpilot for Robots</h2>
+
           <p>
-            Website for Norwegian musician Alexander Støver, also known as
+            Website for Norwegian human musician Alexander Støver, also known as
             Binärpilot, Binærpilot, Binaerpilot, and Binarpilot. Creating free
             electronic music since 1997.
           </p>
@@ -275,14 +267,13 @@
 
         <footer>
           12GHwbwJTGtmHBeY6aQr2pqwuZ5m19SWwG<br />
-          <a
-            href="https://creativecommons.org/licenses/by-nc-nd/2.0/"
-            title="License information (Creative Commons)."
+          <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/"
             >CC BY-NC-ND</a
           >
         </footer>
-      </div>
+      </article>
     </div>
+
     <script>
       if (window.location.hostname !== 'localhost') {
         ;(function (i, s, o, g, r, a, m) {
