@@ -138,18 +138,33 @@
         text-transform: uppercase;
       }
 
-      html.invert {
-        filter: invert(1);
+      html {
+        max-height: 100vh;
+        overflow: hidden;
       }
 
       a {
-        color: #0f0;
+        color: rgba(0,255,0,.75);
         text-decoration: none;
+      }
+
+      nav ul a {
+        color: rgba(0,255,0,1);
+      }
+
+      nav ul a:hover {
+        background-color: rgba(0,255,0,1);
+        color: rgba(0,0,0,.95);
+        outline: solid 2px rgba(0,255,0,1);
       }
 
       footer a,
       footer {
         color: rgba(0, 255, 0, 0.25);
+      }
+
+      footer a:hover {
+        color: #0f0;
       }
 
       footer {
@@ -158,10 +173,14 @@
         line-height: 0.8rem;
       }
 
-      nav ul a:hover {
-        background-color: #0f0;
+      nav ul.social a {
+        color: rgba(0,255,0,.75);
+      }
+
+      nav ul.social a:hover {
+        background-color: rgba(0,255,0,.75);
         color: black;
-        outline: solid 2px #0f0;
+        outline: solid 2px rgba(0,255,0,.75);
       }
 
       ul {
@@ -215,37 +234,36 @@
         />
       </div>
       <div id="battlestar" class="crt">
-        <header>
-          <nav>
-            <ul>
-              <!-- <li><a href="#">Releases</a></li> -->
-              <li>
-                <a href="https://cyberpunksocial.club/join">Downloads</a>
-              </li>
-              <li><a href="https://cyberpunksocial.club/shop">Merch</a></li>
-            </ul>
+        <nav>
+          <ul>
+            <!-- <li><a href="#">Releases</a></li> -->
+            <li>
+              <a href="https://cyberpunksocial.club/join">Downloads</a>
+            </li>
+            <li class="highlight"><a href="https://www.patreon.com/posts/sfat-is-up-on-51892933">Hype</a></li>
+            <li><a href="https://cyberpunksocial.club/shop">Merch</a></li>
+          </ul>
 
-            <ul class="social">
-              <li><a href="https://binaerpilot.bandcamp.com">Bandcamp</a></li>
-              <li><a href="https://patreon.com/destru">Patreon</a></li>
-              <li>
-                <a href="https://soundcloud.com/binaerpilot">Soundcloud</a>
-              </li>
-              <li>
-                <a
-                  href="https://open.spotify.com/artist/7h7YbSISHutpSg3XJt831S?si=B5rJElrvSj6ipECa3tnOKw&nd=1"
-                  >Spotify</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UC0HpHlt3FvryKMa-Z1c-dcg"
-                  >YouTube</a
-                >
-              </li>
-            </ul>
-          </nav>
-        </header>
+          <ul class="social">
+            <li><a href="https://binaerpilot.bandcamp.com">Bandcamp</a></li>
+            <li><a href="https://patreon.com/destru">Patreon</a></li>
+            <li>
+              <a href="https://soundcloud.com/binaerpilot">Soundcloud</a>
+            </li>
+            <li>
+              <a
+                href="https://open.spotify.com/artist/7h7YbSISHutpSg3XJt831S?si=B5rJElrvSj6ipECa3tnOKw&nd=1"
+                >Spotify</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UC0HpHlt3FvryKMa-Z1c-dcg"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </nav>
 
         <section id="robots-only">
           <h2>Binärpilot for Robots</h2>
@@ -266,10 +284,13 @@
         </section>
 
         <footer>
-          12GHwbwJTGtmHBeY6aQr2pqwuZ5m19SWwG<br />
-          <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/"
+          <ul>
+            <li>12GHwbwJTGtmHBeY6aQr2pqwuZ5m19SWwG</li>
+            <li><a href="mailto:alexander@binaerpilot.no">Booking Info</a></li>
+            <li><a href="https://creativecommons.org/licenses/by-nc-nd/2.0/"
             >CC BY-NC-ND</a
-          >
+          > </li>
+          </ul>
         </footer>
       </article>
     </div>
