@@ -11,7 +11,7 @@
     />
     <title>BINÄRPILOT</title>
 
-    <link rel="shortcut icon" type="image/png" href="binaerpilot.png" />
+    <link rel="shortcut icon" type="image/png" href="binaerpilot-web.png" />
     <link rel="stylesheet" type="text/css" href="../reset.css" />
     <style>
       @font-face {
@@ -138,9 +138,12 @@
         text-transform: uppercase;
       }
 
+      iframe {
+        z-index: 1337;
+      }
+
       html {
-        max-height: 100vh;
-        overflow: hidden;
+        min-height: 100vh;
       }
 
       a {
@@ -177,9 +180,14 @@
         margin-bottom: 0.5rem;
       }
 
-      ul.social {
+      ul.links {
         font-size: 8px;
+        letter-spacing: normal;
         line-height: 0.8rem;
+      }
+
+      .links.mostly-inactive {
+        opacity: 0.5;
       }
 
       #app {
@@ -187,25 +195,25 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100vh;
-        transition: all 0.666s ease-in-out;
+        min-height: 100vh;
       }
 
       #app article {
         display: flex;
-        justify-content: center;
+        align-items: center;
       }
 
-      #binaerpilot {
-        margin-right: 2rem;
-        margin-bottom: 2rem;
+      #battlestar,
+      #binaerpilot,
+      iframe {
+        margin: 1rem;
       }
 
       #robots-only {
         display: none;
       }
 
-      @media all and (max-width: 550px) {
+      @media all and (max-width: 800px) {
         #app article {
           flex-direction: column;
         }
@@ -213,54 +221,115 @@
     </style>
   </head>
   <body>
-    <div id="app">
+    <div id="app" class="crt">
       <article>
-        <div id="binaerpilot" class="crt">
-          <img
-            src="binaerpilot-web.png"
-            height="120"
-            width="120"
-            alt="BINAERPILOT LOGO"
-          />
+        <div id="binaerpilot">
+          <a
+            href="https://binaerpilot.bandcamp.com"
+            title="Complete BINÄRPILOT Discography on Bandcamp in MP3 and FLAC"
+            ><img
+              src="binaerpilot-web.png"
+              height="120"
+              width="120"
+              alt="BINÄRPILOT LOGO"
+          /></a>
         </div>
-        <div id="battlestar" class="crt">
+        <iframe
+          style="border: 0; width: 268px; height: 268px"
+          src="https://bandcamp.com/EmbeddedPlayer/album=2933379427/size=large/bgcol=333333/linkcol=ffffff/minimal=true/transparent=true/"
+          seamless
+          ><a
+            href="https://binaerpilot.bandcamp.com/album/songs-for-alan-turing"
+            >Songs for Alan Turing by BINÄRPILOT</a
+          ></iframe
+        >
+        <div id="battlestar">
           <nav id="menu">
             <ul>
               <li>
-                <a href="https://cyberpunksocial.club/join">Community</a>
-              </li>
-              <li>
-                <a href="https://binaerpilot.bandcamp.com/music">Discography</a>
-              </li>
-              <li><a href="https://cyberpunksocial.club/shop">Merch</a></li>
-              <li>
-                <a href="https://patreon.com/destru">Support</a>
-              </li>
-            </ul>
-
-            <ul class="social">
-              <li><a href="https://facebook.com/binaerpilot">Facebook</a></li>
-              <li><a href="https://instagram.com/notdestru">Instagram</a></li>
-              <li>
-                <a href="https://soundcloud.com/binaerpilot">Soundcloud</a>
+                <a
+                  title="Binärpilot on Bandcamp"
+                  href="https://binaerpilot.bandcamp.com/music"
+                  >Bandcamp</a
+                >
               </li>
               <li>
                 <a
+                  title="Binärpilot on Discord"
+                  href="https://discord.gg/0tWMsoyJGJXk8Mj5"
+                  >Discord</a
+                >
+              </li>
+              <li>
+                <a
+                  title="Binärpilot on Patreon"
+                  href="https://patreon.com/destru"
+                  >Patreon</a
+                >
+              </li>
+            </ul>
+
+            <ul class="links">
+              <li>
+                <a
+                  title="Binärpilot on Instagram"
+                  href="https://instagram.com/notdestru"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  title="Binärpilot on Spotify"
                   href="https://open.spotify.com/artist/7h7YbSISHutpSg3XJt831S?si=B5rJElrvSj6ipECa3tnOKw&nd=1"
                   >Spotify</a
                 >
               </li>
-              <li></li>
-              <li><a href="https://twitch.com/notdestru">Twitch</a></li>
-              <li><a href="https://twitter.com/notdestru">Twitter</a></li>
+
               <li>
                 <a
+                  title="Binärpilot on Twitch"
+                  href="https://twitch.com/notdestru"
+                  >Twitch</a
+                >
+              </li>
+              <li>
+                <a
+                  title="Binärpilot on Twitter"
+                  href="https://twitter.com/notdestru"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a
+                  title="Binärpilot on Youtube"
                   href="https://www.youtube.com/channel/UC0HpHlt3FvryKMa-Z1c-dcg"
                   >YouTube</a
                 >
               </li>
             </ul>
-            <ul class="social"></ul>
+            <ul class="links mostly-inactive">
+              <li>
+                <a
+                  title="Binärpilot on Facebook"
+                  href="https://facebook.com/binaerpilot"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  title="Binärpilot on TikTok"
+                  href="https://www.tiktok.com/@notdestru?lang=en"
+                  >TikTok</a
+                >
+              </li>
+              <li>
+                <a
+                  title="Binärpilot on SoundCloud"
+                  href="https://soundcloud.com/binaerpilot"
+                  >Soundcloud</a
+                >
+              </li>
+            </ul>
           </nav>
 
           <section id="robots-only">
@@ -288,6 +357,9 @@
                 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
                   >CC BY-NC-ND</a
                 >
+              </li>
+              <li class="donations">
+                <a href="https://paypal.me/binaerpilot">Make a donation</a>
               </li>
             </ul>
           </footer>

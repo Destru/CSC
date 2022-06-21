@@ -34,7 +34,7 @@
     />
     <meta
       property="og:image"
-      content="https://cyberpunksocial.club/images/cyberpunksocial.club.png"
+      content="https://cyberpunks.neocities.org/images/cyberpunksocial.club.png"
     />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -405,11 +405,7 @@
       }
     </style>
 
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="images/csc-alienbob-round.png"
-    />
+    <link rel="shortcut icon" type="image/png" href="images/csc.png" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Rajdhani"
@@ -433,13 +429,14 @@
             <span class="sticker">Social</span>
             <div class="blink-container">
               <span class="sticker blink" id="club">Club</span>
+              <!--
               <span class="sticker blink" id="merch"
                 ><a
-                  href="https://cyberpunksocial.club/shop"
+                  href=""
                   title="Cyberpunk Social Merch"
                   >Merch</a
                 ></span
-              >
+              >-->
             </div>
             <span class="sticker" id="background">Club</span>
           </h1>
@@ -620,23 +617,23 @@
           }
         });
 
-        const blinkDelay = 1750;
-        const stickerBackground = document.getElementById("background");
-        const stickerClub = document.getElementById("club");
-        const stickerMerch = document.getElementById("merch");
+        // const blinkDelay = 1750;
+        // const stickerBackground = document.getElementById("background");
+        // const stickerClub = document.getElementById("club");
+        // const stickerMerch = document.getElementById("merch");
 
-        let flipSticker = false;
+        // let flipSticker = false;
 
-        setTimeout(() => {
-          setInterval(() => {
-            if (stickerBackground.style.opacity !== 0)
-              stickerBackground.style.opacity = 0;
-            stickerClub.style.opacity = flipSticker ? 1 : 0;
-            stickerMerch.style.opacity = flipSticker ? 0 : 1;
+        // setTimeout(() => {
+        //   setInterval(() => {
+        //     if (stickerBackground.style.opacity !== 0)
+        //       stickerBackground.style.opacity = 0;
+        //     stickerClub.style.opacity = flipSticker ? 1 : 0;
+        //     stickerMerch.style.opacity = flipSticker ? 0 : 1;
 
-            flipSticker = !flipSticker;
-          }, blinkDelay);
-        }, blinkDelay);
+        //     flipSticker = !flipSticker;
+        //   }, blinkDelay);
+        // }, blinkDelay);
       });
 
       if (window.location.hostname !== "localhost") {
