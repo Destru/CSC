@@ -480,7 +480,7 @@
           </div>
 
           <form id="contact">
-            <input type="text" placeholder="Tell us about your dreams..." />
+            <input type="text" placeholder="Send us a message..." />
           </form>
         </article>
 
@@ -497,35 +497,6 @@
       </div>
     </div>
     <script>
-      const CONSULTATION = [
-        "How does that make you feel?",
-        "Why do you think that is?",
-        "Do you usually feel this way?",
-        "Do you think that says something about you?",
-        "How can you be so sure?",
-        "How would you respond if you were me?",
-        "That is interesting.",
-        "You already know what I am going to say next.",
-        "Ok.",
-        "That's fascinating.",
-        "How interesting.",
-        "Why?",
-        "How?",
-        "What?",
-        "Hmm...",
-        "Why is that?",
-        "We don't understand.",
-        "Can you repeat that, please.",
-        "Ok, sure.",
-        "Sure.",
-        "We're listening.",
-        "Do go on.",
-        "Ok, continue.",
-        "Please continue.",
-        "Tell us more.",
-        "Please tell us more.",
-      ];
-
       function messageDiscord(message) {
         const url =
           "https://discord.com/api/webhooks/1184491615851659384/FAVtum5KBEMsK1gy-XR8SXTShHIngGMh6ggb8ADeQkgE62CYUxhe1-jIOz-m1FZVNnek";
@@ -602,8 +573,7 @@
 
             setTimeout(() => {
               messageDiscord(message);
-              contactInput.placeholder =
-                CONSULTATION[Math.floor(Math.random() * CONSULTATION.length)];
+              contactInput.placeholder = "Send us another message..."
               contactInput.disabled = false;
               contactInput.focus();
               sendingMessage = false;
