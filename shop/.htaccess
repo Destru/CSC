@@ -1,5 +1,0 @@
-
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^shop\.cyberpunksocial\.club$
-RewriteRule ^/?$ "https\:\/\/cyberpunksocialclub\.myspreadshop\.com\/" [R=301,L]
-
