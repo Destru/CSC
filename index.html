@@ -431,7 +431,7 @@
               <span class="sticker blink" id="club">Club</span>
               <span class="sticker blink" id="merch"
                 ><a
-                  href=""
+                  href="/shop"
                   title="Cyberpunk Social Merch"
                   >Merch</a
                 ></span
@@ -616,23 +616,23 @@
           }
         });
 
-        // const blinkDelay = 1750;
-        // const stickerBackground = document.getElementById("background");
-        // const stickerClub = document.getElementById("club");
-        // const stickerMerch = document.getElementById("merch");
+        const blinkDelay = 1750;
+        const stickerBackground = document.getElementById("background");
+        const stickerClub = document.getElementById("club");
+        const stickerMerch = document.getElementById("merch");
 
-        // let flipSticker = false;
+        let flipSticker = false;
 
-        // setTimeout(() => {
-        //   setInterval(() => {
-        //     if (stickerBackground.style.opacity !== 0)
-        //       stickerBackground.style.opacity = 0;
-        //     stickerClub.style.opacity = flipSticker ? 1 : 0;
-        //     stickerMerch.style.opacity = flipSticker ? 0 : 1;
+        setTimeout(() => {
+          setInterval(() => {
+            if (stickerBackground.style.opacity !== 0)
+              stickerBackground.style.opacity = 0;
+            stickerClub.style.opacity = flipSticker ? 1 : 0;
+            stickerMerch.style.opacity = flipSticker ? 0 : 1;
 
-        //     flipSticker = !flipSticker;
-        //   }, blinkDelay);
-        // }, blinkDelay);
+            flipSticker = !flipSticker;
+          }, blinkDelay);
+        }, blinkDelay);
       });
 
       if (window.location.hostname !== "localhost") {
