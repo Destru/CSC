@@ -38,8 +38,6 @@
     />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@cyberpunksocial" />
-    <meta name="twitter:creator" content="@cyberpunksocial" />
 
     <title>cﾘ乃乇尺ｱu刀ズ 丂ocﾉﾑﾚ cﾚu乃</title>
 
@@ -88,9 +86,10 @@
       }
 
       .sticker {
-        background-color: rgba(0, 0, 0, 0.75);
-        color: white;
+        background-color: rgba(255, 255, 0, 0.75);
+        color: black;
         display: inline-block;
+        font-weight: bold;
         padding: 0.5rem 0.75rem;
         margin-left: -0.77rem;
         margin-top: 0.5rem;
@@ -98,7 +97,6 @@
       }
 
       h1 {
-        font-family: "Rajdhani", sans-serif;
         font-size: 47px;
         font-weight: 400;
         line-height: 1em;
@@ -425,15 +423,9 @@
       <div id="wrapper">
         <article>
           <h1>
-            <span class="sticker">Cyberpunk</span>
-            <span class="sticker">Social</span>
-            <div class="blink-container">
-              <span class="sticker blink" id="club">Club</span>
-              <span class="sticker blink" id="merch">
-                <a href="/shop" title="Cyberpunk Social Merch">Merch</a>
-              </span>
-            </div>
-            <span class="sticker" id="background">Club</span>
+            <span class="sticker">cﾘ乃乇尺ｱu刀ズ</span>
+            <span class="sticker">丂ocﾉﾑﾚ</span>
+            <span class="sticker">cﾚu乃</span>
           </h1>
 
           <div id="discord" class="content-block highlight">
@@ -573,7 +565,7 @@
 
             setTimeout(() => {
               messageDiscord(message);
-              contactInput.placeholder = "Send us another message..."
+              contactInput.placeholder = "Send us another message...";
               contactInput.disabled = false;
               contactInput.focus();
               sendingMessage = false;
@@ -581,24 +573,6 @@
             }, 3000);
           }
         });
-
-        const blinkDelay = 1750;
-        const stickerBackground = document.getElementById("background");
-        const stickerClub = document.getElementById("club");
-        const stickerMerch = document.getElementById("merch");
-
-        let flipSticker = false;
-
-        setTimeout(() => {
-          setInterval(() => {
-            if (stickerBackground.style.opacity !== 0)
-              stickerBackground.style.opacity = 0;
-            stickerClub.style.opacity = flipSticker ? 1 : 0;
-            stickerMerch.style.opacity = flipSticker ? 0 : 1;
-
-            flipSticker = !flipSticker;
-          }, blinkDelay);
-        }, blinkDelay);
       });
 
       if (window.location.hostname !== "localhost") {
