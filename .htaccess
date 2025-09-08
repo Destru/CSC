@@ -48,10 +48,3 @@ ErrorDocument 504 /error.html
   Header append Vary User-Agent
 </IfModule>
 
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteCond %{HTTP_HOST} ^shop\.cyberpunksocial\.club$
-  RewriteRule ^(.*)$ "https\:\/\/cyberpunksocialclub\.myspreadshop\.com\/" [R=301,L]
-  RewriteCond %{HTTP_HOST} ^join\.cyberpunksocial\.club$
-  RewriteRule ^(.*)$ "https\:\/\/discord\.gg\/yYjap5d" [R=301,L]
-</IfModule>
