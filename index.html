@@ -261,17 +261,22 @@
         }
       }
 
-      body::-webkit-scrollbar {
-        color: rgba(0, 0, 0, 0.3);
-        width: 0.5em;
+      :root {
+        scrollbar-color: transparent, transparent;
+        scrollbar-width: 0;
       }
 
-      body::-webkit-scrollbar-track {
+      ::-webkit-scrollbar {
+        color: rgba(255, 255, 255, 0.1);
+        width: 0;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.75);
+      }
+
+      ::-webkit-scrollbar-thumb {
         background-color: rgba(255, 255, 255, 0.1);
-      }
-
-      body::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, 1);
       }
 
       .lds-ring {
@@ -435,7 +440,8 @@
 
         let sendingMessage = false;
 
-        app.style.backgroundImage = "url(/images/" + rand + ".jpg)";
+        app.style.backgroundImage =
+          "url(https://cyberpunksocial.club/images/" + rand + ".jpg)";
         background.src = "images/" + rand + ".jpg";
         background.onload = function () {
           copyleft.innerHTML = "2016—" + currentYear;
