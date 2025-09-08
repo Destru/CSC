@@ -62,7 +62,7 @@
       footer {
         color: rgba(255, 255, 255, 0.25);
         font-size: 13px;
-        margin-top: -1.5rem;
+        margin-top: 0;
         padding-bottom: 3rem;
       }
 
@@ -72,7 +72,7 @@
         display: inline-block;
         font-weight: bold;
         padding: 0.75rem 0.75rem 0.5rem 0.75rem;
-        margin-left: -1rem;
+        margin-left: -0.75rem;
         margin-top: 0.75rem;
         transform: rotate(-1.666deg);
       }
@@ -81,7 +81,7 @@
         font-size: 48px;
         font-weight: 400;
         line-height: 1em;
-        margin-top: 1rem;
+        margin-top: 2.25rem;
         text-transform: uppercase;
         word-spacing: 100vw;
       }
@@ -396,7 +396,7 @@
     <script>
       function messageDiscord(message) {
         const url =
-          "https://discord.com/api/webhooks/1414306526352510996/s2mpbQ9KWiIA5GXJGndTBakpwQZVB6nNL6OoGugqMHiTUBKAAfkk_JNNkFEO8_JFQ09A";
+          "https://discord.com/api/webhooks/1414599909847601223/0bMzvOzeJfasnrYjJvXCHZKaa2gaAVJo5yfJQtat2QFHulpx5n9Z1ZsI6QfR_m1tWqCB";
         const params = {
           body: JSON.stringify({ content: message }),
           headers: {
@@ -453,7 +453,41 @@
           }
         });
 
-        messageDiscord(`Referrer: ${document.referrer}`);
+        // 🥷
+        (function () {
+          const lastPing = localStorage.getItem("visitorPingedAt");
+          const now = Date.now();
+          const dayMs = 24 * 60 * 60 * 1000;
+          if (lastPing && now - Number(lastPing) < dayMs) return;
+
+          function setStamped() {
+            localStorage.setItem("visitorPingedAt", String(now));
+          }
+
+          fetch("https://ipapi.co/json/")
+            .then((res) => res.json())
+            .then((data) => {
+              const message = `Visitor from ${data.city}, ${
+                data.country_name
+              } (${
+                data.country_code
+              }) :flag_${data.country_code.toLowerCase()}:`;
+              messageDiscord(message);
+              setStamped();
+            })
+            .catch(() => {
+              fetch("https://api.ipify.org?format=json")
+                .then((r) => r.json())
+                .then((ip) => {
+                  const message = `Visited by \`${ip.ip}\``;
+                  messageDiscord(message);
+                })
+                .catch(() => {
+                  messageDiscord("Visited by :anoynmous:");
+                })
+                .finally(setStamped);
+            });
+        })();
       });
 
       if (window.location.hostname !== "localhost") {
