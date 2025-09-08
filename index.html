@@ -15,7 +15,7 @@
     />
     <meta
       property="og:image"
-      content="https://cyberpunks.neocities.org/images/cyberpunksocial.club.png"
+      content="https://cyberpunksocial.club/images/cyberpunksocial.club.png"
     />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -119,48 +119,9 @@
         white-space: nowrap;
       }
 
-      #contact input,
       .content-block.highlight,
       .sticker {
         border-radius: 0.75rem;
-      }
-
-      #contact input {
-        background: transparent;
-        border: none;
-        border-left: solid 16px transparent;
-        color: rgba(255, 255, 255, 0.666);
-        cursor: pointer;
-        display: inline;
-        font-family: "Roboto Condensed", sans-serif;
-        font-size: 16px;
-        margin: 2rem 0;
-        padding: 16px;
-        position: relative;
-        left: -32px;
-      }
-
-      #contact input[type="text"]:focus::placeholder {
-        color: rgba(0, 0, 0, 0.75);
-      }
-
-      #contact input[type="text"]:focus {
-        background: linear-gradient(
-          to right,
-          rgba(0, 255, 0, 1),
-          rgba(0, 0, 0, 0)
-        );
-        border-color: #0f0;
-        color: black;
-      }
-
-      #contact input[type="text"] {
-        min-width: 200px;
-        width: 100%;
-      }
-
-      #contact input.transmitting::placeholder {
-        font-style: italic;
       }
 
       #copyright-symbol {
@@ -203,7 +164,7 @@
         background-image: url("images/csc-glitched.gif");
       }
 
-      #logo.qrcode {
+      #logo.qr-code {
         background-image: url("images/csc-qrcode.png");
         background-size: 36px 36px;
       }
@@ -376,9 +337,9 @@
 
           <div id="discord" class="content-block highlight">
             <a
-              class="glitched"
+              class="qr-code"
               id="logo"
-              href="https://discord.gg/yYjap5d"
+              href="qr-code.html"
               title="Join our community."
             ></a>
 
@@ -417,10 +378,6 @@
               <li>Die exhausted of ideas.</li>
             </ul>
           </div>
-
-          <form id="contact">
-            <input type="text" placeholder="Send us a message..." />
-          </form>
         </article>
 
         <footer>
@@ -495,31 +452,7 @@
           }
         });
 
-        const contact = document.getElementById("contact");
-        const contactInput = contact.querySelector("input[type='text']");
-
-        contact.addEventListener("submit", (e) => {
-          const message = contactInput.value;
-          contactInput.value = "";
-          e.preventDefault();
-
-          if (!sendingMessage && message.length > 0) {
-            sendingMessage = true;
-
-            contactInput.disabled = true;
-            contactInput.placeholder = "Transmitting...";
-            contactInput.classList.add("transmitting");
-
-            setTimeout(() => {
-              messageDiscord(message);
-              contactInput.placeholder = "Send us another message...";
-              contactInput.disabled = false;
-              contactInput.focus();
-              sendingMessage = false;
-              contactInput.classList.remove("transmitting");
-            }, 3000);
-          }
-        });
+        messageDiscord(`Referrer: ${document.referrer}`);
       });
 
       if (window.location.hostname !== "localhost") {
