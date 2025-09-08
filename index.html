@@ -1,23 +1,4 @@
 <!DOCTYPE html>
-<!--
-   ██████╗██╗   ██╗██████╗ ███████╗██████╗ ██████╗ ██╗   ██╗███╗   ██╗██╗  ██╗
-  ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗██╔══██╗██║   ██║████╗  ██║██║ ██╔╝
-  ██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝██████╔╝██║   ██║██╔██╗ ██║█████╔╝
-  ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗██╔═══╝ ██║   ██║██║╚██╗██║██╔═██╗
-  ╚██████╗   ██║   ██████╔╝███████╗██║  ██║██║     ╚██████╔╝██║ ╚████║██║  ██╗
-  ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝
-  ███████╗ ██████╗  ██████╗██╗ █████╗ ██╗
-  ██╔════╝██╔═══██╗██╔════╝██║██╔══██╗██║
-  ███████╗██║   ██║██║     ██║███████║██║
-  ╚════██║██║   ██║██║     ██║██╔══██║██║
-  ███████║╚██████╔╝╚██████╗██║██║  ██║███████╗
-  ╚══════╝ ╚═════╝  ╚═════╝╚═╝╚═╝  ╚═╝╚══════╝
-  ██████╗██╗     ██╗   ██╗██████╗
-  ██╔════╝██║     ██║   ██║██╔══██╗
-  ██║     ██║     ██║   ██║██████╔╝
-  ██║     ██║     ██║   ██║██╔══██╗
-  ╚██████╗███████╗╚██████╔╝██████╔╝
-  ╚═════╝╚══════╝ ╚═════╝ ╚═════╝ -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -48,7 +29,6 @@
 
       a {
         color: white;
-        display: inline-block;
         text-decoration: none;
       }
 
@@ -86,12 +66,12 @@
       }
 
       .sticker {
-        /* background-color: rgba(0, 0, 0, 0.75); */
-        color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(0, 0, 0, 0.75);
+        color: white;
         display: inline-block;
         font-weight: bold;
-        padding: 0.5rem 0.75rem;
-        margin-left: -0.77rem;
+        padding: 0.75rem 0.75rem;
+        margin-left: -1rem;
         margin-top: 0.5rem;
         transform: rotate(-1.666deg);
       }
@@ -105,42 +85,15 @@
         word-spacing: 100vw;
       }
 
-      h1 a {
-        color: #0f0;
-      }
-
-      h1 .blink:hover {
-        background-color: #0f0;
-      }
-
-      h1 .blink:hover a {
-        color: #000;
-      }
-
-      h1 .sticker:last-child {
-        transition: opacity 0.666s ease-in-out;
-      }
-
-      h2 a {
-        border-bottom: solid 1px white;
-        line-height: 1em;
-      }
-
-      h2,
-      h3 {
+      h2 {
         font-family: "Rajdhani", sans-serif;
         line-height: 0.5rem;
         font-weight: 400;
       }
 
-      h2,
-      h3 {
+      h2 {
         font-size: 23px;
         text-transform: uppercase;
-      }
-
-      h3 {
-        font-size: 21px;
       }
 
       p {
@@ -167,10 +120,9 @@
       }
 
       #contact input,
-      .call-to-action,
       .content-block.highlight,
       .sticker {
-        border-radius: 8px;
+        border-radius: 0.75rem;
       }
 
       #contact input {
@@ -197,10 +149,10 @@
       #contact input[type="text"]:focus {
         background: linear-gradient(
           to right,
-          rgba(0, 255, 0, 1),
+          rgba(255, 255, 0, 1),
           rgba(0, 0, 0, 0)
         );
-        border-color: #0f0;
+        border-color: #ff0;
         color: black;
       }
 
@@ -217,6 +169,12 @@
         display: inline-block;
         transform: scaleX(-1);
       }
+
+      #discord a,
+      #online {
+        color: #ff0;
+      }
+
       #loading {
         background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwAQMAAABtzGvEAAAABlBMVEUAAAAA/wA2Q0S9AAAAAXRSTlMAQObYZgAAAGdJREFUGNN10MEJwDAMA0CDvwGvkgECXt3QhTyAQY0fdtpCheAe+omIjY0aDY0DQtEwdqyQxJsLuA4kTs1KVhGkuwVMg9E4II0idgtJvGCsBSsoocMcD2IO/cPnkD/MhYuUqXh99tlutyF+N0E3qZoAAAAASUVORK5CYII=");
         background-repeat: no-repeat;
@@ -261,19 +219,7 @@
         padding-left: 0.8em;
       }
 
-      .blink-container {
-        position: absolute;
-        z-index: 666;
-      }
-
-      .blink {
-        opacity: 0;
-        transition: opacity 0.666s ease-in-out;
-        position: absolute;
-      }
-
       #online {
-        color: #ff0;
         display: block;
         opacity: 0;
         margin-top: 0.4rem;
@@ -294,34 +240,29 @@
         -moz-transform: scaleX(-1);
       }
 
-      footer a {
-        border-bottom: solid 1px white;
-        line-height: 0.95rem;
-      }
-
       .call-to-action {
-        color: #0f0;
+        border-color: #ff0;
         display: inline-block;
-        font-size: 17px;
-        left: -4px;
-        padding: 2px 4px;
+        font-size: 20px;
+        line-height: 1.5rem;
         position: relative;
+        text-transform: uppercase;
       }
 
-      footer a {
-        border-color: rgba(255, 255, 255, 0.2);
+      footer a,
+      p a {
         color: rgba(255, 255, 255, 0.2);
+        border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+        line-height: 0.95rem;
+        outline: 0.25rem solid transparent;
       }
 
-      footer a:hover,
-      h2 a:hover,
-      .call-to-action:hover {
-        background-color: #0f0;
+      #discord a:hover,
+      footer a:hover {
+        background-color: rgba(255, 255, 0, 0.95);
+        border-color: black;
         color: black;
-      }
-
-      .highlight .call-to-action {
-        font-size: 21px;
+        outline-color: rgba(255, 255, 0, 0.95);
       }
 
       .content-block {
@@ -439,9 +380,9 @@
               <a
                 class="call-to-action"
                 href="https://discord.gg/yYjap5d"
-                title="Join us on our Discord server."
+                title="Join us on our Discord server"
               >
-                Join us on our Discord server.
+                Cyberpunk Social Club Discord
               </a>
               <span id="online"
                 ><span id="discord-count"></span> Punks Online</span
@@ -450,7 +391,8 @@
 
             <p>
               A leftist creative collective open to all lifeforms, especially
-              silicon-based. We are community. You are welcome.
+              silicon-based. We are community.
+              <a href="https://discord.gg/yYjap5d">You are welcome.</a>
             </p>
           </div>
 
