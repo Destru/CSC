@@ -393,7 +393,7 @@
             Fractals by
             <a href="https://p1x3ltr4sh.deviantart.com">P1X3LTR4SH</a>.
           </div>
-
+          <div id="inception"></div>
           <div id="bitcoin">12GHwbwJTGtmHBeY6aQr2pqwuZ5m19SWwG</div>
         </footer>
       </div>
@@ -459,7 +459,6 @@
           }
         });
 
-        // 🥷
         (function () {
           const lastPing = localStorage.getItem("visitorPingedAt");
           const now = Date.now();
@@ -493,6 +492,53 @@
                 })
                 .finally(setStamped);
             });
+        })();
+
+        (function () {
+          const inceptionMs = 1458293828 * 1000;
+          function updateSince() {
+            const now = new Date();
+            const start = new Date(inceptionMs);
+            let years = now.getFullYear() - start.getFullYear();
+            let months = now.getMonth() - start.getMonth();
+            let days = now.getDate() - start.getDate();
+            if (days < 0) {
+              months -= 1;
+              days += new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+            }
+            if (months < 0) {
+              years -= 1;
+              months += 12;
+            }
+            const anchor = new Date(start);
+            anchor.setFullYear(start.getFullYear() + years);
+            anchor.setMonth(start.getMonth() + months);
+            anchor.setDate(start.getDate() + days);
+            let rem = now - anchor;
+            const hours = Math.floor(rem / 3600000);
+            rem -= hours * 3600000;
+            const minutes = Math.floor(rem / 60000);
+            rem -= minutes * 60000;
+            const seconds = Math.floor(rem / 1000);
+            function p(n, u) {
+              return n + " " + u + (n === 1 ? "" : "s");
+            }
+            const parts = [];
+            if (years) parts.push(p(years, "year"));
+            if (months) parts.push(p(months, "month"));
+            if (days) parts.push(p(days, "day"));
+            parts.push(p(hours, "hour"));
+            parts.push(p(minutes, "minute"));
+            parts.push(p(seconds, "second"));
+            const timer =
+              (parts.length > 1
+                ? parts.slice(0, -1).join(", ") + " and " + parts.slice(-1)
+                : parts[0]) + " ago";
+            const el = document.getElementById("inception");
+            if (el) el.textContent = `Established ${timer}.`;
+          }
+          updateSince();
+          setInterval(updateSince, 1000);
         })();
       });
 
