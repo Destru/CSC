@@ -480,30 +480,42 @@
 
         (function () {
           const inceptionMs = 1458293828 * 1000;
+
+          function addUTC(date, add) {
+            const d = new Date(date);
+            if (add.years) d.setUTCFullYear(d.getUTCFullYear() + add.years);
+            if (add.months) d.setUTCMonth(d.getUTCMonth() + add.months);
+            if (add.days) d.setUTCDate(d.getUTCDate() + add.days);
+            return d;
+          }
+
           function updateSince() {
             const now = new Date();
-            const start = new Date(inceptionMs);
-            let years = now.getFullYear() - start.getFullYear();
-            let months = now.getMonth() - start.getMonth();
-            let days = now.getDate() - start.getDate();
-            if (days < 0) {
-              months -= 1;
-              days += new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+            let cursor = new Date(inceptionMs);
+            let years = 0,
+              months = 0,
+              days = 0;
+
+            while (addUTC(cursor, { years: 1 }) <= now) {
+              cursor = addUTC(cursor, { years: 1 });
+              years++;
             }
-            if (months < 0) {
-              years -= 1;
-              months += 12;
+            while (addUTC(cursor, { months: 1 }) <= now) {
+              cursor = addUTC(cursor, { months: 1 });
+              months++;
             }
-            const anchor = new Date(start);
-            anchor.setFullYear(start.getFullYear() + years);
-            anchor.setMonth(start.getMonth() + months);
-            anchor.setDate(start.getDate() + days);
-            let rem = now - anchor;
+            while (addUTC(cursor, { days: 1 }) <= now) {
+              cursor = addUTC(cursor, { days: 1 });
+              days++;
+            }
+
+            let rem = now - cursor;
             const hours = Math.floor(rem / 3600000);
             rem -= hours * 3600000;
             const minutes = Math.floor(rem / 60000);
             rem -= minutes * 60000;
             const seconds = Math.floor(rem / 1000);
+
             function p(n, u) {
               return n + " " + u + (n === 1 ? "" : "s");
             }
@@ -514,13 +526,14 @@
             parts.push(p(hours, "hour"));
             parts.push(p(minutes, "minute"));
             parts.push(p(seconds, "second"));
-            const timer =
+            const text =
               (parts.length > 1
                 ? parts.slice(0, -1).join(", ") + " and " + parts.slice(-1)
                 : parts[0]) + " ago";
             const el = document.getElementById("inception");
-            if (el) el.textContent = `Established ${timer}.`;
+            if (el) el.textContent = `Established ${text}.`;
           }
+
           updateSince();
           setInterval(updateSince, 1000);
         })();
