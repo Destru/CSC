@@ -1,9 +1,9 @@
-██▄   ▄███▄     ▄▄▄▄▄      ▄▄▄▄▀ █▄▄▄▄  ▄   
-█  █  █▀   ▀   █     ▀▄ ▀▀▀ █    █  ▄▀   █  
-█   █ ██▄▄   ▄  ▀▀▀▀▄       █    █▀▀▌ █   █ 
-█  █  █▄   ▄▀ ▀▄▄▄▄▀       █     █  █ █   █ 
-███▀  ▀███▀               ▀        █  █▄ ▄█ 
-                                  ▀    ▀▀▀
+██▄ ▄███▄ ▄▄▄▄▄ ▄▄▄▄▀ █▄▄▄▄ ▄
+█ █ █▀ ▀ █ ▀▄ ▀▀▀ █ █ ▄▀ █
+█ █ ██▄▄ ▄ ▀▀▀▀▄ █ █▀▀▌ █ █
+█ █ █▄ ▄▀ ▀▄▄▄▄▀ █ █ █ █ █
+███▀ ▀███▀ ▀ █ █▄ ▄█
+▀ ▀▀▀
 
 > Some say the world will end in fire,
 > Some say in ice.
@@ -71,7 +71,6 @@
 - ## Maulus Navy Issue
 - Merlin
   - https://zkillboard.com/kill/29894593/
-  - https://zkillboard.com/kill/35096341/ 🤷‍♀️
 - Navitas
   - https://zkillboard.com/kill/39667360/
 - ## Probe
@@ -79,12 +78,12 @@
 - Punisher
   - https://zkillboard.com/kill/38185185/
 - Republic Fleet Firetail
-  - https://zkillboard.com/kill/28346238/
+  - https://zkillboard.com/kill/28346238/ 🥈
 - Retribution
   - https://zkillboard.com/kill/65082656/
 - Rifter
-  - https://zkillboard.com/kill/69859161/
-  - https://zkillboard.com/kill/28823489/ 🤷‍♀️
+  - https://zkillboard.com/kill/69859161/ 🥇
+  - https://zkillboard.com/kill/28823489/ 🥉
 - ## Scalpel
 - Slasher
   - https://zkillboard.com/kill/29561174/
