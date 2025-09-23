@@ -1,10 +1,3 @@
-██▄ ▄███▄ ▄▄▄▄▄ ▄▄▄▄▀ █▄▄▄▄ ▄
-█ █ █▀ ▀ █ ▀▄ ▀▀▀ █ █ ▄▀ █
-█ █ ██▄▄ ▄ ▀▀▀▀▄ █ █▀▀▌ █ █
-█ █ █▄ ▄▀ ▀▄▄▄▄▀ █ █ █ █ █
-███▀ ▀███▀ ▀ █ █▄ ▄█
-▀ ▀▀▀
-
 > Some say the world will end in fire,
 > Some say in ice.
 > From what I’ve tasted of desire
@@ -14,8 +7,7 @@
 > To say that for destruction ice
 > Is also great
 > And would suffice.
-
-— Robert Frost
+> — Robert Frost
 
 - Astero
   - https://zkillboard.com/kill/64868035/
