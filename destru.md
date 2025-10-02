@@ -68,6 +68,7 @@ Get one solokill in every (available) frigate in EVE Online.
 - ### Magnate
   https://zkillboard.com/kill/54721483/
 - ### Maulus
+  https://zkillboard.com/kill/130202047/
 - ### Maulus Navy Issue
 - ### Merlin
   https://zkillboard.com/kill/29894593/
