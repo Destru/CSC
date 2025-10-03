@@ -25,17 +25,17 @@ a {
 }
 
 a:link {
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 a:not(:link) {
   cursor: default;
-  opacity: 0.5;
+  opacity: 0.35;
 }
 
 a:link:hover {
-  color: rgba(255, 255, 255, 1);
-  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+  color: white;
+  text-shadow: 3px 3px 1 rgba(0, 0, 0, 0.35);
 }
 
 h1 {
@@ -50,8 +50,7 @@ h1 span {
   letter-spacing: -0.4vw;
 }
 
-footer,
-h2 {
+footer {
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.75vh;
   line-height: 2vh;
@@ -60,13 +59,21 @@ h2 {
   z-index: 2;
 }
 
-h2 {
-  left: 0;
-  top: 0;
-}
-
 li {
   color: rgba(255, 255, 255, 0.5);
+}
+
+ul:hover .type {
+  transform: scale(0.45);
+}
+
+.type {
+  color: rgba(255, 255, 255, 0.85);
+  margin-top: -2.5vh;
+  opacity: 0.5;
+  transform: scale(0.35);
+  transform-origin: 0%;
+  transition: all 150ms ease-in-out;
 }
 
 #app,
@@ -93,7 +100,7 @@ li {
   grid-template-columns: repeat(3, 1fr);
   padding: 5vh 2.5vw;
   position: absolute;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 1s ease-in-out;
   width: calc(100vw - 5vw);
   z-index: 1337;
 }
