@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Destru Kaneda [R1FTA]</title>
+
+    <link rel="shortcut icon" type="image/png" href="binaerpilot-web.png" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .noise {
+        position: fixed;
+        top: -50%;
+        left: -50%;
+        right: -50%;
+        bottom: -50%;
+        width: 200vw;
+        height: 200vh;
+        background: transparent
+          url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+        background-repeat: repeat;
+        animation: noise 0.2s infinite;
+      }
+
+      @keyframes noise {
+        0% {
+          transform: translate(0, 0);
+        }
+        10% {
+          transform: translate(-5%, -5%);
+        }
+        20% {
+          transform: translate(-10%, 5%);
+        }
+        30% {
+          transform: translate(5%, -10%);
+        }
+        40% {
+          transform: translate(-5%, 15%);
+        }
+        50% {
+          transform: translate(-10%, 5%);
+        }
+        60% {
+          transform: translate(15%, 0);
+        }
+        70% {
+          transform: translate(0, 10%);
+        }
+        80% {
+          transform: translate(-15%, 0);
+        }
+        90% {
+          transform: translate(10%, 5%);
+        }
+        100% {
+          transform: translate(5%, 0);
+        }
+      }
+    </style>
+    <style>
+      html {
+        min-height: 100vh;
+      }
+
+      html,
+      body {
+        margin: 0;
+        overflow: none;
+        text-transform: uppercase;
+      }
+
+      body {
+        background-image: url("skull.gif");
+        background-color: black;
+        background-size: contain;
+        background-position: center;
+        font-family: "Creepster", system-ui;
+        font-size: 3vh;
+        line-height: 2.8vh;
+      }
+
+      a {
+        color: rgba(255, 255, 255, 0.95);
+        text-decoration: none;
+        text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+        padding: 0.5vh 2vw;
+      }
+
+      a:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+
+      #app,
+      #destru,
+      #killmails {
+        opacity: 0;
+      }
+
+      #app {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      #destru {
+        color: rgba(255, 255, 255, 0.15);
+        font-size: 20vw;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 2.5s ease-in-out;
+      }
+
+      #killmails {
+        padding: 2em;
+        position: absolute;
+        z-index: 2;
+        transition: opacity 0.25s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app" class="noise"></div>
+    <h1 id="destru">Destru</h1>
+    <aside id="killmails">
+      <ul>
+        <li>
+          <a href="https://zkillboard.com/kill/39715777/">Atron</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/130189413/">Bantam</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/55891755/">Breacher</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/65524742/">Burst</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/28571640/"
+            >Caldari Navy Hookbill</a
+          >
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/64801277/">Condor</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/65046076/">Cruor</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/64722458/">Daredevil</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/64970201/">Executioner</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/65621475/"
+            >Federation Navy Comet</a
+          >
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/65315168/">Harpy</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/29836521/">Heron</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/48036164/"
+            >Imperial Navy Slicer</a
+          >
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/27648545/">Incursus</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/35142988/">Jaguar</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/29618898/">Kestrel</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/54721483/">Magnate</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/130202047/">Maulus</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/29894593/">Merlin</a>
+        </li>
+        <li>
+          <h3 id="navitas"></h3>
+          <a href="https://zkillboard.com/kill/39667360/">Navitas</a>
+        </li>
+
+        <li>
+          <h3 id="punisher"></h3>
+          <a href="https://zkillboard.com/kill/38185185/">Punisher</a>
+        </li>
+        <li>
+          <h3 id="republic-fleet-firetail"></h3>
+          <a href="https://zkillboard.com/kill/28346238/"
+            >Republic Fleet Firetail</a
+          >
+        </li>
+        <li>
+          <h3 id="retribution"></h3>
+          <a href="https://zkillboard.com/kill/65082656/">Retribution</a>
+        </li>
+        <li>
+          <h3 id="rifter"></h3>
+          <a href="https://zkillboard.com/kill/69859161/">Rifter</a>
+        </li>
+
+        <li>
+          <h3 id="slasher"></h3>
+          <a href="https://zkillboard.com/kill/29561174/">Slasher</a>
+        </li>
+        <li>
+          <h3 id="succubus"></h3>
+          <a href="https://zkillboard.com/kill/48026499/">Succubus</a>
+        </li>
+
+        <li>
+          <h3 id="tormentor"></h3>
+          <a href="https://zkillboard.com/kill/65166764/">Tormentor</a>
+        </li>
+        <li>
+          <h3 id="tristan"></h3>
+          <a href="https://zkillboard.com/kill/39667307/">Tristan</a>
+        </li>
+        <li>
+          <h3 id="vengeance"></h3>
+          <a href="https://zkillboard.com/kill/65542183/">Vengeance</a>
+        </li>
+        <li>
+          <h3 id="venture"></h3>
+          <a href="https://zkillboard.com/kill/28822435/">Venture</a>
+        </li>
+        <li>
+          <a href="https://zkillboard.com/kill/22182234/">Wolf</a>
+        </li>
+      </ul>
+    </aside>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+          document.getElementById("destru").style.opacity = 1;
+          document.getElementById("killmails").style.opacity = 1;
+        }, 250);
+      });
+    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7J85SD9ZQR"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-7J85SD9ZQR");
+    </script>
+  </body>
+</html>
