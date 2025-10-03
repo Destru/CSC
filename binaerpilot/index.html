@@ -9,7 +9,7 @@
     <title>BINÆRPILOT — Neurodivergent Dance Music</title>
 
     <link rel="shortcut icon" type="image/png" href="binaerpilot-web.png" />
-    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="../reset.css" />
     <style>
       @font-face {
         font-family: "Nintendo";
@@ -86,7 +86,7 @@
       }
 
       .crt {
-        background: linear-gradient(rgb(0, 24, 0), rgb(0, 8, 0));
+        background: linear-gradient(rgb(0, 32, 0), rgb(0, 8, 0));
       }
 
       .crt::after {
@@ -136,12 +136,8 @@
         font-family: "Nintendo", monospace;
         font-size: 16px;
         line-height: 1.4rem;
-        overflow: none;
+        overflow: hidden;
         text-transform: uppercase;
-      }
-
-      iframe {
-        z-index: 1337;
       }
 
       html {
@@ -214,8 +210,7 @@
       }
 
       #battlestar,
-      #binaerpilot,
-      iframe {
+      #binaerpilot {
         margin: 1rem;
       }
 
@@ -245,6 +240,7 @@
         width: 132px;
         height: 132px;
       }
+
       .lds-ring div {
         box-sizing: border-box;
         display: block;
@@ -257,15 +253,19 @@
         animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
         border-color: #0f0 transparent transparent transparent;
       }
+
       .lds-ring div:nth-child(1) {
         animation-delay: -0.45s;
       }
+
       .lds-ring div:nth-child(2) {
         animation-delay: -0.3s;
       }
+
       .lds-ring div:nth-child(3) {
         animation-delay: -0.15s;
       }
+
       @keyframes lds-ring {
         0% {
           transform: rotate(0deg);
@@ -382,9 +382,14 @@
     </div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(() => {
+        const loader = document.getElementById("loading");
+        loader.addEventListener("transitionend", () => {
+          loader.style.visibility = "hidden";
           document.getElementById("app").style.opacity = 1;
-          document.getElementById("loading").style.opacity = 0;
+        });
+
+        setTimeout(() => {
+          loader.style.opacity = 0;
         }, 333);
       });
     </script>

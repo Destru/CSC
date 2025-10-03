@@ -5,249 +5,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Destru Kaneda [R1FTA]</title>
+    <title>Destru Kaneda 💀</title>
 
-    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="../reset.css" />
+    <link rel="stylesheet" type="text/css" href="screen.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .noise {
-        position: fixed;
-        top: -50%;
-        left: -50%;
-        right: -50%;
-        bottom: -50%;
-        width: 200vw;
-        height: 200vh;
-        background: transparent url("noise.png") repeat 0 0;
-        background-repeat: repeat;
-        animation: noise 0.2s infinite;
-      }
-
-      @keyframes noise {
-        0% {
-          transform: translate(0, 0);
-        }
-        10% {
-          transform: translate(-5%, -5%);
-        }
-        20% {
-          transform: translate(-10%, 5%);
-        }
-        30% {
-          transform: translate(5%, -10%);
-        }
-        40% {
-          transform: translate(-5%, 15%);
-        }
-        50% {
-          transform: translate(-10%, 5%);
-        }
-        60% {
-          transform: translate(15%, 0);
-        }
-        70% {
-          transform: translate(0, 10%);
-        }
-        80% {
-          transform: translate(-15%, 0);
-        }
-        90% {
-          transform: translate(10%, 5%);
-        }
-        100% {
-          transform: translate(5%, 0);
-        }
-      }
-    </style>
-    <style>
-      html {
-        min-height: 100vh;
-      }
-
-      html,
-      body {
-        margin: 0;
-        overflow: none;
-        text-transform: uppercase;
-      }
-
-      body {
-        background-image: url("skull.gif");
-        background-color: black;
-        background-size: cover;
-        background-position: center;
-        font-family: "Creepster", system-ui;
-        font-size: 3vh;
-        line-height: 2.8vh;
-      }
-
-      a {
-        color: rgba(255, 255, 255, 0.95);
-        text-decoration: none;
-        text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
-        padding: 0.5vh 2vw;
-      }
-
-      a:hover {
-        background-color: rgba(255, 255, 255, 0.15);
-      }
-
-      #destru,
-      #killmails {
-        opacity: 0;
-      }
-
-      #destru {
-        color: rgba(255, 255, 255, 0.15);
-        font-size: 20vw;
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        transition: opacity 2.5s ease-in-out;
-      }
-
-      #killmails {
-        padding: 2em;
-        position: absolute;
-        z-index: 2;
-        transition: opacity 0.25s ease-in-out;
-      }
-    </style>
   </head>
   <body>
-    <div id="app" class="noise"></div>
-    <h1 id="destru">Destru</h1>
-    <aside id="killmails">
-      <ul>
-        <li>
-          <a href="https://zkillboard.com/kill/39715777/">Atron</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/130189413/">Bantam</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/55891755/">Breacher</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/65524742/">Burst</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/28571640/"
-            >Caldari Navy Hookbill</a
-          >
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/64801277/">Condor</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/65046076/">Cruor</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/64722458/">Daredevil</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/64970201/">Executioner</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/65621475/"
-            >Federation Navy Comet</a
-          >
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/65315168/">Harpy</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/29836521/">Heron</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/48036164/"
-            >Imperial Navy Slicer</a
-          >
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/27648545/">Incursus</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/35142988/">Jaguar</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/29618898/">Kestrel</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/54721483/">Magnate</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/130202047/">Maulus</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/29894593/">Merlin</a>
-        </li>
-        <li>
-          <h3 id="navitas"></h3>
-          <a href="https://zkillboard.com/kill/39667360/">Navitas</a>
-        </li>
+    <main id="app">
+      <header id="destru">
+        <h1>Destru <span>Kaneda</span></h1>
+      </header>
+      <h2 id="quote"></h2>
+      <aside id="killmails">
+        <ul class="tech-1">
+          <li>
+            <a href="https://zkillboard.com/kill/39715777/">Atron</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/130189413/">Bantam</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/55891755/">Breacher</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/65524742/">Burst</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/64801277/">Condor</a>
+          </li>
+          <li><a>Crucifier</a></li>
+          <li><a>Damavik</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/64970201/">Executioner</a>
+          </li>
+          <li><a>Griffin</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/29836521/">Heron</a>
+          </li>
+          <li><a>Imicus</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/27648545/">Incursus</a>
+          </li>
+          <li><a>Inquisitor</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/29618898/">Kestrel</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/54721483/">Magnate</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/130202047/">Maulus</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/29894593/">Merlin</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/39667360/">Navitas</a>
+          </li>
+          <li><a>Probe</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/38185185/">Punisher</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/69859161/">Rifter</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/29561174/">Slasher</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/65166764/">Tormentor</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/39667307/">Tristan</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/28822435/">Venture</a>
+          </li>
+          <li><a>Vigil</a></li>
+        </ul>
 
-        <li>
-          <h3 id="punisher"></h3>
-          <a href="https://zkillboard.com/kill/38185185/">Punisher</a>
-        </li>
-        <li>
-          <h3 id="republic-fleet-firetail"></h3>
-          <a href="https://zkillboard.com/kill/28346238/"
-            >Republic Fleet Firetail</a
-          >
-        </li>
-        <li>
-          <h3 id="retribution"></h3>
-          <a href="https://zkillboard.com/kill/65082656/">Retribution</a>
-        </li>
-        <li>
-          <h3 id="rifter"></h3>
-          <a href="https://zkillboard.com/kill/69859161/">Rifter</a>
-        </li>
+        <ul class="faction">
+          <li><a>Astero</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/28571640/"
+              >Caldari Navy Hookbill</a
+            >
+          </li>
+          <li><a>Crucifier Navy Issue</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/65046076/">Cruor</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/64722458/">Daredevil</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/65621475/"
+              >Federation Navy Comet</a
+            >
+          </li>
+          <li><a>Garmur</a></li>
+          <li><a>Griffin Navy Issue</a></li>
+          <li><a>Heron Navy Issue</a></li>
+          <li><a>Imicus Navy Issue</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/48036164/"
+              >Imperial Navy Slicer</a
+            >
+          </li>
+          <li><a>Magnate Navy Issue</a></li>
+          <li><a>Maulus Navy Issue</a></li>
+          <li><a>Probe Navy Issue</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/28346238/"
+              >Republic Fleet Firetail</a
+            >
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/48026499/">Succubus</a>
+          </li>
+          <li><a>Vigil Fleet Issue</a></li>
+          <li><a>Worm</a></li>
+        </ul>
 
-        <li>
-          <h3 id="slasher"></h3>
-          <a href="https://zkillboard.com/kill/29561174/">Slasher</a>
-        </li>
-        <li>
-          <h3 id="succubus"></h3>
-          <a href="https://zkillboard.com/kill/48026499/">Succubus</a>
-        </li>
+        <ul class="tech-2">
+          <li><a>Ares</a></li>
+          <li><a>Crow</a></li>
+          <li><a>Crusader</a></li>
+          <li><a>Deacon</a></li>
+          <li><a>Endurance</a></li>
+          <li><a>Enyo</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/65315168/">Harpy</a>
+          </li>
+          <li><a>Hawk</a></li>
+          <li><a>Hound</a></li>
+          <li><a>Hyena</a></li>
+          <li><a>Imp</a></li>
+          <li><a>Ishkur</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/35142988/">Jaguar</a>
+          </li>
+          <li><a>Keres</a></li>
+          <li><a>Kirin</a></li>
+          <li><a>Kitsune</a></li>
+          <li><a>Malediction</a></li>
+          <li><a>Manticore</a></li>
+          <li><a>Nemesis</a></li>
+          <li><a>Nergal</a></li>
+          <li><a>Prospect</a></li>
+          <li><a>Purifier</a></li>
+          <li><a>Raptor</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/65082656/">Retribution</a>
+          </li>
+          <li><a>Scalpel</a></li>
+          <li><a>Sentinel</a></li>
+          <li><a>Stiletto</a></li>
+          <li><a>Taranis</a></li>
+          <li><a>Thalia</a></li>
+          <li>
+            <a href="https://zkillboard.com/kill/65542183/">Vengeance</a>
+          </li>
+          <li>
+            <a href="https://zkillboard.com/kill/22182234/">Wolf</a>
+          </li>
+          <li><a>Whiptail</a></li>
+        </ul>
+      </aside>
+      <footer>
+        Send ISK 4 reships to <span>Destru Kaneda</span><br />
+        <span class="rotate">&hearts;</span> Black Rebel Rifter Club
+      </footer>
+    </main>
 
-        <li>
-          <h3 id="tormentor"></h3>
-          <a href="https://zkillboard.com/kill/65166764/">Tormentor</a>
-        </li>
-        <li>
-          <h3 id="tristan"></h3>
-          <a href="https://zkillboard.com/kill/39667307/">Tristan</a>
-        </li>
-        <li>
-          <h3 id="vengeance"></h3>
-          <a href="https://zkillboard.com/kill/65542183/">Vengeance</a>
-        </li>
-        <li>
-          <h3 id="venture"></h3>
-          <a href="https://zkillboard.com/kill/28822435/">Venture</a>
-        </li>
-        <li>
-          <a href="https://zkillboard.com/kill/22182234/">Wolf</a>
-        </li>
-      </ul>
-    </aside>
+    <div id="skull"></div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        setTimeout(() => {
+        const app = document.getElementById("app");
+        app.addEventListener("transitionend", () => {
           document.getElementById("destru").style.opacity = 1;
+          document.getElementById("skull").style.opacity = 0.85;
+          type();
+        });
+
+        setTimeout(() => {
+          app.style.opacity = 1;
           document.getElementById("killmails").style.opacity = 1;
         }, 250);
+
+        const quote = document.getElementById("quote");
+        const quotes = [
+          { author: "Annah Kitheran", text: "You are bad man Kaneda" },
+          { author: "Licht Hee", text: "You are best samurai" },
+          { author: "Loryanna", text: "Piss off Destru" },
+          { author: "David Devant", text: "Shut the fuck up Destru" },
+          { author: "Philip Murgy", text: "Bantam Wow!!!" },
+          { author: "Sihrru", text: "Stop being so good" },
+        ];
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        let quoteIndex = 0;
+
+        const type = () => {
+          if (quoteIndex <= randomQuote.text.length) {
+            quote.innerHTML =
+              `&lt;${randomQuote.author}&gt; ` +
+              randomQuote.text.slice(0, quoteIndex);
+            quoteIndex++;
+            setTimeout(type, 50);
+          }
+        };
       });
     </script>
     <script
