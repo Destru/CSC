@@ -72,13 +72,13 @@ li {
 }
 
 ul:hover .type {
-  transform: scale(0.45);
+  transform: scale(0.5);
 }
 
 .type {
-  margin-top: -2.5vh;
+  margin-top: -3.5vh;
   opacity: 0.5;
-  transform: scale(0.35);
+  transform: scale(0.45);
   transform-origin: 0%;
   transition: all 150ms ease-in-out;
 }
@@ -108,12 +108,11 @@ ul:hover .type {
   padding: 5vh 2.5vw;
   position: fixed;
   transition: opacity 1s ease-in-out;
-  width: calc(100vw - 5vw);
+  width: 100vw;
   z-index: 1337;
 }
 
 #skull {
-  animation: acid 10s infinite;
   background-blend-mode: color-burn;
   background-color: #f0f;
   background-image: url("skull.gif");
@@ -124,6 +123,13 @@ ul:hover .type {
   position: absolute;
   transition: opacity 5s ease-in-out;
   width: 100%;
+}
+
+#skull,
+#love,
+.type {
+  animation: acid 10s infinite;
+  color: #f0f;
 }
 
 @keyframes acid {
@@ -138,10 +144,6 @@ ul:hover .type {
 footer {
   bottom: 0;
   left: 0;
-}
-
-footer span {
-  color: rgba(255, 255, 255, 1);
 }
 
 .rotate {
