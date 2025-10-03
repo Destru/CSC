@@ -112,7 +112,7 @@ ul:hover .type {
 
 #skull {
   animation: acid 10s infinite;
-  background-blend-mode: color-burn;
+  background-blend-mode: color-dodge;
   background-color: #f0f;
   background-image: url("skull.gif");
   background-size: cover;
