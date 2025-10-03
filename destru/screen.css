@@ -17,7 +17,7 @@ body {
 body {
   background-color: black;
   font-family: "Creepster", system-ui;
-  font-size: 3.6vh;
+  font-size: 3.2vh;
   line-height: 3vh;
 }
 
@@ -40,11 +40,13 @@ a:not(:link) {
 }
 
 a:link:hover {
+  animation: blink 100ms infinite;
   color: white;
   text-shadow: 3px 3px 1 rgba(0, 0, 0, 0.35);
 }
 
 h1 {
+  animation: grow 3s ease-in-out;
   color: rgba(255, 255, 255, 0.15);
   font-size: 24vw;
   line-height: 20vw;
@@ -104,7 +106,7 @@ ul:hover .type {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 5vh 2.5vw;
-  position: absolute;
+  position: fixed;
   transition: opacity 1s ease-in-out;
   width: calc(100vw - 5vw);
   z-index: 1337;
@@ -112,7 +114,7 @@ ul:hover .type {
 
 #skull {
   animation: acid 10s infinite;
-  background-blend-mode: color-dodge;
+  background-blend-mode: color-burn;
   background-color: #f0f;
   background-image: url("skull.gif");
   background-size: cover;
@@ -154,5 +156,23 @@ footer span {
   }
   to {
     transform: rotateY(360deg);
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1);
   }
 }
