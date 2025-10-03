@@ -76,8 +76,7 @@ li {
   opacity: 0;
 }
 
-#app,
-#killmails {
+#app {
   transition: opacity 0.25s ease-in-out;
 }
 
@@ -94,6 +93,7 @@ li {
   grid-template-columns: repeat(3, 1fr);
   padding: 5vh 2.5vw;
   position: absolute;
+  transition: opacity 0.5s ease-in-out;
   width: calc(100vw - 5vw);
   z-index: 1337;
 }

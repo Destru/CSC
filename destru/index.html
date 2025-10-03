@@ -197,12 +197,12 @@
         app.addEventListener("transitionend", () => {
           document.getElementById("destru").style.opacity = 1;
           document.getElementById("skull").style.opacity = 0.85;
-          type();
         });
 
         setTimeout(() => {
           app.style.opacity = 1;
           document.getElementById("killmails").style.opacity = 1;
+          type();
         }, 250);
 
         const quote = document.getElementById("quote");
