@@ -1,0 +1,146 @@
+html {
+  min-height: 100vh;
+}
+
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: black;
+  font-family: "Creepster", system-ui;
+  font-size: 3vh;
+  line-height: 2.8vh;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.85);
+  display: inline-block;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+  white-space: pre;
+}
+
+a:link {
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+a:not(:link) {
+  cursor: default;
+  opacity: 0.5;
+}
+
+a:link:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 24vw;
+  line-height: 20vw;
+  text-align: center;
+  user-select: none;
+}
+
+h1 span {
+  letter-spacing: -0.4vw;
+}
+
+footer,
+h2 {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.75vh;
+  line-height: 2vh;
+  padding: 2.5vh 2.5vw;
+  position: absolute;
+  z-index: 2;
+}
+
+h2 {
+  left: 0;
+  top: 0;
+}
+
+li {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#app,
+#destru,
+#killmails,
+#skull {
+  opacity: 0;
+}
+
+#app,
+#killmails {
+  transition: opacity 0.25s ease-in-out;
+}
+
+#destru {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 2.5s ease-in-out;
+}
+
+#killmails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5vh 2.5vw;
+  position: absolute;
+  width: calc(100vw - 5vw);
+  z-index: 1337;
+}
+
+#skull {
+  animation: acid 10s infinite;
+  background-blend-mode: color-burn;
+  background-color: #f0f;
+  background-image: url("skull.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  position: absolute;
+  transition: opacity 5s ease-in-out;
+  width: 100%;
+}
+
+@keyframes acid {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+}
+
+footer span {
+  color: rgba(255, 255, 255, 1);
+}
+
+.rotate {
+  animation: rotate 1s infinite;
+  display: inline-block;
+  transform-style: preserve-3d;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
