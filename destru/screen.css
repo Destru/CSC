@@ -72,13 +72,13 @@ li {
 }
 
 ul:hover .type {
-  transform: scale(0.5);
+  transform: scale(1);
 }
 
 .type {
-  margin-top: -3.5vh;
+  margin-top: -1.5vh;
   opacity: 0.5;
-  transform: scale(0.45);
+  transform: scale(0.5);
   transform-origin: 0%;
   transition: all 150ms ease-in-out;
 }
