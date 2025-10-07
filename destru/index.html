@@ -227,7 +227,7 @@
         setTimeout(() => {
           app.style.opacity = 1;
           document.getElementById("killmails").style.opacity = 1;
-          type();
+          setTimeout(type, 500);
         }, 250);
 
         const quote = document.getElementById("quote");
@@ -238,13 +238,12 @@
           { author: "David Devant", text: "Shut the fuck up Destru" },
         ];
         const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        let quoteFull = `${randomQuote.author} > ${randomQuote.text}`;
         let quoteIndex = 0;
 
         const type = () => {
-          if (quoteIndex <= randomQuote.text.length) {
-            quote.innerHTML =
-              `&lt;${randomQuote.author}&gt; ` +
-              randomQuote.text.slice(0, quoteIndex);
+          if (quoteIndex <= quoteFull.length) {
+            quote.innerHTML = quoteFull.slice(0, quoteIndex);
             quoteIndex++;
             setTimeout(type, 50);
           }
