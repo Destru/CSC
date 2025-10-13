@@ -123,15 +123,23 @@ ul:hover .type {
   width: 100%;
 }
 
-#skull,
 #love,
+#skull,
+.new::after,
 .type {
   animation: acid 10s infinite;
+}
+
+#love,
+#love a,
+#skull,
+.new::after,
+.type {
   color: #f0f;
 }
 
-#love a {
-  color: #f0f;
+.new::after {
+  content: "*";
 }
 
 @keyframes acid {
