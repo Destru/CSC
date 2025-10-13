@@ -130,6 +130,10 @@ ul:hover .type {
   color: #f0f;
 }
 
+#love a {
+  color: #f0f;
+}
+
 @keyframes acid {
   from {
     filter: hue-rotate(0deg);
