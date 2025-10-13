@@ -45,6 +45,18 @@ a:link:hover {
   text-shadow: 3px 3px 1 rgba(0, 0, 0, 0.35);
 }
 
+article {
+  display: none;
+}
+
+footer {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.75vh;
+  line-height: 2vh;
+  padding: 2.5vh 2.5vw;
+  position: absolute;
+}
+
 h1 {
   animation: grow 3s ease-in-out;
   color: rgba(255, 255, 255, 0.15);
@@ -58,27 +70,12 @@ h1 span {
   letter-spacing: -0.4vw;
 }
 
-footer {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1.75vh;
-  line-height: 2vh;
-  padding: 2.5vh 2.5vw;
-  position: absolute;
-}
-
 li {
   color: rgba(255, 255, 255, 0.5);
 }
 
 ul:hover .type {
   transform: scale(1);
-}
-
-.type {
-  margin-top: -1.5vh;
-  transform: scale(0.5);
-  transform-origin: 0%;
-  transition: all 150ms ease-in-out;
 }
 
 #app,
@@ -140,6 +137,13 @@ ul:hover .type {
 
 .new::after {
   content: "*";
+}
+
+.type {
+  margin-top: -1.5vh;
+  transform: scale(0.5);
+  transform-origin: 0%;
+  transition: all 150ms ease-in-out;
 }
 
 @keyframes acid {
