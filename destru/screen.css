@@ -108,7 +108,7 @@ ul:hover .type {
 }
 
 #skull {
-  background-blend-mode: color-burn;
+  background-blend-mode: multiply;
   background-color: #f0f;
   background-image: url("skull.gif");
   background-size: cover;
