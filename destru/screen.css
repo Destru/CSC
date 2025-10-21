@@ -122,20 +122,20 @@ ul:hover .type {
 
 #love,
 #skull,
-.new::after,
-.type {
+.type,
+.update::after {
   animation: acid 10s infinite;
 }
 
 #love,
 #love a,
 #skull,
-.new::after,
-.type {
+.type,
+.update::after {
   color: #f0f;
 }
 
-.new::after {
+.update::after {
   content: "*";
 }
 
