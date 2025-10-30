@@ -17,8 +17,8 @@ body {
 body {
   background-color: black;
   font-family: "Creepster", system-ui;
-  font-size: 3.2vh;
-  line-height: 3vh;
+  font-size: 3.15vh;
+  line-height: 2.85vh;
 }
 
 a {
@@ -72,10 +72,6 @@ h1 span {
 
 li {
   color: rgba(255, 255, 255, 0.5);
-}
-
-ul:hover .type {
-  transform: scale(1);
 }
 
 #app,
