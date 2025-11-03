@@ -449,38 +449,78 @@
         });
 
         (function () {
-          const lastPing = localStorage.getItem("visitorPingedAt");
           const now = Date.now();
           const dayMs = 24 * 60 * 60 * 1000;
+          const ua = navigator.userAgent || "";
+
+          const isLikelyAutomation =
+            navigator.webdriver === true ||
+            /bot|crawler|spider|preview|render|headless|facebookexternalhit|slackbot|discordbot|twitterbot|telegram|whatsapp|linkedinbot/i.test(
+              ua
+            );
+
+          const debounceKey = `visitorPingedAt:${ua}:${
+            Intl.DateTimeFormat().resolvedOptions().timeZone || ""
+          }`;
+          const lastPing = localStorage.getItem(debounceKey);
           if (lastPing && now - Number(lastPing) < dayMs) return;
 
           function setStamped() {
-            localStorage.setItem("visitorPingedAt", String(now));
+            localStorage.setItem(debounceKey, String(now));
           }
 
-          fetch("https://ipapi.co/json/")
-            .then((res) => res.json())
-            .then((data) => {
-              const message = `Visitor from ${data.city}, ${
-                data.country_name
-              } (${
-                data.country_code
-              }) :flag_${data.country_code.toLowerCase()}:`;
-              messageDiscord(message);
-              setStamped();
-            })
-            .catch(() => {
-              fetch("https://api.ipify.org?format=json")
-                .then((r) => r.json())
-                .then((ip) => {
-                  const message = `Visited by \`${ip.ip}\``;
-                  messageDiscord(message);
-                })
-                .catch(() => {
-                  messageDiscord("Visited by Unknown 🥷");
-                })
-                .finally(setStamped);
-            });
+          function sendPing() {
+            if (document.visibilityState !== "visible" || isLikelyAutomation)
+              return;
+
+            fetch("https://ipapi.co/json/")
+              .then((res) => res.json())
+              .then((data) => {
+                const org = data.org || data.org_name || "Unknown org";
+                const city = data.city || "Unknown city";
+                const countryName = data.country_name || "Unknown";
+                const countryCode = (data.country_code || "").toLowerCase();
+                const flag = countryCode ? `:flag_${countryCode}:` : "";
+                const message =
+                  `Visitor from ${city}, ${countryName} (${(
+                    data.country_code || ""
+                  ).toUpperCase()}) ${flag}` +
+                  `\nASN/Org: ${org}` +
+                  `\nUA: ${ua}`;
+                messageDiscord(message);
+                setStamped();
+              })
+              .catch(() => {
+                fetch("https://api.ipify.org?format=json")
+                  .then((r) => r.json())
+                  .then((ip) => {
+                    const message = `Visited by \`${ip.ip}\`\nDebug: ${ua}`;
+                    messageDiscord(message);
+                  })
+                  .catch(() => {
+                    messageDiscord(`Visited by Unknown 🥷\nDebug: ${ua}`);
+                  })
+                  .finally(setStamped);
+              });
+          }
+
+          function schedulePingOnVisibleDwell() {
+            if (document.visibilityState === "visible") {
+              setTimeout(sendPing, 2500);
+            } else {
+              const onVisible = () => {
+                if (document.visibilityState === "visible") {
+                  document.removeEventListener("visibilitychange", onVisible);
+                  setTimeout(sendPing, 2500);
+                }
+              };
+              document.addEventListener("visibilitychange", onVisible);
+            }
+          }
+
+          if (!isLikelyAutomation) {
+            schedulePingOnVisibleDwell();
+          }
         })();
 
         (function () {
