@@ -17,8 +17,8 @@ body {
 body {
   background-color: black;
   font-family: "Creepster", system-ui;
-  font-size: 3.15vh;
-  line-height: 2.85vh;
+  font-size: 3.1vh;
+  line-height: 2.9vh;
 }
 
 a {
@@ -95,7 +95,7 @@ li {
 
 #killmails {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   padding: 5vh 2.5vw;
   position: fixed;
   transition: opacity 1s ease-in-out;
