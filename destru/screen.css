@@ -119,7 +119,7 @@ li {
 #love,
 #skull,
 .type,
-.update::after {
+.new::after {
   animation: acid 10s infinite;
 }
 
@@ -127,11 +127,11 @@ li {
 #love a,
 #skull,
 .type,
-.update::after {
+.new::after {
   color: #f0f;
 }
 
-.update::after {
+.new::after {
   content: "*";
 }
 
