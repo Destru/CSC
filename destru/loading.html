@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta property="og:title" content="Destru Kaneda" />
+    <meta
+      property="og:description"
+      content="High-tech low-sec in EVE Online."
+    />
+    <meta
+      property="og:image"
+      content="https://cyberpunksocial.club/destru/skull.gif"
+    />
+    <title>Destru Kaneda — Solo Frigate PvP</title>
+
+    <link rel="stylesheet" type="text/css" href="../reset.css" />
+    <link rel="stylesheet" type="text/css" href="screen.css?v=4" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="app">
+      <header id="destru">
+        <h1>Destru <span>Kaneda</span></h1>
+      </header>
+      <article>
+        <h2>High-Tech Low-Sec</h2>
+        <p>
+          My name is Destru Kaneda, I am a pirate capsuleer in New Eden, and I
+          will get a killmail in every single frigate.
+        </p>
+        <blockquote>
+          This will be my monument<br />
+          This will be a beacon when I'm gone
+        </blockquote>
+      </article>
+      <footer>
+        <p>
+          Send ransom money to
+          <a href="https://twitch.tv/notdestru">Destru Kaneda</a>
+        </p>
+        <p id="quote"></p>
+        <p id="love">
+          <span class="rotate">&hearts;</span>
+          <a href="https://cyberpunksocial.club">Cyberpunk Social Club</a>
+        </p>
+      </footer>
+    </main>
+
+    <div id="skull"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const app = document.getElementById("app");
+        app.addEventListener("transitionend", () => {
+          document.getElementById("destru").style.opacity = 1;
+          document.getElementById("skull").style.opacity = 0.9;
+        });
+
+        setTimeout(() => {
+          app.style.opacity = 1;
+          document.getElementById("killmails").style.opacity = 1;
+          setTimeout(type, 500);
+        }, 250);
+
+        const quote = document.getElementById("quote");
+        const quotes = [
+          { author: "Annah Kitheran", text: "You are bad man Kaneda" },
+          { author: "Loryanna", text: "Piss off Destru" },
+          { author: "David Devant", text: "Shut the fuck up Destru" },
+          { author: "Sihrru", text: "Stop being so good" },
+          { author: "Philip Murgy", text: "Destru you are a master" },
+
+          { author: "Licht Hee", text: "You are best samurai" },
+          { author: "Kefir0iz", text: "Your mom dead" },
+          { author: "Decimus Krull", text: "Love you long time" },
+        ];
+        const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+        let quoteFull = `${randomQuote.author} > ${randomQuote.text}`;
+        let quoteIndex = 0;
+
+        const type = () => {
+          if (quoteIndex <= quoteFull.length) {
+            quote.innerHTML = quoteFull.slice(0, quoteIndex);
+            quoteIndex++;
+            setTimeout(type, 50);
+          }
+        };
+      });
+    </script>
+  </body>
+</html>
