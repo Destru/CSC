@@ -481,12 +481,9 @@
                 const countryName = data.country_name || "Unknown";
                 const countryCode = (data.country_code || "").toLowerCase();
                 const flag = countryCode ? `:flag_${countryCode}:` : "";
-                const message =
-                  `Visitor from ${city}, ${countryName} (${(
-                    data.country_code || ""
-                  ).toUpperCase()}) ${flag}` +
-                  `\nASN/Org: ${org}` +
-                  `\nUA: ${ua}`;
+                const message = `Visitor from ${city}, ${countryName} (${(
+                  data.country_code || ""
+                ).toUpperCase()}) ${flag}`;
                 messageDiscord(message);
                 setStamped();
               })
@@ -494,11 +491,11 @@
                 fetch("https://api.ipify.org?format=json")
                   .then((r) => r.json())
                   .then((ip) => {
-                    const message = `Visited by \`${ip.ip}\`\nDebug: ${ua}`;
+                    const message = `Visited by \`${ip.ip}\``;
                     messageDiscord(message);
                   })
                   .catch(() => {
-                    messageDiscord(`Visited by Unknown 🥷\nDebug: ${ua}`);
+                    messageDiscord(`Visited by Unknown 🥷`);
                   })
                   .finally(setStamped);
               });
