@@ -451,6 +451,7 @@
         (function () {
           const now = Date.now();
           const dayMs = 24 * 60 * 60 * 1000;
+          const pendingWindowMs = 15 * 60 * 1000;
           const ua = navigator.userAgent || "";
 
           const isLikelyAutomation =
@@ -462,16 +463,28 @@
           const debounceKey = `visitorPingedAt:${ua}:${
             Intl.DateTimeFormat().resolvedOptions().timeZone || ""
           }`;
-          const lastPing = localStorage.getItem(debounceKey);
-          if (lastPing && now - Number(lastPing) < dayMs) return;
+          const pendingKey = `${debounceKey}:pending`;
+          const lastPing = Number(localStorage.getItem(debounceKey));
+          const lastPending = Number(localStorage.getItem(pendingKey));
+          if (lastPing && now - lastPing < dayMs) return;
+          if (lastPending && now - lastPending < pendingWindowMs) return;
+          if (isLikelyAutomation) return;
 
           function setStamped() {
-            localStorage.setItem(debounceKey, String(now));
+            localStorage.setItem(debounceKey, String(Date.now()));
+            localStorage.removeItem(pendingKey);
+          }
+
+          function markPending() {
+            localStorage.setItem(pendingKey, String(Date.now()));
           }
 
           function sendPing() {
-            if (document.visibilityState !== "visible" || isLikelyAutomation)
+            if (document.visibilityState !== "visible") {
+              localStorage.removeItem(pendingKey);
+              schedulePingOnVisibleDwell();
               return;
+            }
 
             fetch("https://ipapi.co/json/")
               .then((res) => res.json())
@@ -503,11 +516,13 @@
 
           function schedulePingOnVisibleDwell() {
             if (document.visibilityState === "visible") {
+              markPending();
               setTimeout(sendPing, 2500);
             } else {
               const onVisible = () => {
                 if (document.visibilityState === "visible") {
                   document.removeEventListener("visibilitychange", onVisible);
+                  markPending();
                   setTimeout(sendPing, 2500);
                 }
               };
