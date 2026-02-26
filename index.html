@@ -466,6 +466,9 @@
 
           const isLikelyAutomation =
             navigator.webdriver === true ||
+            /chrome-lighthouse|lighthouse|pagespeed|psi|google-inspectiontool|google web preview|gtmetrix|pingdom|prerender/i.test(
+              ua,
+            ) ||
             /bot|crawler|spider|preview|render|headless|facebookexternalhit|slackbot|discordbot|twitterbot|telegram|whatsapp|linkedinbot/i.test(
               ua,
             );
@@ -499,14 +502,18 @@
             fetch("https://ipapi.co/json/")
               .then((res) => res.json())
               .then((data) => {
-                const org = data.org || data.org_name || "Unknown org";
-                const city = data.city || "Unknown city";
-                const countryName = data.country_name || "Unknown";
-                const countryCode = (data.country_code || "").toLowerCase();
-                const flag = countryCode ? `:flag_${countryCode}:` : "";
-                const message = `Visitor from ${city}, ${countryName} (${(
-                  data.country_code || ""
-                ).toUpperCase()}) ${flag}`;
+                const city = data.city;
+                const countryName = data.country_name;
+                const countryCode = data.country_code;
+
+                if (!city || !countryName || !countryCode) {
+                  messageDiscord(`Visited by Unknown 🥷`);
+                  setStamped();
+                  return;
+                }
+
+                const flag = `:flag_${countryCode.toLowerCase()}:`;
+                const message = `Visitor from ${city}, ${countryName} (${countryCode.toUpperCase()}) ${flag}`;
                 messageDiscord(message);
                 setStamped();
               })
