@@ -355,7 +355,7 @@
                 Join us on Discord
               </a>
               <span id="online"
-                ><span id="discord-count"></span> Punks Online</span
+                ><span id="discord-count"></span> punks are online</span
               >
             </p>
 
@@ -411,14 +411,22 @@
       }
 
       function checkDiscord(callback) {
-        fetch(
-          "https://discordapp.com/api/guilds/160320676580818951/widget.json",
-        )
+        fetch("https://discord.com/api/guilds/160320676580818951/widget.json")
           .then((r) => (r.ok ? r.json() : null))
           .then((data) => {
             if (data) callback(data);
           })
           .catch(() => {});
+      }
+
+      function scheduleDiscordCheck(callback) {
+        const run = () => checkDiscord(callback);
+
+        if ("requestIdleCallback" in window) {
+          requestIdleCallback(() => setTimeout(run, 500));
+        } else {
+          setTimeout(run, 2000);
+        }
       }
 
       document.addEventListener("DOMContentLoaded", function () {
@@ -441,10 +449,10 @@
           }, 333);
         };
 
-        checkDiscord(function (data) {
+        scheduleDiscordCheck(function (data) {
           const online = document.getElementById("online");
           const onlineCount = document.getElementById("discord-count");
-          if (data.presence_count > 0) {
+          if (data && data.presence_count > 0) {
             onlineCount.textContent = data.presence_count;
             online.style.opacity = 1;
           }
