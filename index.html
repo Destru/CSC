@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -307,10 +307,18 @@
     </style>
 
     <link rel="shortcut icon" type="image/png" href="images/csc.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+    />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
-      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      media="print"
+      onload="this.media = 'all'"
     />
   </head>
   <body>
@@ -321,14 +329,16 @@
     </div>
     <div id="app">
       <div id="wrapper">
-        <article>
-          <h1>
-            <span class="sticker">cﾘ乃乇尺ｱu刀ズ</span>
-            <span class="sticker">Social</span>
-            <span class="sticker">Club</span>
-          </h1>
+        <main>
+          <header>
+            <h1>
+              <span class="sticker">cﾘ乃乇尺ｱu刀ズ</span>
+              <span class="sticker">Social</span>
+              <span class="sticker">Club</span>
+            </h1>
+          </header>
 
-          <div id="discord" class="content-block highlight">
+          <article id="discord" class="content-block highlight">
             <a
               class="qr-code"
               id="logo"
@@ -354,9 +364,9 @@
               silicon-based. We are community.
               <a href="https://discord.gg/yYjap5d">You are welcome.</a>
             </p>
-          </div>
+          </article>
 
-          <div id="manifesto" class="content-block">
+          <article id="manifesto" class="content-block">
             <h2>Manifesto</h2>
             <ul class="roman">
               <li>Work <i>is</i> meaning.</li>
@@ -370,8 +380,8 @@
               <li>Be a proponent of an emotional revolution.</li>
               <li>Die exhausted of ideas.</li>
             </ul>
-          </div>
-        </article>
+          </article>
+        </main>
 
         <footer>
           <div>
@@ -402,7 +412,7 @@
 
       function checkDiscord(callback) {
         fetch(
-          "https://discordapp.com/api/guilds/160320676580818951/widget.json"
+          "https://discordapp.com/api/guilds/160320676580818951/widget.json",
         )
           .then((r) => (r.ok ? r.json() : null))
           .then((data) => {
@@ -449,7 +459,7 @@
           const isLikelyAutomation =
             navigator.webdriver === true ||
             /bot|crawler|spider|preview|render|headless|facebookexternalhit|slackbot|discordbot|twitterbot|telegram|whatsapp|linkedinbot/i.test(
-              ua
+              ua,
             );
 
           const debounceKey = `visitorPingedAt:${ua}:${
@@ -589,28 +599,53 @@
       });
 
       if (window.location.hostname !== "localhost") {
-        (function (i, s, o, g, r, a, m) {
-          i["GoogleAnalyticsObject"] = r;
-          (i[r] =
-            i[r] ||
-            function () {
-              (i[r].q = i[r].q || []).push(arguments);
-            }),
-            (i[r].l = 1 * new Date());
-          (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-          a.async = 1;
-          a.src = g;
-          m.parentNode.insertBefore(a, m);
-        })(
-          window,
-          document,
-          "script",
-          "https://www.google-analytics.com/analytics.js",
-          "ga"
-        );
+        (function () {
+          let loaded = false;
 
-        ga("create", "UA-139019-12", "auto");
-        ga("send", "pageview");
+          function loadGA() {
+            if (loaded) return;
+            loaded = true;
+
+            (function (i, s, o, g, r, a, m) {
+              i["GoogleAnalyticsObject"] = r;
+              ((i[r] =
+                i[r] ||
+                function () {
+                  (i[r].q = i[r].q || []).push(arguments);
+                }),
+                (i[r].l = 1 * new Date()));
+              ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+              a.async = 1;
+              a.src = g;
+              m.parentNode.insertBefore(a, m);
+            })(
+              window,
+              document,
+              "script",
+              "https://www.google-analytics.com/analytics.js",
+              "ga",
+            );
+
+            ga("create", "UA-139019-12", "auto");
+            ga("send", "pageview");
+
+            ["pointerdown", "keydown", "scroll", "touchstart"].forEach((evt) =>
+              window.removeEventListener(evt, loadGA, { passive: true }),
+            );
+          }
+
+          ["pointerdown", "keydown", "scroll", "touchstart"].forEach((evt) =>
+            window.addEventListener(evt, loadGA, { passive: true, once: true }),
+          );
+
+          window.addEventListener(
+            "load",
+            () => {
+              setTimeout(loadGA, 3000);
+            },
+            { once: true },
+          );
+        })();
       }
     </script>
   </body>
